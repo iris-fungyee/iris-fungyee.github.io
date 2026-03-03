@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        div.container {
+            display: flex;
+            /* direction of items */
+            flex-direction: column;
+            /* horizontal (row) vertical (column) alignment */
+            justify-content: space-around;
+            /* vertical (row) horizontal (column)alignment */
+            align-items: flex-end;
+            /* distance between items */
+            gap: 10px;
+            min-height: 300px;
+            /*
+            background: linear-gradient(to right, rgb(206, 128, 206), rgb(150, 58, 58));
+            */
+            background-image: url(images/sunflowerfield.jpg);
+            background-size: cover;
+            background-position: bottom;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+
+    </div>
+</body>
+
+</html>
