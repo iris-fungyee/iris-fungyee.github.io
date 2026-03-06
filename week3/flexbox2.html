@@ -8,13 +8,18 @@
     <style>
         body {
             font-family: Arial;
-            margin: 51px;
+            margin: auto;
         }
 
         div.header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin: 30px 100px 30px 100px;
+        }
+
+        img.logo {
+            vertical-align: middle;
         }
 
         div.menu_container {
@@ -37,11 +42,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin: 100px;
         }
 
         div.content {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
         }
 
         h2 {
@@ -63,9 +70,14 @@
             border-radius: 14px;
         }
 
+        div.image {
+            display: flex;
+        }
+
         div.footer {
             display: flex;
             justify-content: space-between;
+            margin: 20px 100px 20px 100px;
         }
     </style>
 </head>
@@ -73,7 +85,7 @@
 <body>
     <div class="header">
         <div>
-            <h1> <img src="images/logoicon.png" alt="positivusicon" width="30" height="30">
+            <h1> <img class="logo" src="images/logoicon.png" alt="positivusicon" width="30" height="30">
                 Positivus</h1>
         </div>
 
