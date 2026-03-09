@@ -5,45 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elementra</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
     <style>
+        @font-face {
+            font-family: oxygen;
+            src: url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+        }
+
+        div {
+            font-family: oxygen;
+        }
+
         body {
             background-color: #f6f5ef;
             margin: auto;
-            font-family: oxygen;
         }
 
         div.projects {
             display: flex;
             justify-content: space-evenly;
-            margin: 95px;
+            margin: 150px;
             gap: 30px;
 
         }
 
         p {
             font-size: 16px;
-            font-weight: 300;
+            font-weight: 400;
+            line-height: 1.5;
+            padding: 0px 18px 0px 18px;
         }
 
         img {
-            border-radius: 16px;
+            border-radius: 8px;
         }
 
         div.residential {
             display: flex;
             flex-direction: column;
             background-color: white;
-            padding: 15px 20px 15px 15px;
+            padding: 15px 15px 20px 15px;
             border-radius: 16px;
+            margin: 0;
 
         }
 
         h1 {
             font-size: 28px;
+            font-weight: bolder;
+            line-height: 1;
+            padding: 0px 18px 0px 18px;
+            margin: 30px 0px 0px 0px;
 
         }
 
@@ -51,12 +63,17 @@
             display: flex;
             flex-direction: column;
             background-color: white;
-            padding: 15px 20px 15px 15px;
+            padding: 15px 15px 20px 15px;
             border-radius: 16px;
+
         }
 
         h2 {
             font-size: 28px;
+            font-weight: bolder;
+            line-height: 1;
+            padding: 0px 18px 0px 18px;
+            margin: 30px 0px 0px 0px;
 
         }
 
@@ -64,12 +81,17 @@
             display: flex;
             flex-direction: column;
             background-color: white;
-            padding: 15px 20px 15px 15px;
+            padding: 15px 15px 20px 15px;
             border-radius: 16px;
+
         }
 
         h3 {
             font-size: 28px;
+            font-weight: bolder;
+            line-height: 1;
+            padding: 0px 18px 0px 18px;
+            margin: 30px 0px 0px 0px;
 
         }
     </style>
@@ -77,14 +99,11 @@
 
 <body>
     <div class="projects">
+
         <div class="residential">
             <div>
                 <img src="images/residential.jpg" alt="residentialproj" width="100%">
-            </div>
-            <div>
                 <h1>Residential projects</h1>
-            </div>
-            <div>
                 <p>We build sustainable and modern homes for comfortable living.</p>
             </div>
         </div>
@@ -92,11 +111,7 @@
         <div class="commercial">
             <div>
                 <img src="images/commercial.jpg" alt="commercialspc" width="100%">
-            </div>
-            <div>
                 <h2>Commercial spaces</h2>
-            </div>
-            <div>
                 <p>We create efficient, inspiring workspaces for businesses of all sizes.</p>
             </div>
         </div>
@@ -104,11 +119,7 @@
         <div class="infrastructure">
             <div>
                 <img src="images/infrastructure.jpg" alt="infraworks" width="100%">
-            </div>
-            <div>
                 <h2>Infrastructure works</h2>
-            </div>
-            <div>
                 <p>We develop strong, reliable infrastructure for growing communities.</p>
             </div>
         </div>
