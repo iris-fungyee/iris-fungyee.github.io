@@ -7,25 +7,21 @@
     <title>Elementra</title>
 
     <style>
-        @font-face {
-            font-family: oxygen;
-            src: url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
-        }
-
-        div {
-            font-family: oxygen;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+        /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap');*/
 
         body {
             background-color: #f6f5ef;
-            margin: auto;
+            font-family: "Oxygen";
+            margin: 10px;
         }
 
         div.projects {
             display: flex;
             justify-content: space-evenly;
-            margin: 150px;
             gap: 30px;
+            max-width: 1024px;
+            margin: auto;
         }
 
         p {
@@ -48,6 +44,7 @@
         }
 
         h1 {
+            /*font-family: "Montserrat";*/
             font-size: 28px;
             font-weight: bolder;
             line-height: 1;
@@ -86,6 +83,43 @@
             padding: 0px 18px 0px 18px;
             margin: 30px 0px 0px 0px;
         }
+
+        /*@media screen and (max-width: 930px) {
+            div.projects {
+                flex-direction: column;
+            }
+
+            .residential {
+                width: 70%;
+                margin: auto;
+            }
+
+            .commercial {
+                width: 70%;
+                margin: auto;
+            }
+
+            .infrastructure {
+                width: 70%;
+                margin: auto;
+            }
+        }
+
+
+        @media screen and (max-width: 550px) {
+            .residential {
+                width: 90%;
+            }
+
+            .commercial {
+                width: 90%;
+            }
+
+            .infrastructure {
+                width: 90%;
+            }
+
+        }*/
     </style>
 </head>
 
@@ -93,24 +127,24 @@
     <div class="projects">
 
         <div class="residential">
+            <div> <img src="images/residential.jpg" alt="residentialproj" width="100%"> </div>
             <div>
-                <img src="images/residential.jpg" alt="residentialproj" width="100%">
                 <h1>Residential projects</h1>
                 <p>We build sustainable and modern homes for comfortable living.</p>
             </div>
         </div>
 
         <div class="commercial">
+            <div> <img src="images/commercial.jpg" alt="commercialspc" width="100%"> </div>
             <div>
-                <img src="images/commercial.jpg" alt="commercialspc" width="100%">
                 <h2>Commercial spaces</h2>
                 <p>We create efficient, inspiring workspaces for businesses of all sizes.</p>
             </div>
         </div>
 
         <div class="infrastructure">
+            <div> <img src="images/infrastructure.jpg" alt="infraworks" width="100%"> </div>
             <div>
-                <img src="images/infrastructure.jpg" alt="infraworks" width="100%">
                 <h2>Infrastructure works</h2>
                 <p>We develop strong, reliable infrastructure for growing communities.</p>
             </div>
