@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementra Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: "Archivo";
+            background-color: #f6f5ef;
+            margin: 0px;
+            font-size: 17px;
+        }
+
+        div.header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            padding: 10px 0px 10px 0px;
+        }
+
+        div.menu_container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        div.services {
+            color: #f9612b;
+        }
+
+        div.contact_section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+        }
+
+        div.phonenumber {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 17px;
+
+        }
+
+        button.contact {
+            background-color: #f9612b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 18px 12px 18px;
+            font-size: 15px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div> <img src="images/elementralogo.png" alt="brandlogo" width="190" height="36"> </div>
+
+        <div class="menu_container">
+            <div>Home</div>
+            <div class="services">Services</div>
+            <div>Work</div>
+            <div>Project Details</div>
+            <div>Contact</div>
+        </div>
+
+        <div class="contact_section">
+            <div class="phonenumber">
+                <img src="images/callicon.png" alt="call" width="36" height="36">
+                <h1>555-123-4567</h1>
+            </div>
+            <div> <button class="contact">Contact</button></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
