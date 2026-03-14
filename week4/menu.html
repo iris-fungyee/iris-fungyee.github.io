@@ -17,10 +17,10 @@
 
         div.header {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             background-color: white;
-            padding: 10px 0px 10px 0px;
+            padding: 10px 50px 10px 50px;
         }
 
         div.menu_container {
@@ -58,6 +58,56 @@
             padding: 12px 18px 12px 18px;
             font-size: 15px
         }
+
+        div.menubutton {
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.hamburgermenu {
+            width: 23px;
+            height: 3px;
+            background-color: black;
+            margin: 2px 0;
+        }
+
+        @media screen and (max-width: 1563px) {
+            div.menubutton {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1080px) {
+            button.contact {
+                display: none;
+            }
+
+            div.menu_container {
+                display: none;
+            }
+
+            div.menubutton {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            div.phonenumber {
+                display: none;
+            }
+
+            button.contact {
+                display: none;
+            }
+
+            div.menu_container {
+                display: none;
+            }
+
+            div.menubutton {
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -79,9 +129,27 @@
                 <h1>555-123-4567</h1>
             </div>
             <div> <button class="contact">Contact</button></div>
+            <div class="menubutton">
+                <div class="hamburgermenu">
+                    <div></div>
+                </div>
+                <div class="hamburgermenu">
+                    <div></div>
+                </div>
+                <div class="hamburgermenu">
+                    <div></div>
+                </div>
+            </div>
         </div>
-
     </div>
+
+
+
+
+
+
+
+
 
 </body>
 
