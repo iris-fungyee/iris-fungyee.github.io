@@ -27,6 +27,18 @@
             align-items: center;
         }
 
+        div.menu_button {
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.hamburgermenu {
+            width: 23px;
+            height: 3px;
+            background-color: black;
+            margin: 2px 0;
+        }
+
         button.request {
             background-color: white;
             border: 1px solid #191A23;
@@ -86,6 +98,28 @@
             margin: 10px 100px 10px 100px;
         }
 
+        div.mobile_footer {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        div.companylogoone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.companylogotwo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.companylogothree {
+            display: flex;
+            justify-content: center;
+        }
 
         div.services_header {
             display: flex;
@@ -296,7 +330,6 @@
             background-color: #F3F3F3;
             border-radius: 40px;
             padding: 60px;
-
         }
 
         div.footer_content {
@@ -328,6 +361,38 @@
             border-radius: 14px;
             margin: 20px 0px 0px 0px;
         }
+
+        @media screen and (max-width: 1800px) {
+            div.mobile_footer {
+                display: block;
+            }
+
+            div.menu_button {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width: 1270px) {
+            div.footer {
+                display: none;
+            }
+
+            div.mobile_footer {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 950px) {
+            div.menu_button {
+                display: block;
+            }
+
+            div.menu_container {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -345,6 +410,17 @@
             <div>Pricing</div>
             <div>Blog</div>
             <div> <button class="request">Request a quote</button></div>
+        </div>
+        <div class="menu_button">
+            <div class="hamburgermenu">
+                <div></div>
+            </div>
+            <div class="hamburgermenu">
+                <div></div>
+            </div>
+            <div class="hamburgermenu">
+                <div></div>
+            </div>
         </div>
     </div>
 
@@ -370,6 +446,21 @@
         <div> <img src="../week3/images/notion.png" alt="notionlogo" width="100%"> </div>
         <div> <img src="../week3/images/netflixlogo.png" alt="netflixlogo" width="100%"> </div>
         <div> <img src="../week3/images/zoomlogo.png" alt="zoomlogo" width="100%"> </div>
+    </div>
+
+    <div class="mobile_footer">
+        <div class="companylogoone">
+            <div> <img src="../week3/images/amazonlogo.png" alt="amazonlogo" width="100%"> </div>
+            <div> <img src="../week3/images/dribble.png" alt="dribblelogo" width="100%"> </div>
+        </div>
+        <div class="companylogotwo">
+            <div> <img src="../week3/images/hubspotlogo.png" alt="hubspotlogo" width="100%"> </div>
+            <div> <img src="../week3/images/notion.png" alt="notionlogo" width="100%"> </div>
+        </div>
+        <div class="companylogothree">
+            <div> <img src="../week3/images/netflixlogo.png" alt="netflixlogo" width="100%"> </div>
+            <div> <img src="../week3/images/zoomlogo.png" alt="zoomlogo" width="100%"> </div>
+        </div>
     </div>
 
     <div class="services_header">
@@ -478,6 +569,7 @@
     </div>
 
     <div class="services_footer">
+
         <div class="footer_content">
             <div>
                 <h6>Let's make things happen</h6>
