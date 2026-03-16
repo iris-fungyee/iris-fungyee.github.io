@@ -100,25 +100,14 @@
 
         div.mobile_footer {
             display: flex;
-            justify-content: space-between;
+        }
+
+        div.companylogo {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
             gap: 40px;
-        }
-
-        div.companylogoone {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        div.companylogotwo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        div.companylogothree {
-            display: flex;
-            justify-content: center;
+            width: 100%;
         }
 
         div.services_header {
@@ -364,16 +353,28 @@
 
         @media screen and (max-width: 1800px) {
             div.mobile_footer {
-                display: block;
+                display: none;
             }
 
             div.menu_button {
                 display: none;
             }
 
+            div.main_mobile {
+                display: none;
+            }
+
         }
 
         @media screen and (max-width: 1270px) {
+            div.menu_button {
+                display: block;
+            }
+
+            div.menu_container {
+                display: none;
+            }
+
             div.footer {
                 display: none;
             }
@@ -391,6 +392,42 @@
 
             div.menu_container {
                 display: none;
+            }
+
+            div.main_mobile {
+                display: block;
+                flex-direction: column;
+                margin: 20px;
+                width: 100%;
+            }
+
+            div.content {
+                width: 100%;
+            }
+
+            div.image {
+                width: 100%;
+            }
+
+            div.main {
+                display: none;
+            }
+
+            div.services_header {
+                flex-direction: column;
+            }
+
+            div.services_content {
+                flex-direction: column;
+            }
+
+            div.footerimage {
+                display: none;
+
+            }
+
+            div.footer_content {
+                width: 100%;
             }
         }
     </style>
@@ -439,6 +476,18 @@
         </div>
     </div>
 
+    <div class="main_mobile">
+        <div class="content">
+            <h2>Navigating the digital landscape for success</h2>
+            <div class="image">
+                <img src="../week3/images/illustration.png" alt="illustration" width="100%" height="auto">
+            </div>
+            <p class="mainpage"> Our digital marketing agency helps businesses grow and succeed online through a
+                range of services including SEO, PPC, social media marketing, and content creation.</p>
+            <button class="book">Book a consultation</button>
+        </div>
+    </div>
+
     <div class="footer">
         <div> <img src="../week3/images/amazonlogo.png" alt="amazonlogo" width="100%"> </div>
         <div> <img src="../week3/images/dribble.png" alt="dribblelogo" width="100%"> </div>
@@ -449,15 +498,15 @@
     </div>
 
     <div class="mobile_footer">
-        <div class="companylogoone">
+        <div class="companylogo">
             <div> <img src="../week3/images/amazonlogo.png" alt="amazonlogo" width="100%"> </div>
             <div> <img src="../week3/images/dribble.png" alt="dribblelogo" width="100%"> </div>
         </div>
-        <div class="companylogotwo">
+        <div class="companylogo">
             <div> <img src="../week3/images/hubspotlogo.png" alt="hubspotlogo" width="100%"> </div>
             <div> <img src="../week3/images/notion.png" alt="notionlogo" width="100%"> </div>
         </div>
-        <div class="companylogothree">
+        <div class="companylogo">
             <div> <img src="../week3/images/netflixlogo.png" alt="netflixlogo" width="100%"> </div>
             <div> <img src="../week3/images/zoomlogo.png" alt="zoomlogo" width="100%"> </div>
         </div>
