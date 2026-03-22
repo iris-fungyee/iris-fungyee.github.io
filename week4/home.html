@@ -23,7 +23,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 10px 100px 10px 100px;
+            margin: 0px 30px;
         }
 
         div.menu_container {
@@ -32,7 +32,15 @@
             align-items: center;
         }
 
-        div.menu_button {
+        button.request {
+            background-color: white;
+            border: 1px solid #191A23;
+            padding: 20px 35px;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+
+        div.menubutton {
             display: flex;
             flex-direction: column;
         }
@@ -40,26 +48,14 @@
         div.hamburgermenu {
             width: 23px;
             height: 3px;
-            background-color: black;
+            background-color: #191A23;
             margin: 2px 0;
-        }
-
-        button.request {
-            background-color: white;
-            border: 1px solid #191A23;
-            padding: 20px 35px 20px 35px;
-            border-radius: 14px;
-            font-size: 20px;
-        }
-
-        img.logo {
-            vertical-align: middle;
         }
 
         div.main {
             display: flex;
             justify-content: space-between;
-            margin: 60px 100px 60px 100px;
+            margin: 30px;
             gap: 30px;
 
         }
@@ -72,21 +68,22 @@
         }
 
         h2 {
-            font-size: 70px;
+            font-size: 60px;
             font-weight: 500;
         }
 
-        p.mainpage {
+        p {
             line-height: 28px;
+
         }
 
         button.book {
             color: white;
             background-color: #191A23;
             font-size: 20px;
-            padding: 20px 35px 20px 35px;
+            padding: 20px 35px;
             border-radius: 14px;
-            margin: 20px 0px 0px 0px;
+            margin: 20px 0px;
 
         }
 
@@ -100,26 +97,37 @@
         div.footer {
             display: flex;
             justify-content: space-between;
-            margin: 10px 100px 10px 100px;
+            margin: 10px 30px;
         }
 
         div.mobile_footer {
             display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin: auto;
         }
 
-        div.companylogo {
+        div.companylogoleft {
             display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            gap: 40px;
-            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 30px;
+            width: 50%;
+        }
+
+        div.companylogoright {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: 30px;
+            width: 50%;
         }
 
         div.services_header {
             display: flex;
             align-items: center;
             gap: 30px;
-            margin: 100px 100px 40px 100px;
+            margin: 0px 30px;
         }
 
         h3 {
@@ -132,183 +140,75 @@
 
         p.servicespage {
             font-size: 18px;
+            width: 40%;
         }
 
-        div.services_content {
+        div.services {
             display: flex;
-            justify-content: space-between;
-            margin: 40px 80px 40px 80px;
-            gap: 40px;
-
+            justify-content: space-evenly;
+            margin-bottom: 30px;
         }
 
-        div.services_left {
+        div.content_services {
             display: flex;
-            width: 50%;
+            justify-content: space-evenly;
+            width: 43%;
             border: 1px solid #191A23;
             border-radius: 50px;
-            padding: 40px;
-            background-color: #F3F3F3;
             box-shadow: 0px 5px #000000;
-
+            padding: 30px;
         }
 
-        div.services_lefttwo {
-            display: flex;
-            width: 50%;
-            border: 1px solid #191A23;
-            border-radius: 50px;
-            padding: 40px;
-            background-color: #B9FF66;
-            box-shadow: 0px 5px #000000;
-        }
-
-        div.services_leftthree {
-            display: flex;
-            width: 50%;
-            border: 1px solid #191A23;
-            border-radius: 50px;
-            padding: 40px;
-            background-color: #191A23;
-            box-shadow: 0px 5px #000000;
-        }
-
-        div.services_right {
-            display: flex;
-            width: 50%;
-            border: 1px solid #191A23;
-            border-radius: 50px;
-            padding: 40px;
-            background-color: #F3F3F3;
-            box-shadow: 0px 5px #000000;
-        }
-
-        div.services_righttwo {
-            display: flex;
-            width: 50%;
-            border: 1px solid #191A23;
-            border-radius: 50px;
-            padding: 40px;
-            background-color: #B9FF66;
-            box-shadow: 0px 5px #000000;
-        }
-
-        div.services_rightthree {
-            display: flex;
-            width: 50%;
-            border: 1px solid #191A23;
-            border-radius: 50px;
-            padding: 40px;
-            background-color: #191A23;
-            box-shadow: 0px 5px #000000;
-        }
-
-        div.search_engine {
+        div.title_services {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 50%;
+            width: 43%;
         }
 
-        div.magnifyglass {
+        div.image_services {
             display: flex;
-            justify-content: center;
             align-items: center;
-            width: 50%
-        }
-
-        div.social_media {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 50%
-        }
-
-        div.smiley {
-            display: flex;
             justify-content: center;
-            align-items: center;
-            width: 50%;
+            width: 43%;
+
         }
 
-        div.content_create {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 50%;
-        }
-
-        div.multitabs {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-        }
-
-        div.pay_perclick {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 50%;
-        }
-
-        div.mouseclick {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-        }
-
-        div.email_market {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 50%;
-        }
-
-        div.letters {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-        }
-
-        div.analytic_track {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 50%;
-        }
-
-        div.charts {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-        }
-
-        span.green {
+        h4 {
             font-size: 28px;
             font-weight: 500;
-            background-color: #B9FF66;
-            padding: 4px;
-            border-radius: 11px;
-            line-height: 40px;
-        }
-
-        span.white {
-            font-size: 28px;
-            font-weight: 500;
-            background-color: #F3F3F3;
-            padding: 4px;
-            border-radius: 11px;
-            line-height: 40px;
+            margin-top: 0px;
+            line-height: 43px;
         }
 
         div.learnmore {
             display: flex;
             align-items: center;
             gap: 10px;
+        }
+
+        span.green {
+            background-color: #B9FF66;
+            padding: 4px;
+            border-radius: 11px;
+        }
+
+        span.white {
+            background-color: #F3F3F3;
+            padding: 4px;
+            border-radius: 11px;
+        }
+
+        div.bggrey {
+            background-color: #F3F3F3;
+        }
+
+        div.bggreen {
+            background-color: #B9FF66;
+        }
+
+        div.bgblack {
+            background-color: #191A23;
         }
 
         span.whitep {
@@ -318,92 +218,76 @@
         div.services_footer {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            margin: 100px 100px 10px 100px;
-            gap: 40px;
+            margin: 40px;
             background-color: #F3F3F3;
             border-radius: 40px;
-            padding: 60px;
-        }
+            padding: 30px;
+            }
 
         div.footer_content {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            width: 40%;
-            gap: 30px;
-        }
-
-        h6 {
-            font-size: 28px;
-            font-weight: 500;
-            margin: 0px;
-        }
+            justify-content: center;
+            width: 45%;
+            }
 
         div.footerimage {
             display: flex;
-            justify-content: center;
             align-items: center;
-            width: 60%;
+            width: 45%;
+        }
+
+        h5 {
+            font-size: 28px;
+            font-weight: 500;
         }
 
         button.freeprop {
             color: white;
             background-color: #191A23;
             font-size: 20px;
-            padding: 20px 35px 20px 35px;
+            padding: 20px 35px;
             border-radius: 14px;
-            margin: 20px 0px 0px 0px;
+            margin: 20px 0px;
         }
 
-        @media screen and (max-width: 1800px) {
+   
+    @media screen and (max-width: 1800px) {
+            div.menubutton {
+                display: none;
+            }
+
             div.mobile_footer {
                 display: none;
             }
 
-            div.menu_button {
+            div.mobile_main {
                 display: none;
             }
-
-            div.main_mobile {
-                display: none;
-            }
-
+            
         }
 
-        @media screen and (max-width: 1270px) {
-            div.menu_button {
+    @media screen and (max-width: 1270px) {
+            div.menubutton {
                 display: block;
             }
 
             div.menu_container {
                 display: none;
-            }
-
-            div.footer {
-                display: none;
-            }
-
-            div.mobile_footer {
-                display: block;
-                width: 100%;
-            }
+            }  
         }
 
-        @media screen and (max-width: 950px) {
-            div.menu_button {
-                display: block;
-            }
-
-            div.menu_container {
+    @media screen and (max-width: 750px) {
+            div.main {
                 display: none;
             }
 
-            div.main_mobile {
+             div.mobile_main {
                 display: block;
-                flex-direction: column;
-                margin: 20px;
                 width: 100%;
+                text-align: left;
+                align-items: center;
+                
             }
 
             div.content {
@@ -412,28 +296,69 @@
 
             div.image {
                 width: 100%;
+                
             }
 
-            div.main {
+            .book {
+                width: 100%;
+            }
+
+
+            div.footer {
                 display: none;
+            }
+
+            div.mobile_footer {
+                display: flex;
             }
 
             div.services_header {
                 flex-direction: column;
+                text-align: center;
             }
 
-            div.services_content {
-                flex-direction: column;
+            p.servicespage {
+                width: 100%;
+                margin-bottom: 30px;
+                margin-top: 0px;
             }
 
-            div.footerimage {
+            h3 {
+                margin: 30px 0px 0px 0px;
+            }
+
+            div.services {
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+
+            div.learnmore p {
                 display: none;
+            }
 
+            div.content_services {
+                align-items: flex-end;
+                width: 100%;
+            }
+
+            div.services_footer {
+                width: 90%;
+                margin: auto;
             }
 
             div.footer_content {
                 width: 100%;
             }
+
+            .freeprop {
+                width: 100%;
+            }
+
+            div.footerimage {
+                display: none;
+                
+            }
+
         }
     </style>
 </head>
@@ -452,18 +377,14 @@
             <div>Use Cases</div>
             <div>Pricing</div>
             <div>Blog</div>
-            <div> <button class="request">Request a quote</button></div>
+            <div>
+                <button class="request">Request a quote</button>
+            </div>
         </div>
-        <div class="menu_button">
-            <div class="hamburgermenu">
-                <div></div>
-            </div>
-            <div class="hamburgermenu">
-                <div></div>
-            </div>
-            <div class="hamburgermenu">
-                <div></div>
-            </div>
+        <div class="menubutton">
+            <div class="hamburgermenu"></div>
+            <div class="hamburgermenu"></div>
+            <div class="hamburgermenu"></div>
         </div>
     </div>
 
@@ -471,8 +392,9 @@
         <div class="content">
             <div>
                 <h2>Navigating the digital landscape for success</h2>
-                <p class="mainpage"> Our digital marketing agency helps businesses grow and succeed online through a
-                    range of services including SEO, PPC, social media marketing, and content creation.</p>
+                <p> Our digital marketing agency helps businesses grow and succeed online through a range
+                    of services
+                    including SEO, PPC, social media marketing, and content creation.</p>
                 <button class="book">Book a consultation</button>
             </div>
         </div>
@@ -482,7 +404,7 @@
         </div>
     </div>
 
-    <div class="main_mobile">
+    <div class="mobile_main">
         <div class="content">
             <h2>Navigating the digital landscape for success</h2>
             <div class="image">
@@ -495,139 +417,137 @@
     </div>
 
     <div class="footer">
-        <div> <img src="../week3/images/amazonlogo.png" alt="amazonlogo" width="100%"> </div>
-        <div> <img src="../week3/images/dribble.png" alt="dribblelogo" width="100%"> </div>
-        <div> <img src="../week3/images/hubspotlogo.png" alt="hubspotlogo" width="100%"> </div>
-        <div> <img src="../week3/images/notion.png" alt="notionlogo" width="100%"> </div>
-        <div> <img src="../week3/images/netflixlogo.png" alt="netflixlogo" width="100%"> </div>
-        <div> <img src="../week3/images/zoomlogo.png" alt="zoomlogo" width="100%"> </div>
+       <div><img src="../week3/images/amazonlogo.png" alt="amazonlogo" width="100%"></div>
+        <div><img src="../week3/images/dribble.png" alt="dribblelogo" width="100%"></div>
+        <div><img src="../week3/images/hubspotlogo.png" alt="hubspotlogo" width="100%"></div>
+        <div><img src="../week3/images/notion.png" alt="notionlogo" width="100%"></div>
+        <div><img src="../week3/images/netflixlogo.png" alt="netflixlogo" width="100%"></div>
+        <div><img src="../week3/images/zoomlogo.png" alt="zoomlogo" width="100%"></div>
     </div>
 
     <div class="mobile_footer">
-        <div class="companylogo">
-            <div> <img src="../week3/images/amazonlogo.png" alt="amazonlogo" width="100%"> </div>
-            <div> <img src="../week3/images/dribble.png" alt="dribblelogo" width="100%"> </div>
+        <div class="companylogoleft">
+            <div><img src="../week3/images/amazonlogo.png" alt="amazonlogo" width="100%"></div>
+            <div><img src="../week3/images/hubspotlogo.png" alt="hubspotlogo" width="100%"></div>
+            <div><img src="../week3/images/netflixlogo.png" alt="netflixlogo" width="100%"></div>
+            
         </div>
-        <div class="companylogo">
-            <div> <img src="../week3/images/hubspotlogo.png" alt="hubspotlogo" width="100%"> </div>
-            <div> <img src="../week3/images/notion.png" alt="notionlogo" width="100%"> </div>
-        </div>
-        <div class="companylogo">
-            <div> <img src="../week3/images/netflixlogo.png" alt="netflixlogo" width="100%"> </div>
-            <div> <img src="../week3/images/zoomlogo.png" alt="zoomlogo" width="100%"> </div>
+        <div class="companylogoright">
+            <div><img src="../week3/images/dribble.png" alt="dribblelogo" width="100%"></div>
+            <div><img src="../week3/images/notion.png" alt="notionlogo" width="100%"></div>
+            <div><img src="../week3/images/zoomlogo.png" alt="zoomlogo" width="100%"></div>
         </div>
     </div>
 
     <div class="services_header">
         <h3>Services</h3>
-        <p class="servicespage">At our digital marketing agency, we offer a range of services to<br />
+        <p class="servicespage">At our digital marketing agency, we offer a range of services to
             help businesses grow and succeed online. These services include:
         </p>
     </div>
 
-    <div class="services_content">
-        <div class="services_left">
-            <div class="search_engine">
+    <div class="services">
+        <div class="content_services bggrey">
+            <div class="title_services">
                 <div>
                     <h4><span class="green">Search engine</span><br />
-                        <span class="green">optimization</span>
-                    </h4>
-                </div>
+                        <span class="green">optimization</span></h4></div>
                 <div class="learnmore">
                     <img src="images/greenbutton.png" alt="arrowbutton" width="41" height="41">
                     <p>Learn more</p>
                 </div>
             </div>
-            <div class="magnifyglass">
+            <div class="image_services">
                 <img src="images/magnify.png" alt="magnifyglass" width="100%" height="auto">
             </div>
         </div>
-
-        <div class="services_righttwo">
-            <div class="pay_perclick">
-                <h5><span class="white">Pay-per-click</span><br />
-                    <span class="white">advertising</span>
-                </h5>
+        <div class="content_services bggreen">
+            <div class="title_services">
+                <div>
+                    <h4><span class="white">Pay-per-click</span>
+                        <span class="white">advertising</span></h4>
+                </div>
                 <div class="learnmore">
                     <img src="images/greenbutton.png" alt="arrowbutton" width="41" height="41">
                     <p>Learn more</p>
                 </div>
             </div>
-            <div class="mouseclick">
+            <div class="image_services">
                 <img src="images/mouseclick.png" alt="mouse" width="100%" height="auto">
             </div>
         </div>
     </div>
 
-    <div class="services_content">
-        <div class="services_leftthree">
-            <div class="social_media">
-                <h5><span class="white">Social Media</span>
-                    <span class="white">Marketing</span>
-                </h5>
+    <div class="services">
+        <div class="content_services bgblack">
+            <div class="title_services">
+                <div>
+                    <h4><span class="white">Social Media</span>
+                        <span class="white">Marketing</span></h4>
+                </div>
                 <div class="learnmore">
                     <img src="images/whitebutton.png" alt="arrowbutton" width="41" height="41">
                     <p><span class="whitep">Learn more</span></p>
                 </div>
             </div>
-            <div class="smiley">
-                <img src="images/smiley.png" alt="smiley" width="100%" height="auto">
+            <div class="image_services">
+                <img src="images/smiley.png" alt="smiley" width="80%" height="auto">
             </div>
         </div>
-
-        <div class="services_right">
-            <div class="email_market">
-                <h4><span class="green">Email</span><br />
-                    <span class="green">Marketing</span>
-                </h4>
+        <div class="content_services bggrey">
+            <div class="title_services">
+                <div>
+                    <h4><span class="green">Email</span><br />
+                        <span class="green">Marketing</span></h4>
+                </div>
                 <div class="learnmore">
                     <img src="images/greenbutton.png" alt="arrowbutton" width="41" height="41">
                     <p>Learn more</p>
                 </div>
             </div>
-            <div class="letters">
-                <img src="images/letters.png" alt="letters" width="100%" height="auto">
+            <div class="image_services">
+                <img src="images/letters.png" alt="letters" width="80%" height="auto">
             </div>
         </div>
     </div>
 
-    <div class="services_content">
-        <div class="services_lefttwo">
-            <div class="content_create">
-                <h5><span class="white">Content</span><br />
-                    <span class="white">Creation</span>
-                </h5>
+    <div class="services">
+        <div class="content_services bggreen">
+            <div class="title_services">
+                <div>
+                    <h4><span class="white">Content</span><br />
+                    <span class="white">Creation</span></h4>
+                </div>
                 <div class="learnmore">
                     <img src="images/greenbutton.png" alt="arrowbutton" width="41" height="41">
                     <p>Learn more</p>
                 </div>
             </div>
-            <div class="multitabs">
-                <img src="images/multitabs.png" alt="tabs" width="100%" height="auto">
+            <div class="image_services">
+                <img src="images/multitabs.png" alt="tabs" width="80%" height="auto">
             </div>
         </div>
-
-        <div class="services_rightthree">
-            <div class="analytic_track">
-                <h4><span class="green">Analytics and</span>
-                    <span class="green">Tracking</span>
-                </h4>
+        <div class="content_services bgblack">
+            <div class="title_services">
+                <div>
+                    <h4><span class="green">Analytics and</span>
+                    <span class="green">Tracking</span></h4>
+                </div>
                 <div class="learnmore">
-                    <img src="images/whitebutton.png" alt="arrowbutton" width="41" height="41">
+                    <img src="images/greenbutton.png" alt="arrowbutton" width="41" height="41">
                     <p><span class="whitep">Learn more</span></p>
                 </div>
             </div>
-            <div class="charts">
-                <img src="images/charts.png" alt="charts" width="100%" height="auto">
+            <div class="image_services">
+                <img src="images/charts.png" alt="chart" width="80%" height="auto">
             </div>
         </div>
     </div>
 
     <div class="services_footer">
-
         <div class="footer_content">
             <div>
-                <h6>Let's make things happen</h6>
+                <h5>Let's make things happen</h5>
                 <p>Contact us today to learn more about how our digital marketing services can help your business
                     grow
                     and succeed online.</p>
@@ -635,9 +555,17 @@
             </div>
         </div>
 
-        <div class="footerimage"> <img src="images/roundeyes.png" alt="roundeyes" width="100%" height="auto"> </div>
+        <div class="footerimage">
+            <img src="images/roundeyes.png" alt="roundeyes" width="100%" height="auto">
+        </div>
     </div>
+    
+
+
+
+
 </div>
+
 </body>
 
 </html>
