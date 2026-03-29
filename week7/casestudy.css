@@ -54,11 +54,11 @@
             display: flex;
             align-items: center;
             gap: 30px;
-            margin: 0px 30px;
+            margin: 30px;
         }
 
         h3 {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 500;
             background-color: #B9FF66;
             padding: 7px;
@@ -69,6 +69,21 @@
             font-size: 18px;
             width: 40%;
         }
+
+        div.case_study {
+            display: flex;
+            background-color: #191A23;
+            color: white;
+            border-radius: 40px;
+            padding: 30px;
+        }
+
+        div.greenlearn {
+            display: flex;
+            color: #B9FF66;
+        }
+
+
 
     @media screen and (max-width: 1536px) {
             div.menubutton {
@@ -99,6 +114,14 @@
                 padding: 12px 18px;
                 border-radius: 7px;
             }
+
+            p.subcontent {
+                width: 60%;
+            }
+
+            h3 {
+                font-size: 25px;
+            }
         }
 
     @media screen and (max-width: 840px) {
@@ -109,5 +132,14 @@
             div.menu_container {
                 display: none;
                 }
+            
+            div.subheader {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            p.subcontent {
+                width: 100%;
+            }
 
         }
