@@ -72,17 +72,34 @@
 
         div.case_study {
             display: flex;
+            justify-content: space-evenly;
             background-color: #191A23;
             color: white;
             border-radius: 40px;
             padding: 30px;
+            margin: auto 30px;
+            font-size: 16px;
+        }
+
+        div.cscontent {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            width: 25%;
         }
 
         div.greenlearn {
             display: flex;
+            gap: 15px;
             color: #B9FF66;
         }
 
+        div.border {
+            display: flex;
+            border-right: 1px solid white;
+            height: 150px;
+        }
 
 
     @media screen and (max-width: 1536px) {
@@ -140,6 +157,25 @@
 
             p.subcontent {
                 width: 100%;
+            }
+
+            div.border {
+                display: none;
+            }
+
+            div.case_study {
+                background-color: transparent;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            div.cscontent {
+                background-color: #191A23;
+                border-radius: 40px;
+                padding: 30px;
+                width: calc(
+                    33% - 10px
+                );
             }
 
         }
