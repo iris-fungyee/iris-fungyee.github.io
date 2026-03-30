@@ -121,12 +121,6 @@
             width: 50%;
         }
 
-        div.services_header {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            margin: 0px 30px;
-        }
 
         h3 {
             font-size: 40px;
@@ -134,11 +128,6 @@
             background-color: #B9FF66;
             padding: 7px;
             border-radius: 8px;
-        }
-
-        p.servicespage {
-            font-size: 18px;
-            width: 40%;
         }
 
         div.services {
@@ -195,14 +184,6 @@
             background-color: #F3F3F3;
             padding: 4px;
             border-radius: 11px;
-        }
-
-        div.bggrey {
-            background-color: #F3F3F3;
-        }
-
-        div.bggreen {
-            background-color: #B9FF66;
         }
 
         div.bgblack {
