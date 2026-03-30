@@ -78,7 +78,8 @@
             border-radius: 40px;
             padding: 30px;
             margin: auto 30px;
-            font-size: 16px;
+            font-size: 18px;
+            line-height: 1.5;
         }
 
         div.cscontent {
@@ -99,6 +100,49 @@
             display: flex;
             border-right: 1px solid white;
             height: 150px;
+        }
+
+        div.bggreen {
+            background-color: #B9FF66;
+        }
+
+        span.wpnum {
+            font-size: 40px;
+        }
+
+        div.wphead {
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 500;
+            gap: 10px;
+        }
+
+        div.wp_title {
+            display: flex;
+           justify-content: space-between;
+        }
+
+        div.bottom_border {
+            border-bottom: 1px solid #191A23;
+            width: 100%;
+            margin: 20px 0px;
+        }
+
+        div.wpcontent {
+            border: 1px solid #191A23;
+            border-radius: 20px;
+            box-shadow: 0px 5px #000000;
+            padding: 30px;
+            font-size: 18px;
+        }
+
+           div.work_process {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 30px;
+            gap: 30px;
+            background-color: #F3F3F3 ;
         }
 
 
@@ -139,6 +183,25 @@
             h3 {
                 font-size: 25px;
             }
+
+             div.border {
+                display: none;
+            }
+
+            div.case_study {
+                background-color: transparent;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            div.cscontent {
+                background-color: #191A23;
+                border-radius: 40px;
+                padding: 30px;
+                width: calc(
+                    33% - 10px
+                );
+            }
         }
 
     @media screen and (max-width: 840px) {
@@ -159,23 +222,19 @@
                 width: 100%;
             }
 
-            div.border {
-                display: none;
-            }
-
             div.case_study {
-                background-color: transparent;
-                padding: 0px;
-                margin: 0px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
             }
 
             div.cscontent {
-                background-color: #191A23;
-                border-radius: 40px;
-                padding: 30px;
                 width: calc(
-                    33% - 10px
+                    90% - 10px
                 );
+                
             }
+
 
         }
