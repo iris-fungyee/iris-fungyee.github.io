@@ -164,6 +164,28 @@
             margin-right: 30px;
         }
 
+        div.team {
+            display: flex;
+            flex-direction: column;
+            width: 33%;
+        }
+
+        div.team_name {
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.main_footer{
+            background-color: #191A23;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: white;
+        }
+
+       
+
 
     @media screen and (max-width: 1536px) {
             div.menubutton {
@@ -252,6 +274,15 @@
 
             span.wpnum {
                 font-size: 35px;
+            }
+
+            div.teambutton {
+                justify-content: center;
+                margin: auto;
+            }
+
+            button.team {
+                width: 90%;
             }
 
 
