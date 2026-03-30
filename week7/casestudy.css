@@ -54,7 +54,7 @@
             display: flex;
             align-items: center;
             gap: 30px;
-            margin: 30px;
+            margin: 50px 30px;
         }
 
         h3 {
@@ -106,6 +106,10 @@
             background-color: #B9FF66;
         }
 
+        div.bggrey {
+            background-color: #F3F3F3;
+        }
+
         span.wpnum {
             font-size: 40px;
         }
@@ -121,6 +125,7 @@
         div.wp_title {
             display: flex;
            justify-content: space-between;
+           align-items: center;
         }
 
         div.bottom_border {
@@ -142,12 +147,30 @@
             flex-direction: column;
             margin: 0px 30px;
             gap: 30px;
-            background-color: #F3F3F3 ;
+        }
+
+        button.team {
+            color: white;
+            background-color: #191A23;
+            font-size: 20px;
+            padding: 20px 60px;
+            border-radius: 14px;
+            margin: 20px 0px;
+        }
+
+        div.teambutton {
+            display: flex;
+            justify-content: right;
+            margin-right: 30px;
         }
 
 
     @media screen and (max-width: 1536px) {
             div.menubutton {
+                display: none;
+            }
+
+            .plusicon {
                 display: none;
             }
             
@@ -202,6 +225,36 @@
                     33% - 10px
                 );
             }
+
+            div.wpcontent {
+                background-color: #F3F3F3;
+            }
+
+            .minusicon {
+                display: none;
+            }
+
+            .plusicon {
+                display: block;
+            }
+
+            div.bottom_border {
+                display: none;
+            }
+
+            div.wppara {
+                display: none; 
+            }
+
+            div.wphead {
+                font-size: 20px;
+            }
+
+            span.wpnum {
+                font-size: 35px;
+            }
+
+
         }
 
     @media screen and (max-width: 840px) {
@@ -233,7 +286,18 @@
                 width: calc(
                     90% - 10px
                 );
-                
+            }
+
+            div.wpcontent {
+                border-radius: 80px;
+            }
+
+            div.wphead {
+                font-size: 18px;
+            }
+
+            span.wpnum {
+                font-size: 30px;
             }
 
 
