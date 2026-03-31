@@ -1,37 +1,4 @@
 
-        div.header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0px 30px;
-        }
-
-        div.menu_container {
-            display: flex;
-            gap: 40px;
-            align-items: center;
-        }
-
-        button.request {
-            background-color: white;
-            border: 1px solid #191A23;
-            padding: 20px 35px;
-            border-radius: 14px;
-            font-size: 20px;
-        }
-
-        div.menubutton {
-            display: flex;
-            flex-direction: column;
-        }
-
-        div.hamburgermenu {
-            width: 23px;
-            height: 3px;
-            background-color: #191A23;
-            margin: 2px 0;
-        }
-
         div.case_study {
             display: flex;
             justify-content: space-evenly;

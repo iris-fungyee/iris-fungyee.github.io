@@ -92,7 +92,7 @@
             width: 50%;
         }
 
-        div.footer {
+        div.deskfooter {
             display: flex;
             justify-content: space-between;
             margin: 10px 30px;
@@ -119,15 +119,6 @@
             justify-content: space-between;
             margin-right: 30px;
             width: 50%;
-        }
-
-
-        h3 {
-            font-size: 40px;
-            font-weight: 500;
-            background-color: #B9FF66;
-            padding: 7px;
-            border-radius: 8px;
         }
 
         div.services {
@@ -203,7 +194,7 @@
             padding: 30px;
             }
 
-        div.footer_content {
+        div.sfooter_content {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -288,7 +279,7 @@
             }
 
 
-            div.footer {
+            div.deskfooter {
                 display: none;
             }
 
@@ -330,7 +321,7 @@
                 margin: auto;
             }
 
-            div.footer_content {
+            div.sfooter_content {
                 width: 100%;
             }
 
