@@ -334,5 +334,54 @@
                 
             }
 
+             div.footer {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            div.footer_container {
+                flex-direction: column;
+            }
+
+            div.footer_content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+            }
+
+            div.contactus {
+                width: 60%;
+                gap: 15px;
+            }
+
+            div.email_sub {
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                gap: 15px;
+            }
+
+             div.email {
+                width: 100%;
+                text-align: left;
+            }
+
+             button.subscribe {
+                width: 100%;
+            }
+
+            div.copyright {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            div.socialslink_mobile {
+                display: flex; 
+            }
+
         }
     
