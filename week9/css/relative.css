@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+* {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            max-width: 1800px;
+            margin: auto;
+        }
+
+        /* === ROOT VARIABLES === */
+    :root {
+        --font-family: 'Domine', serif;
+        --background-color: #F5F5DC;
+        --border-radius: 8px;
+        --text-align: center;
+}
+
+    body {
+        font-family: var(--font-family);
+        background-color: var(--background-color);
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 20px 0;
+        text-align: var(--text-align);
+    }
+
+    p {
+       text-align: var(--text-align);
+       margin-bottom: 20px; 
+    }
+
