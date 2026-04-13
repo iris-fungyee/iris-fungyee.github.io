@@ -17,7 +17,7 @@
         --background-color: #F5F5DC;
         --border-radius: 8px;
         --text-align: center;
-        --color-link: green;
+        --color-link: #008000;
 }
 
     body {
@@ -41,6 +41,7 @@
         flex-wrap: wrap;
         margin: 0px 30px;
         gap: 20px;
+        
     }
 
     div.imgdessert {
@@ -48,6 +49,7 @@
         flex-direction: column;
         gap: 10px;
         width: calc(33.33% - 13.33px);
+        
     }
 
     img {
@@ -62,17 +64,21 @@
 
     a {
         color: var(--color-link);
+        text-decoration: none;
     }
 
     div.relative {
         position: relative;
-        bottom: 30px;
+        bottom: 80px;
         border-radius: var(--border-radius);
         background-color: #F5F5F5;
-        box-shadow: 8px 8px 5px #d4d1d1;
+        box-shadow: 5px 8px 5px #d4d1d1;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 80%;
+        padding: 20px;
+        margin: auto;
     }
 
      @media screen and (max-width: 1080px) {
