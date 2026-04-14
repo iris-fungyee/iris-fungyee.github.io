@@ -36,6 +36,7 @@
 	--color-icon-secondary: #000000;
 	--color-icon-secondary-hover: #BC4B20;
 	--color-icon-socials-hover: #b4a089cc;
+	--gap: 40px;
 
 }
 
@@ -86,6 +87,10 @@ a {
 	color: var(--color-link);
 }
 
+a.header {
+	text-decoration: none;
+}
+
 /* === Images === */
 img {
 	max-width: 100%;
@@ -93,6 +98,15 @@ img {
 }
 
 /* === Icons === */
+
+.logo {
+	font-family: var(--font-heading);
+	font-size: 33px;
+	font-weight: 400;
+	color: var(--color-logo);
+	text-align: center;
+}
+
 .icon-header {
 	width: 28px;
 	height: 28px;
@@ -118,9 +132,12 @@ img {
 }
 
 .icon-search {
-	width: 21px;
-	height: 21px;
 	color: var(--color-icon-secondary);
+	padding-left: 50px;
+	padding-right: 15px;
+	font-family: var(--font-base);
+	font-size: var(--font-default-size);
+	background-color: var(--color-bg-secondary);
 }
 
 .icon-usp {
@@ -194,18 +211,23 @@ img {
 .btn-default {
 	display: inline-block;
 	background: var(--color-btn-bg-primary);
-	color: #ffffff;
+	color: var(--color-text-secondary);
 	border-radius: var(--border-radius-primary);
 	cursor: pointer;
 }
 
 .btn-black {
 	background-color: var(--color-btn-bg-tertiary);
+	padding: var(--padding-btn-secondary);
+	border-radius: var(--border-radius-primary);
+	color: var(--color-text-secondary);
 }
 
 .btn-white {
 	background-color: var(--color-btn-bg-secondary);
 	color: var(--color-text-primary);
+	padding: var(--padding-btn-primary);
+	border-radius: var(--border-radius-primary);
 }
 
 .btn-default:hover {
@@ -247,19 +269,17 @@ img {
 	padding: 40px;
 	margin: 40px 20px;
 }
-.box-shadow {
-	box-shadow: 0 0 10px var(--color-box-shadow);
-}
 
 /* === Form Elements === */
 input[type="text"],
 textarea {
 	border: none;
-	border-bottom: 2px solid var(--color-border-line);
-	padding: 20px;
+	border-radius: var(--border-radius-primary);
+	padding: 0px 16px;
 	width: 100%;
-	margin: 10px 0px;
-	font-size: var(--font-default-size);
+	margin: 18px 0px;
+	font-size: 16px;
+	font-family: var(--font-base);
 }
 textarea {
 	min-height: 100px;
@@ -288,17 +308,7 @@ textarea:focus {
 }
 
 /* === Screen: Tablet  === */
-@media only screen and (max-width: 900px) {
-	/* === GLOBAL TYPOGRAPHY  === */
-	h1 {
-		font-size: 45px;
-	}
-	h2 {
-		font-size: 40px;
-	}
-	h3 {
-		font-size: 35px;
-	}
+@media only screen and (max-width: 1100px) {
 
 	/* === Layout === */
 	.column-two,
