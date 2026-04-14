@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input[type="text"] {
+        width: 50%;
+        padding: 12px;
+        margin: 10px 0;
+        color: grey;
+        }
+
+        input[type="date"] {
+        width: 50%;
+        padding: 12px;
+        margin: 10px 0;
+        }
+
+        input[type="email"] {
+        width: 50%;
+        padding: 12px;
+        margin: 10px 0;
+        }
+
+        input[type="url"] {
+        width: 50%;
+        padding: 12px;
+        margin: 10px 0;
+        }
+    
+        
+
+    </style>
+</head>
+<body>
+<form action="/action_page.php">
+<h1>Registration Form</h1>
+  <input type="text" id="fname" name="fname" placeholder="First Name*" required/><br>
+  <input type="text" id="lname" name="lname" placeholder="Last Name*" required/><br>
+  <input type="date" id="dob" name="dob" placeholder="Date of Birth*" required/><br>
+  <input type="email" id="email" name="email" placeholder="Email Address*" required/><br>
+  <input type="url" id="homepage" name="homepage" placeholder="Homepage URL"/><br>
+    <label for="color">Favourite Colors:</label><br>
+ <input type="checkbox" id="color1" name="color1" value="Red">
+  <label for="color1">Red</label><br>
+  <input type="checkbox" id="color2" name="color2" value="Blue">
+  <label for="color2">Blue</label><br>
+  <input type="checkbox" id="color3" name="color3" value="Green">
+  <label for="color3">Green</label><br>
+  <input type="checkbox" id="color4" name="color4" value="Yellow">
+  <label for="color4">Yellow</label><br>
+  <input type="checkbox" id="color5" name="color5" value="Orange">
+  <label for="color5">Orange</label><br>
+  <input type="checkbox" id="color6" name="color6" value="Purple">
+  <label for="color6">Purple</label><br>
+  <p><label for="bio">Bio/Self Introduction</label></p>
+  <textarea id="bio" name="bio" rows="5" cols="50" placeholder="Tell us about yourself..."></textarea>
+  <br>
+  <input type="submit" value="Submit">
+
+</form>
+    
+</body>
+</html>
