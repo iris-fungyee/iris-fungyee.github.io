@@ -1,0 +1,208 @@
+body {
+	font-family: var(--font-base);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-base-line-height);
+	color: var(--color-text-default);
+}
+
+/* h1 - Domine */
+.about-banner-title {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    color: var(--color-text-light);
+    font-size: 49px;
+}
+
+.product-title-candle {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 47px;
+}
+
+.logo-header {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    color: var(--color-text-accent);
+    font-size: 33px;
+
+}
+
+.about-banner-card {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 32px;
+}
+
+.form-title {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 23px;
+}
+
+/* h2 - Domine */
+.home-banner-title {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    color: var(--color-text-light);
+    font-size: 50px;
+}
+
+.promo-banner-title {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    color: var(--color-text-light);
+    font-size: 36px;
+}
+
+.story-title {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 32px;
+}
+
+.subscribe-title {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 29px;
+}
+
+.logo-footer {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    color: var(--color-text-accent);
+    font-size: 28px;
+}
+
+.categories-title {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 24px;
+}
+
+.footer-title {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 20px;
+    /* color: var(--color-text-light); 
+    color: var(--color-text-accent); */
+}
+
+.usp-title {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 19px;
+}
+
+/* h3 - Domine */
+.home-sec-title {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 22px;
+}
+
+.article-product-title {
+    font-family: var(--font-heading-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 21px;
+}
+
+/* h1 - Inter */
+.product-title-plant {
+    font-family: var(--font-heading-san-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 59px;
+}
+
+.page-intro {
+    font-family: var(--font-heading-san-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 30px;
+}
+
+/* h3 - Inter */
+.popular-card-sub {
+    font-family: var(--font-heading-san-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 16px;
+}
+ 
+/* body/p - Inter */
+.article-sub {
+    font-family: var(--font-heading-san-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-base-line-height);
+    font-size: 16px;
+}
+
+.homepage-sub {
+    font-family: var(--font-heading-san-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-base-line-height);
+    font-size: 15px;
+}
+
+.categories-sub {
+    font-family: var(--font-heading-san-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-base-line-height);
+    font-size: 14px;
+     /*color: var(--color-text-accent); */
+}
+
+.ui-text {
+    font-family: var(--font-heading-san-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-base-line-height);
+    font-size: 13px;
+    /*color: var(--color-text-light); */
+}
+
+.bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.font-base-light {
+    color: var(--color-text-light);
+}
+
+.font-base-accent {
+    color: var(--color-text-accent);
+}
+
+/* === Screen: Mobile  === */
+@media only screen and (max-width: 680px) {
+
+    .about-banner-title {
+        font-size: 34px;
+    }
+    .home-banner-title {
+        font-size: 38px;
+    }
+
+    .promo-banner-title {
+        font-size: 28px;
+    }
+
+    .product-title-plant {
+        font-size: 40px;
+    }
+}
+
