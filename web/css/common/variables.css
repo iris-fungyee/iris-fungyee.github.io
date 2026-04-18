@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* === ROOT VARIABLES === */
@@ -11,10 +11,59 @@
     --font-heading-serif: "Domine", serif;
     --font-heading-san-serif: "Inter", sans-serif;
     --font-heading-line-height: 1.16;
-	--font-base: "Inter", sans-serif;
+    --font-base: "Inter", sans-serif;
     --font-base-line-height: 1.5;
-	--font-default-size: 18px;
+    --font-default-size: 18px;
     --font-default-weight: 400;
     --font-weight-bold: 600;
-    
+
+    /* background color*/
+    --color-bg-neutral: #f2f1f6;
+    --color-bg-accent: #EDF7F1;
+    --color-bg-brand: #f7efec;
+    --color-btn-bg-default: #BC4B20;
+    --color-btn-bg-light: #FFFFF;
+    --color-btn-bg-dark: #00000;
+    --color-bg-form-element: #F6F6F6;
+    --color-bg-stepper-plant: #903A18;
+    --color-bg-stepper-mask: #FFFFFF;
+    --color-bg-form-element-plant: #BC4B20;
+    --color-bg-quantity-masks: #F6F6F6;
+    --color-disclaimer-bg: #BC4B20;
+    --color-discount-bg: #BC4B20;
+
+    /* background hover color*/
+    --color-btn-bg-hover: #903A18;
+    --color-border-line-hover: #BC4B20;
+    --color-bg-stepper-plant-hover: #7A3115;
+    --color-icon-socials-hover: #C3B3A1;
+
+    /*text color*/
+    --color-text-default: #000000;
+    --btn-text: #FFFFFF;
+    --color-text-accent: #BC4B20;
+    --color-text-light: #FFFFFF;
+
+    /*logo color*/
+    --color-logo: #BC4B20;
+
+    /*icon color*/
+    --color-icon: #BC4B20;
+    --coloc-icon-socials: #000000;
+
+    /*link color*/
+    --color-link: #BC4B20;
+
+    /*border line*/
+    --color-border-line: #E2E2E2;
+
+    /*border-radius*/
+    --border-radius-btn: 50px;
+    --border-radius-img-default: 6px;
+    --border-radius-img-card: 12px;
+    --border-radius-circle: 50%;
+
+    /*btn padding*/
+    --btn-default-padding: 13px 29px;
+    --btn-full-width-padding: 17px 40px;
 }
