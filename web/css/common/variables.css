@@ -22,8 +22,8 @@
     --color-bg-accent: #EDF7F1;
     --color-bg-brand: #f7efec;
     --color-btn-bg-default: #BC4B20;
-    --color-btn-bg-light: #FFFFF;
-    --color-btn-bg-dark: #00000;
+    --color-btn-bg-light: #FFFFFF;
+    --color-btn-bg-dark: #000000;
     --color-bg-form-element: #F6F6F6;
     --color-bg-form-element-light: #FFFFFF;
     --color-bg-stepper-plant: #903A18;
@@ -32,6 +32,7 @@
     --color-bg-quantity-masks: #F6F6F6;
     --color-disclaimer-bg: #BC4B20;
     --color-discount-bg: #BC4B20;
+    --color-bg-submenu: #BC4B20;
 
     /* background hover color*/
     --color-btn-bg-hover: #903A18;
