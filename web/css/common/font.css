@@ -137,6 +137,12 @@ body {
 }
 
 /* h3 - Inter */
+.add-review {
+    font-family: var(--font-heading-san-serif);
+    font-weight: var(--font-default-weight);
+    line-height: var(--font-heading-line-height);
+    font-size: 20px;
+}
 .popular-card-sub {
     font-family: var(--font-heading-san-serif);
     font-weight: var(--font-default-weight);
