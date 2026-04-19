@@ -19,7 +19,8 @@
     outline: none;                
     color: var(--color-text-default);
     padding: 0px 15px;
-    height: 50px;                              
+    height: 50px;
+    margin-bottom: 0;                              
 }
 
 .search-container input::placeholder {
@@ -42,7 +43,9 @@
 
 .subscribe-form {
     display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 15px;
 }
 
 .subscribe-form input[type="text"], .subscribe-form [type="email"] {   
@@ -50,11 +53,11 @@
     border-radius: var(--border-radius-btn);  
     border: 1px solid transparent;               
     outline: none;                
-    color: #9ea0a4;
+    color: var(--color-text-input);
     padding: 0px 16px;
     margin: 18px 0px;
     height: 56px;
-    width: 33.33%;                             
+    width: 33.33%;                          
 }
 
 .subscribe-form input[type="text"]:hover, [type="email"]:hover { 
@@ -62,15 +65,19 @@
 }
 
 button[type="submit"] {
-    display: inline-block;
     font-size: var( --font-default-size);
     color: var(--btn-text);
+    background-color: var(--color-btn-bg-default);
     padding: var(--btn-full-width-padding);
     border-radius: var(--border-radius-btn);
     border: none;
     cursor: pointer;
     height: 55px;
-    width: 100%;
+    width: 25%;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-btn-bg-hover);
 }
 
 /* Footer - Subscribe Section */
@@ -83,7 +90,7 @@ button[type="submit"] {
     border-radius: var(--border-radius-img-default);
     text-align: center;
     margin: 20px;
-    padding: 80px 130px 70px 130px;
+    padding: 20px;
 }
 
 .subscribe-title {
@@ -123,8 +130,6 @@ span.bold {
 }
 
 h3.add-review {
-    font-weight: var(--font-default-weight);
-    font-size: 20px;
     margin: 20px 0px 15px 0px;
 }
 
@@ -146,7 +151,7 @@ h3.add-review {
 }
 
 .star-option:hover {
-    background-color: rgba(0, 0, 0, .075);
+    background-color: var(--color-rating-options-bg-hover);
     color: var(--color-text-accent);
 }
 
@@ -156,16 +161,18 @@ h3.add-review {
     margin: 0px 20px;
 }
 
-.review-form input[type="text"], .review-form input[type="email"], textarea {
-    border:1px solid var(--color-border-line);
+[type="text"],
+[type="email"], 
+textarea {
+    border: 1px solid var(--color-border-line);
     margin-bottom: 20px;
     outline: none;
     border-radius: var(--border-radius-img-default);
-    color: #9ea0a4;
+    color: var(--color-text-input);
 }
 
 .review-form input[type="text"]:focus, .review-form input[type="email"]:focus, textarea:focus {
-    border-color:  #BC4B20;
+    border-color: var(--color-border-line-focus);
 }
 
 .review-form input[type="text"], .review-form input[type="email"]{
@@ -175,7 +182,12 @@ h3.add-review {
 .checkbox-grp {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
     gap: 10px;
+}
+
+.review-form button[type="submit"] {
+    width: 100%;
 }
 
 /* Contact page - Form */
@@ -183,6 +195,7 @@ h3.add-review {
     display:flex;
     justify-content: center;
     margin: 20px 0px;
+    gap: 30px;
 }
 
 .contact-img {
@@ -210,16 +223,19 @@ h1.form-title {
 .form-input input[type="text"], .form-input input[type="email"] {
     height: 50px;
     padding: 0px 16px;
-    border:1px solid var(--color-border-line);
-    margin-bottom: 20px;
-    outline: none;
-    border-radius: var(--border-radius-img-default);
-    color: #9ea0a4;
+}
+
+.form-input input[type="text"]:focus, .form-input input[type="email"]:focus, textarea:focus {
+    border-color: var(--color-border-line-focus);
 }
 
 .form-comment {
     display: flex;
     flex-direction: column;
+}
+
+.contact-form button[type="submit"] {
+    width: 100%;
 }
 
 
