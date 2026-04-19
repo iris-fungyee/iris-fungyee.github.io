@@ -23,11 +23,111 @@
 
         <form class="subscribe-form">
             <input type="text" id="yourname" name="yourname" placeholder="Your name ...">
-            <input type="email" id="youremail" name="youremail" placeholder="Your email ...">
+            <input type="email" id="youremail" name="youremail" placeholder="Your email ... *" required/>
             <button type="submit">Subscribe</button>
          </form>
     </div>
 </section>
+
+<section>
+    <div class="footer-subscribe">
+        <div>
+            <h2 class="subscribe-title">Subscribe to our newsletter to receive updates.</h2>
+        </div>
+
+        <form class="subscribe-form">
+            <input type="text" id="name" name="name" placeholder="Your name ...">
+            <input type="email" id="email" name="email" placeholder="Your email ... *" required/>
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <div>
+            <p class="categories-sub">We will only send you the good stuff, no spam. *</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="review-section">
+        <div class="review-container">
+            <div>
+                <img src="../images/user.png" alt="user" width="60" height="60">
+            </div>
+            <div class="review">
+                <div class="user-date">
+                    <p class="ui-text"><span class="bold">Dany</span> – December 10, 2020</p>
+                    <img src="../images/fivestars.png" alt="stars-rating" width="90" height="18">
+                </div>
+                <div class="review-content">
+                    <p>Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 class="add-review">Add a review</h3>
+            <p>Your email address will not be published. Required fields are marked *</p>
+        </div>
+    </div>
+
+    <div class="rating-option">
+        <div class="star-option">1 of 5 stars<img src="../images/onestar.png" alt="one" width="10" height="10"></div>
+        <div class="star-option">2 of 5 stars<img src="../images/twostar.png" alt="one" width="20" height="10"></div>
+        <div class="star-option">3 of 5 stars<img src="../images/threestar.png" alt="one" width="30" height="10"></div>
+        <div class="star-option">4 of 5 stars<img src="../images/fourstar.png" alt="one" width="40" height="10"></div>
+        <div class="star-option">5 of 5 stars<img src="../images/fivestar.png" alt="one" width="50" height="10"></div>
+    </div>
+
+    <form class="review-form">
+        <label for="review">Your review *</label>
+        <textarea id="review" name="review" rows="8" cols="45"></textarea>
+
+        <label for="review-name">Name *</label>
+        <input type="text" id="review-name" name="review-name">
+
+        <label for="review-email">Email *</label>
+        <input type="email" id="review-email" name="review-email">
+        <div class="checkbox-grp">
+            <input type="checkbox" id="save" name="save" value="Save">
+            <label for="save"> Save my name, email, and website in this browser for the next time I comment.</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+    <div class="contact-section">
+        <div class="contact-img">
+            <img src="../images/contact-form.jpg" alt="contact-img" width="100%" height="auto">
+        </div>
+        <div class="contact-content">
+            <h1 class="form-title">How can we help you today?</h1>
+
+            <form class="contact-form">
+                <input type="radio" id="help" name="reason" value="help">
+                <label for="help">I need help with a product.</label><br>
+                <input type="radio" id="refund" name="reason" value="refund">
+                <label for="refund">I need to get a refund for a product.</label><br>
+                <input type="radio" id="receive" name="reason" value="not-receive">
+                <label for="receive">I didn't receive the product I ordered.</label><br>
+                <input type="radio" id="other" name="reason" value="other">
+                <label for="other">Other</label><br><br>
+
+                <div class="form-input">
+                    <input type="text" id="fname" name="fname" placeholder="First name *">
+                    <input type="text" id="lname" name="lname" placeholder="Last name *">
+                    <input type="email" id="contact-email" name="contact-email" placeholder="Your email *">
+                </div>
+
+                <div class="form-comment">
+                <label for="comment">Comments or questions</label>
+                <textarea id="comment" name="comment" rows="4"></textarea>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
 
 </body>
 </html>
