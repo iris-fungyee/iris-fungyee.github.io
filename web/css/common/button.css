@@ -1,39 +1,48 @@
 .btndefault {
     display: inline-flex;
     font-size: 14px;
-    background-color: var (--color-btn-bg-default);
-    color: var(--btn-text);
-    padding: var (--btn-default-padding);
+    background-color: var(--color-btn-bg-default);
+    padding: var(--btn-default-padding);
     border-radius: var(--border-radius-btn);
     cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-light {
+    display: inline-flex;
+    background-color: var(--btn-bg-light);
+    font-size: 14px;
+    color: var(--color-text-default);
+    padding: var(--btn-default-padding);
+    border-radius: var(--border-radius-btn);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-light a {
+    color: inherit;
 }
 
 .btn-full-width {
     display: block;
     font-size: 18px;
     text-align: center;
-    color: var(--btn-text);
-    padding: var (--btn-full-width-padding);
+    background-color: var(--color-btn-bg-default);
+    padding: var(--btn-full-width-padding);
     border-radius: var(--border-radius-btn);
     cursor: pointer;
-}
-
-.btn-light {
-    background-color: var(--btn-bg-light);
-    font-size: 14px;
-    color: var(--color-text-default);
-    padding: var (--btn-default-padding);
-    border-radius: var(--border-radius-btn);
-    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .btn-dark {
-    background-color: var(--btn-bg-dark);
+    display: block;
+    background-color: var(--color-btn-bg-dark);
     font-size: 18px;
-    color: var(--btn-text);
-    padding: var (--btn-full-width-padding);
+    text-align: center;
+    padding: var(--btn-full-width-padding);
     border-radius: var(--border-radius-btn);
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .btndefault:hover,
@@ -41,4 +50,9 @@
 .btn-light:hover {
     background-color: var(--color-btn-bg-hover);
     color: var(--btn-text);
+}
+
+a {
+    color: var(--btn-text);
+    text-decoration: none;
 }
