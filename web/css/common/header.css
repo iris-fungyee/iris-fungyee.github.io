@@ -1,0 +1,72 @@
+div.topheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    color: var(--color-icon);
+}
+
+
+.navigationmenu {
+    display: flex;
+}
+
+.navigationmenu a {
+    font-size: 16px;
+    color: var(--color-text-default);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    background-color: white;
+    padding: 14px 0px;
+}
+
+.dropdown .product {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--color-text-default);
+    padding: 14px 16px;
+    margin: 0;
+}
+
+.navigationmenu a:hover,
+.dropdown:hover .product {
+    color: var(--color-text-accent);
+}
+
+.product-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-bg-default);
+    z-index: 1;
+}
+
+.product-content a {
+    color: var(--color-text-default);
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.product-content a:hover {
+    background-color: var(--color-bg-submenu);
+    color: var(--color-text-light);
+}
+
+.dropdown:hover .product-content {
+    display: block;
+}
