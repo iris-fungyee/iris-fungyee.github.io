@@ -4,11 +4,15 @@ body {
     line-height: var(--font-base-line-height);
 	color: var(--color-text-default);
 }
-
+a.link {
+    color: var(--color-text-accent); /* link in text */
+}
 .seperate {
     margin: 20px;
     background-color: var(--color-btn-bg-default); /* divide each section */
 }
+
+
 
 /* h1 - Domine */
 .about-banner-title {
