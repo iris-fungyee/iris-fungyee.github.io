@@ -1,23 +1,58 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 76.8px 0px;
+}
+
 div.topheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
+}
+
+div.search-container {
+    width: 20%;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+div.logo-header {
+    width: 60%;
+    text-align: center;
 }
 
 .logo {
     display: flex;
-    align-items: center;
 }
 
 .icon {
+    width: 20%;
     display: flex;
+    justify-content: flex-end;
     color: var(--color-icon);
 }
 
+.account {
+    margin-right: 5px;
+}
+
+.cart {
+    margin-left: 5px;
+}
+
+.bottomheader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+    margin-top: 22px;
+    border-top: 1px solid var(--color-border-line);
+}
 
 .navigationmenu {
     display: flex;
+    margin-top: 22px;
 }
 
 .navigationmenu a {
@@ -26,6 +61,7 @@ div.topheader {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    margin: 0px 20px;
 }
 
 .dropdown {
@@ -34,6 +70,7 @@ div.topheader {
 }
 
 .dropdown .product {
+    position: relative;
     font-size: 16px;
     border: none;
     outline: none;
@@ -43,30 +80,32 @@ div.topheader {
 }
 
 .navigationmenu a:hover,
-.dropdown:hover .product {
+.dropdown:hover .dropdown {
     color: var(--color-text-accent);
 }
 
-.product-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: var(--color-bg-default);
     z-index: 1;
+    margin-top: 15px;
 }
 
-.product-content a {
+.dropdown-content a {
     color: var(--color-text-default);
     padding: 20px;
     text-decoration: none;
     display: block;
     text-align: center;
+
 }
 
-.product-content a:hover {
+.dropdown-content a:hover {
     background-color: var(--color-bg-submenu);
     color: var(--color-text-light);
 }
 
-.dropdown:hover .product-content {
+.dropdown:hover .dropdown-content {
     display: block;
 }
