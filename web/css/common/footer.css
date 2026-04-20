@@ -6,7 +6,7 @@
 
 .footertitle,
 .popular {
-    width: 33.33%
+    width: 50%
 }
 
 .logo-footer {
@@ -25,10 +25,14 @@
     margin: 10px;
 }
 
-.popular {
+.product-card {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+}
+
+.popular {
+    margin: 0px 45px;
 }
 
 .logo-footer {
@@ -38,10 +42,6 @@
 .article-sub {
     margin: 17px 0px;
     font-size: var(--font-default-size);
-}
-
-.popular {
-    margin: 0px 45px;
 }
 
 .producttitle {
@@ -81,4 +81,37 @@
 
 .ui-text p {
     padding: 13px 0px;
+}
+
+@media screen and (max-width:680px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-sub {
+        text-align: center;
+        max-width: 92%;
+    }
+
+    .footertitle {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .product-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    .popular {
+        margin: 0px 20px;
+    }
 }
