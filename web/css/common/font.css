@@ -3,6 +3,12 @@ body {
     font-weight: var(--font-default-weight);
     line-height: var(--font-base-line-height);
 	color: var(--color-text-default);
+    background-color: var(--color-bg-brand); /* to show fonts that are white */
+}
+
+.seperate {
+    margin: 20px;
+    background-color: var(--color-btn-bg-default); /* divide each section */
 }
 
 /* h1 - Domine */

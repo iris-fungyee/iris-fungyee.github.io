@@ -368,7 +368,19 @@ input[type="number"] {
     border-color: var(--color-border-line-hover);
 }
 
-
+/* Discount Label*/
+.discount-label{
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-heading-san-serif);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--font-base-line-height);
+    font-size: 14px;
+    color: var(--btn-text);
+    background-color: var(--color-btn-bg-default);
+    border-radius: 4px;
+    padding: 1px 8px;
+}
 
 
 
