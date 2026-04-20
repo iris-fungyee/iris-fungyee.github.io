@@ -12,12 +12,18 @@ a {
 
 .footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .icon-img {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.usp-icon {
+    display: flex;
+    justify-content: space-evenly;
     margin: 20px;
 }
 
@@ -39,6 +45,17 @@ a {
     color: var(--color-text-accent);
 }
 
+/* Header - Mobile navi */
+
+.dottednavi::before {
+    content: "\f141";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 10px;
+    color: var(--color-text-accent);
+}
+
 /* Footer - Socials icon */
 .socials-icon::before {
     font-family: "Font Awesome 5 Brands";
@@ -55,3 +72,4 @@ a {
 .socials-icon:hover::before {
     color: var( --color-icon-socials-hover);
 }
+
