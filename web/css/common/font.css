@@ -208,6 +208,10 @@ a.link {
 /* === Screen: Mobile  === */
 @media only screen and (max-width: 680px) {
 
+    .logo-header {
+        font-size: 20px;
+    }
+
     .about-banner-title {
         font-size: 34px;
     }
@@ -222,5 +226,6 @@ a.link {
     .product-title-plant {
         font-size: 40px;
     }
+
 }
 
