@@ -60,7 +60,7 @@
     width: 33.33%;                          
 }
 
-.subscribe-form input[type="text"]:hover, [type="email"]:hover { 
+.subscribe-form input[type="text"]:hover, .subscribe-form input[type="email"]:hover { 
     border-color: var(--color-border-line-hover);
 }
 
@@ -162,7 +162,8 @@ h3.add-review {
 }
 
 [type="text"],
-[type="email"], 
+[type="email"],
+[type="url"],
 textarea {
     border: 1px solid var(--color-border-line);
     margin-bottom: 20px;
@@ -211,6 +212,10 @@ textarea {
     width: 55%;
 }
 
+input[type="radio"] {
+    accent-color: var( --color-btn-bg-default);
+}
+
 h1.form-title {
     margin-bottom: 20px;
 }
@@ -223,10 +228,15 @@ h1.form-title {
 .form-input input[type="text"], .form-input input[type="email"] {
     height: 50px;
     padding: 0px 16px;
+    width: calc(33.33% - 6.66px);
 }
 
-.form-input input[type="text"]:focus, .form-input input[type="email"]:focus, textarea:focus {
+.form-input input[type="text"]:focus, .form-input input[type="email"]:focus {
     border-color: var(--color-border-line-focus);
+}
+
+.form-input input[type="text"]:hover, .form-input input[type="email"]:hover, .form-comment textarea:hover {
+    border-color: var(--color-border-line-hover);
 }
 
 .form-comment {
@@ -238,8 +248,58 @@ h1.form-title {
     width: 100%;
 }
 
+/* Blog page - Comment form */
+.blog-comment {
+    background-color: var(--color-bg-neutral);
+    padding: 20px;
+    margin-top: 20px;
+}
 
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
 
+h2.categories-title {
+    margin-bottom: 20px;
+}
+
+.comment-form input[type="text"], .comment-form input[type="email"], .comment-form input[type="url"] {
+    height: 50px;
+    padding: 0px 15px;
+    width: calc(33.33% - 6.66px);
+}
+
+.comment-form textarea{
+    padding: 12px 15px;
+    width: 100%;
+    margin: 0;
+}
+
+.comment-form input[type="text"]:focus , .comment-form input[type="email"]:focus, .comment-form input[type="url"]:focus {
+    border-color: var(--color-border-line-focus);
+}
+
+.blog-comment .comment-input{
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button[type="submit.post"] {
+    display: inline-flex;
+    font-size: 14px;
+    background-color: var(--color-btn-bg-default);
+    padding: var(--btn-default-padding);
+    border-radius: var(--border-radius-btn);
+    color: var(--btn-text);
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit.post"]:hover {
+    background-color: var(--color-btn-bg-hover);
+}
 
 
 

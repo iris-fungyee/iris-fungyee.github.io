@@ -15,6 +15,12 @@ a {
     justify-content: center;
 }
 
+.icon-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
  /* Header - Drop down icon */
 
 .header-dropdown a::after {
