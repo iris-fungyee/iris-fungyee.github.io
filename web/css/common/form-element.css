@@ -200,6 +200,7 @@ textarea {
 }
 
 .contact-img {
+    display: flex;
     width: 35%;
     margin: 0px 30px;
 }
@@ -214,6 +215,7 @@ textarea {
 
 input[type="radio"] {
     accent-color: var( --color-btn-bg-default);
+    margin: 10px;
 }
 
 h1.form-title {
@@ -268,7 +270,7 @@ h2.categories-title {
 .comment-form input[type="text"], .comment-form input[type="email"], .comment-form input[type="url"] {
     height: 50px;
     padding: 0px 15px;
-    width: calc(33.33% - 6.66px);
+    width: calc(33.33% - 6.67px);
 }
 
 .comment-form textarea{
@@ -281,8 +283,8 @@ h2.categories-title {
     border-color: var(--color-border-line-focus);
 }
 
-.blog-comment .comment-input{
-    justify-content: space-between;
+.comment-input {
+    display: flex;
     gap: 10px;
 }
 
@@ -299,6 +301,71 @@ button[type="submit.post"] {
 
 button[type="submit.post"]:hover {
     background-color: var(--color-btn-bg-hover);
+}
+
+/* Quantity Stepper - Product Plant*/
+.quantity-stepper-plant,
+.quantity-stepper-mask  {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    display: inline-flex;
+    text-align: center;
+    background-color: var(--color-btn-bg-default); 
+    height: 55px;
+    border: 1px solid var(--color-border-line-stepper-plant);
+    color: var(--btn-text);
+}
+
+.qty-btn {
+    background-color: var(--color-bg-stepper-plant);
+    color: var(--btn-text);
+    border: 1px solid var(--color-border-line-stepper-plant);
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.qty-btn.minus {
+   border-top-left-radius: 4px; 
+   border-bottom-left-radius: 4px;
+}
+
+.qty-btn.plus {
+   border-top-right-radius: 4px; 
+   border-bottom-right-radius: 4px;
+}
+
+.qty-btn:hover {
+    background-color: var(--color-bg-stepper-plant-hover);
+}
+
+/* Quantity Stepper - Product Mask*/
+
+.quantity-stepper-mask input[type="number"] {
+    display: inline-flex;
+    text-align: center;
+    background-color: var(--color-bg-form-element); 
+    height: 55px;
+    border: 1px solid var(--color-border-line);
+    color: var(--color-text-default);
+}
+
+.quantity-stepper-mask .qty-btn {
+    background-color: var(--color-bg-stepper-mask);
+    color: var(--color-text-default);
+    border: 1px solid var(--color-border-line);
+    height: 55px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.quantity-stepper-mask .qty-btn:hover {
+    border-color: var(--color-border-line-hover);
 }
 
 
