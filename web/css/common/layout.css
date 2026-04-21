@@ -9,7 +9,7 @@
 }
 
 .homepage-card {
-    width: calc((100%-20px)/3);
+    width: calc((100% - 20px)/3);
 }
 
 .product-card:hover {
@@ -59,6 +59,7 @@ div.brand {
     display: flex;
     padding: 20px;
     gap: 20px;
+    background-color: var(--color-bg-neutral);
 }
 
 .popular-categories:hover {
@@ -83,6 +84,12 @@ div.brand {
     text-align: center;
     padding: 20px;
     border-radius: 0px 0px 12px 12px;
+    position: relative;
+    bottom: 10px;
+}
+
+.article-sub {
+    background-color: white;
 }
 
 a {
@@ -90,14 +97,22 @@ a {
     color: var(--color-text-default);
 }
 
+.background-img {
+    position: relative;
+    top: 10px;
+}
+
 .column-six {
     display: flex;
-    padding: 20px;
+    padding: 30px;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: var(--color-bg-accent);
 }
 
 .selection {
-    width: calc((100% - 40px) / 5);
+    width: calc((100% - 50px) / 6);
 }
 
 .selection:hover {
@@ -133,7 +148,7 @@ a {
 }
 
 .ornament {
-    width: calc((100% - 60)/3);
+    width: calc((100% - 60px)/3);
 }
 
 .ornamenthover {
@@ -159,12 +174,13 @@ a {
 
 @media screen and (max-width:1100px) {
     .column-three {
-        width: calc((50%-10px)/2);
+        width: calc((100% - 10px)/2);
     }
 }
 
 @media screen and (max-width:680px) {
     .column-three {
+        width: 100%;
         flex-direction: column;
     }
 
@@ -177,12 +193,12 @@ a {
     }
 
     .popular-img img {
-        height: 100px;
+        height: 90px;
 
     }
 
-    .column-six {
-        width: calc((33.33%-20px)/3);
+    .selection {
+        width: calc((100% - 20px)/3);
     }
 
     .holiday-deco {
