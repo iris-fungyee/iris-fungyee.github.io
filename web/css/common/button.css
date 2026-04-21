@@ -1,58 +1,49 @@
-.btndefault {
+.btn {
     display: inline-flex;
     font-size: 14px;
+    text-align: center;
     background-color: var(--color-btn-bg-default);
     padding: var(--btn-default-padding);
     border-radius: var(--border-radius-btn);
     cursor: pointer;
+
+
+    /* spacing use */
     margin-bottom: 10px;
 }
 
 .btn-light {
-    display: inline-flex;
     background-color: var(--btn-bg-light);
-    font-size: 14px;
-    color: var(--color-text-default);
-    padding: var(--btn-default-padding);
-    border-radius: var(--border-radius-btn);
-    cursor: pointer;
-    margin-bottom: 10px;
 }
 
 .btn-light a {
-    color: inherit;
+    color: var(--color-text-default);
 }
 
-.btn-full-width {
+.btn-defualt a,
+.btn-full-width a,
+.btn-dark a {
+    color: var(--btn-text);
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn-full-width,
+.btn-dark {
     display: block;
-    font-size: 18px;
     text-align: center;
-    background-color: var(--color-btn-bg-default);
+    font-size: 18px;
     padding: var(--btn-full-width-padding);
-    border-radius: var(--border-radius-btn);
-    cursor: pointer;
-    margin-bottom: 10px;
 }
 
 .btn-dark {
-    display: block;
     background-color: var(--color-btn-bg-dark);
-    font-size: 18px;
-    text-align: center;
-    padding: var(--btn-full-width-padding);
-    border-radius: var(--border-radius-btn);
-    cursor: pointer;
-    margin-bottom: 10px;
 }
 
 .btndefault:hover,
 .btn-full-width:hover,
 .btn-light:hover {
     background-color: var(--color-btn-bg-hover);
-    color: var(--btn-text);
-}
-
-a {
-    color: var(--btn-text);
-    text-decoration: none;
 }
