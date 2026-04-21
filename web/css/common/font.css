@@ -1,135 +1,92 @@
 body {
 	font-family: var(--font-base);
     font-weight: var(--font-default-weight);
+    font-size: var( --font-default-size);
     line-height: var(--font-base-line-height);
 	color: var(--color-text-default);
 }
-a.link {
-    color: var(--color-text-accent); /* link in text */
-}
-.seperate {
-    margin: 20px;
-    background-color: var(--color-btn-bg-default); /* divide each section */
+
+/* Domine */
+h1,
+h2,
+h3 .domine {
+    font-family: var(--font-heading-serif);
+    line-height: var(--font-heading-line-height);
+    font-weight: var(--font-default-weight);
+    background-color:  #f2f1f6;; /* background for white text */
 }
 
+.light {
+    color: var(--color-text-light);
+}
 
+.accent {
+    color: var(--color-text-accent);   
+}
 
 /* h1 - Domine */
 .about-banner-title {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
-    color: var(--color-text-light);
     font-size: 49px;
-    background-color: var(--color-bg-brand); /* to show fonts that are white */
 }
-
+    
 .product-title-candle {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 47px;
 }
 
 .logo-header {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
-    color: var(--color-text-accent);
     font-size: 33px;
-
 }
 
 .about-banner-card {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 32px;
 }
 
 .form-title {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 23px;
 }
 
 /* h2 - Domine */
 .home-banner-title {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
-    color: var(--color-text-light);
     font-size: 50px;
-    background-color: var(--color-bg-brand); /* to show fonts that are white */
 }
 
 .promo-banner-title {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
-    color: var(--color-text-light);
     font-size: 36px;
-    background-color: var(--color-bg-brand); /* to show fonts that are white */
 }
 
 .story-title {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 32px;
 }
 
 .subscribe-title {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 29px;
 }
 
 .logo-footer {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     color: var(--color-text-accent);
     font-size: 28px;
 }
 
 .categories-title {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 24px;
 }
 
 .footer-title {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 20px;
     /* color: var(--color-text-light); 
     color: var(--color-text-accent); */
 }
 
 .usp-title {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 19px;
 }
 
 /* h3 - Domine */
 .home-sec-title {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 22px;
 }
 
 .article-product-title {
-    font-family: var(--font-heading-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 21px;
 }
 
@@ -142,38 +99,23 @@ a.link {
 }
 
 .page-intro {
-    font-family: var(--font-heading-san-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 30px;
 }
 
 /* h3 - Inter */
 .add-review {
-    font-family: var(--font-heading-san-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 20px;
 }
 .popular-card-sub {
-    font-family: var(--font-heading-san-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 16px;
 }
  
 /* body/p - Inter */
 .article-sub {
-    font-family: var(--font-heading-san-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-base-line-height);
     font-size: 16px;
 }
 
 .homepage-sub {
-    font-family: var(--font-heading-san-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-base-line-height);
     font-size: 15px;
 }
 

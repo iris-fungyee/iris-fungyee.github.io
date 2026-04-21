@@ -112,5 +112,11 @@ div.logo-header {
 
 /* === Screen: Mobile  === */
 @media only screen and (max-width: 680px) {
-    
+    .account {
+        display: none;
+    }
+
+    .bottomheader {
+        display: none;
+    }
 }
