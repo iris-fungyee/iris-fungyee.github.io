@@ -15,3 +15,7 @@ a {
 .dark:hover {
     color: var(--color-link);
 }
+
+.dark.btn-style {
+    color: var(--color-text-default)
+}
