@@ -9,11 +9,14 @@ body {
 /* Domine */
 h1,
 h2,
-h3 .domine {
-    font-family: var(--font-heading-serif);
+h3 {
     line-height: var(--font-heading-line-height);
     font-weight: var(--font-default-weight);
     background-color:  #f2f1f6;; /* background for white text */
+}
+
+.domine {
+    font-family: var(--font-heading-serif);
 }
 
 .light {
@@ -22,6 +25,10 @@ h3 .domine {
 
 .accent {
     color: var(--color-text-accent);   
+}
+
+.bold {
+    font-weight: var(--font-weight-bold);
 }
 
 /* h1 - Domine */
@@ -92,9 +99,6 @@ h3 .domine {
 
 /* h1 - Inter */
 .product-title-plant {
-    font-family: var(--font-heading-san-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-heading-line-height);
     font-size: 59px;
 }
 
@@ -120,31 +124,13 @@ h3 .domine {
 }
 
 .categories-sub {
-    font-family: var(--font-heading-san-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-base-line-height);
     font-size: 14px;
      /*color: var(--color-text-accent); */
 }
 
 .ui-text {
-    font-family: var(--font-heading-san-serif);
-    font-weight: var(--font-default-weight);
-    line-height: var(--font-base-line-height);
     font-size: 13px;
     /*color: var(--color-text-light); */
-}
-
-.bold {
-    font-weight: var(--font-weight-bold);
-}
-
-.font-base-light {
-    color: var(--color-text-light);
-}
-
-.font-base-accent {
-    color: var(--color-text-accent);
 }
 
 /* === Screen: Mobile  === */
