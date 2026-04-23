@@ -1,0 +1,17 @@
+a {
+	text-decoration: none;
+    color: var(--btn-text)
+}
+
+.dark {
+    color: var(--color-text-default);
+}
+
+.text-link {
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+.dark:hover {
+    color: var(--color-link);
+}
