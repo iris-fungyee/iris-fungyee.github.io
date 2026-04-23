@@ -12,7 +12,7 @@ h2,
 h3 {
     line-height: var(--font-heading-line-height);
     font-weight: var(--font-default-weight);
-    background-color:  #f2f1f6;; /* background for white text */
+    /* background-color:  #f2f1f6;  background for white text */
 }
 
 .domine {
