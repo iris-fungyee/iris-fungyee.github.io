@@ -17,5 +17,5 @@ a {
 }
 
 .dark.btn-style {
-    color: var(--color-text-default)
+    color: var( --btn-text);
 }
