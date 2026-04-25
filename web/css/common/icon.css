@@ -24,10 +24,46 @@
     color: var(--color-text-accent)
 }
 
+.productpg-socials {
+    display: flex;
+    margin: 20px;
+    justify-content: right;
+    gap: var(--gap-30);
+}
+
+.share-fb::before,
+.share-x::before,
+.share-email::before {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.share-fb::before {
+    content: "\f39e";
+    color: #3b5998;
+}
+
+.share-x::before {
+    content: "\e61b";
+}
+
+.share-email::before {
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+}
+
+.customerreview-sub {
+    display: flex;
+    gap: var(--gap-10);
+    margin: 20px;
+}
+
 @media only screen and (max-width: 1100px) {
     .usp-section {
         flex-wrap: wrap;
-        gap: 30px; 
+        gap: var(--gap-30);
     }
 
     .usp-content{
@@ -48,6 +84,10 @@
 @media only screen and (max-width: 680px) {
     .usp-content {
         width: 100%;
-        gap: 30px;
+        gap: var(--gap-30);
+    }
+
+    .productpg-socials {
+        justify-content: space-evenly;
     }
 }

@@ -72,4 +72,8 @@
     /*btn padding*/
     --btn-default-padding: 13px 29px;
     --btn-full-width-padding: 17px 40px;
+
+    /*gap */
+    --gap-10: 10px;
+    --gap-30: 30px;
 }

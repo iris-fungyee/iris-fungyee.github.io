@@ -3,7 +3,8 @@ a {
     color: var(--btn-text)
 }
 
-.link-dark {
+.link-dark,
+.link-static {
     color: var(--color-text-default);
 }
 
