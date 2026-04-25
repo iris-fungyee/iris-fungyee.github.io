@@ -1,3 +1,40 @@
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-30);
+}
+
 .footer-content {
     display: flex;
+    margin: 20px;
+    gap: var(--gap-30);
+}
+
+.footer-avada,
+.popular-products,
+.featured-products {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-30);
+    width: 33%;
+}
+
+.footer-prodcontent {
+    display: flex;
+}
+
+.footer-product,
+.footer-prodimg {
+    width: 50%;
+}
+
+.footer-prodimg {
+    display: flex;
+    justify-content: right;
+}
+
+.footer-bottom {
+    background-color: var(--color-btn-bg-default);
+    padding: 20px;
+    text-align: center;
 }
