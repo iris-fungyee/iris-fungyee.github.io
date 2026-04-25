@@ -3,7 +3,7 @@ a {
     color: var(--btn-text)
 }
 
-.dark {
+.link-dark {
     color: var(--color-text-default);
 }
 
@@ -12,10 +12,9 @@ a {
     text-decoration: underline;
 }
 
-.dark:hover {
+.link-dark:hover {
     color: var(--color-link);
 }
 
-.dark.btn-style {
-    color: var( --btn-text);
-}
+
+
