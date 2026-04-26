@@ -1,207 +1,79 @@
-* {
-    box-sizing: border-box;
+.row-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-10);
+}
+
+.content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.background-color {
+    background-color: antiquewhite;
+}
+
+.max-width {
+    margin: 40px;
+    max-width: 1440px;
+}
+
+.padding-default {
+    padding: 20px;
+}
+
+.column-two {
+    width: calc(50% - calc(var(--gap-10) / 2));
 }
 
 .column-three {
-    display: flex;
-    padding: 40px;
-    gap: 10px;
-}
-
-.homepage-card {
-    width: calc((100% - 20px)/3);
-}
-
-.product-card:hover {
-    cursor: pointer;
-}
-
-div.img img {
-    border-radius: var(--border-radius-img-default);
-}
-
-div.accent {
-    position: relative;
-    bottom: 26.15%;
-    background-color: var(--color-bg-accent);
-    text-align: center;
-    padding: 30px 0px;
-    border-radius: 0px 0px 6px 6px;
-}
-
-div.neutral {
-    position: relative;
-    bottom: 26.15%;
-    background-color: var(--color-bg-neutral);
-    text-align: center;
-    padding: 30px 0px;
-    border-radius: 0px 0px 6px 6px;
-}
-
-div.brand {
-    position: relative;
-    bottom: 26.15%;
-    background-color: var(--color-bg-brand);
-    text-align: center;
-    padding: 30px 0px;
-    border-radius: 0px 0px 6px 6px;
-}
-
-.categories-title {
-    margin: 10px 0px;
-}
-
-.homepage-sub {
-    margin: 20px 0px;
+    width: calc(33.33% - calc(var(--gap-10) * 2/3));
 }
 
 .column-four {
-    display: flex;
-    padding: 20px;
-    gap: 20px;
-    background-color: var(--color-bg-neutral);
-}
-
-.popular-categories:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.popular-categories {
-    width: calc((100% - 80px)/4);
-    margin: 20px;
-}
-
-.popular-img img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 12px 12px 0px 0px;
-}
-
-.popular-name {
-    background-color: var(--color-bg-form-element-light);
-    text-align: center;
-    padding: 20px;
-    border-radius: 0px 0px 12px 12px;
-    position: relative;
-    bottom: 10px;
-}
-
-.article-sub {
-    background-color: white;
-}
-
-a {
-    text-decoration: none;
-    color: var(--color-text-default);
-}
-
-.background-img {
-    position: relative;
-    top: 10px;
+    width: calc(25% - calc(var(--gap-10)*3/4));
 }
 
 .column-six {
+    width: calc(16.66% - calc(var(--gap-10)* 5/6));
+}
+
+.card {
     display: flex;
-    padding: 30px;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    background-color: var(--color-bg-accent);
+    flex-direction: column;
 }
-
-.selection {
-    width: calc((100% - 50px) / 6);
-}
-
-.selection:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.selection-img {
-    width: 120px;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    border-radius: var(--border-radius-circle);
-    margin: auto
-}
-
-.selection-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.selection-card {
-    text-align: center;
-    margin: 20px;
-}
-
-
-.holiday-deco {
-    display: flex;
-    gap: 20px;
-    margin: 30px;
-}
-
-.ornament {
-    width: calc((100% - 60px)/3);
-}
-
-.ornamenthover {
-    cursor: pointer;
-    color: var(--color-text-accent)
-}
-
-.footer-title:hover {
-    cursor: pointer;
-    color: var(--color-text-accent)
-}
-
-.ornament-content {
-    text-align: center;
-    margin: 20px
-}
-
-.categories-sub {
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-accent);
-}
-
 
 @media screen and (max-width:1100px) {
+
+    .column-two {
+        width: 100%;
+    }
+
     .column-three {
-        width: calc((100% - 10px)/2);
+        width: calc(50% - calc(var(--gap-10) / 2));
+    }
+
+    .disappear {
+        display: none;
+    }
+
+    .row-column-two {
+        width: calc(50% - calc(var(--gap-10) / 2));
     }
 }
 
 @media screen and (max-width:680px) {
     .column-three {
-        width: 100%;
-        flex-direction: column;
+        width: 100%
     }
 
-    .img {
-        display: none;
+    .disappear {
+        display: block;
     }
 
-    .column-four {
-        gap: 10px;
-    }
-
-    .popular-img img {
-        height: 90px;
-
-    }
-
-    .selection {
-        width: calc((100% - 20px)/3);
-    }
-
-    .holiday-deco {
-        flex-direction: column;
+    .column-six {
+        width: calc(33.33% - calc(var(--gap-10)* 2/3));
     }
 }
