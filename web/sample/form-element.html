@@ -59,11 +59,30 @@
     </div>
 
     <div class="rating-option">
-        <div class="star-option">1 of 5 stars<img src="../images/onestar.png" alt="one" width="10" height="10"></div>
-        <div class="star-option">2 of 5 stars<img src="../images/twostar.png" alt="one" width="20" height="10"></div>
-        <div class="star-option">3 of 5 stars<img src="../images/threestar.png" alt="one" width="30" height="10"></div>
-        <div class="star-option">4 of 5 stars<img src="../images/fourstar.png" alt="one" width="40" height="10"></div>
-        <div class="star-option">5 of 5 stars<img src="../images/fivestar.png" alt="one" width="50" height="10"></div>
+        <input type="radio" name="star_rating" id="rating1" value="1" hidden>
+        <label for="rating1" class="star-option bold">
+            1 of 5 stars <img src="../images/onestar.png" alt="one" width="10" height="10">
+        </label>
+
+        <input type="radio" name="star_rating" id="rating2" value="2" hidden>
+        <label for="rating2" class="star-option bold">
+            2 of 5 stars <img src="../images/twostar.png" alt="two" width="20" height="10">
+        </label>
+
+        <input type="radio" name="star_rating" id="rating3" value="3" hidden>
+        <label for="rating3" class="star-option bold">
+            3 of 5 stars <img src="../images/threestar.png" alt="three" width="30" height="10">
+        </label>
+
+        <input type="radio" name="star_rating" id="rating4" value="4" hidden>
+        <label for="rating4" class="star-option bold">
+            4 of 5 stars <img src="../images/fourstar.png" alt="three" width="40" height="10">
+        </label>
+
+        <input type="radio" name="star_rating" id="rating5" value="5" hidden>
+        <label for="rating5" class="star-option bold">
+            5 of 5 stars <img src="../images/fivestar.png" alt="five" width="50" height="10">
+        </label>
     </div>
 
     <form class="review-form">
@@ -90,7 +109,7 @@
             <img src="../images/contact-form.jpg" alt="contact-img" width="100%" height="auto">
         </div>
         <div class="contact-content">
-            <h1 class="form-title">How can we help you today?</h1>
+            <h1 class="domine form-title">How can we help you today?</h1>
 
             <form class="contact-form">
                 <input type="radio" id="help" name="reason" value="help">

@@ -16,6 +16,30 @@ input[type="url"] {
     padding: 16px 16px;
 }
 
+textarea {
+    padding: 12px 15px;
+}
+
+button[type="submit"] {
+    margin: 0px;
+    border: none;
+    color: var(--btn-text);
+}
+
+.contact-form input:hover,
+.review-form input:focus,
+.review-form textarea:focus,
+.contact-form input:focus,
+.form-comment textarea:focus,
+.form-comment textarea:hover {
+    border-color: var(--color-border-line-hover);
+}
+
+.subscribe-form input:hover {
+    border: 1px solid var(--color-border-line-hover);
+}
+
+
 /* Search bar */
 .search-container {
     display: flex;
@@ -57,13 +81,17 @@ input[type="url"] {
 
 .subscribe-form {
     display: flex;
-    gap: var(--gap-10);
+    gap: 20px;
     justify-content: center;
 }
 
 .subscribe-form input {
     border-radius: var(--border-radius-btn);
     width: 33%;                            
+}
+
+.subscribe-form button {
+    width: 25%;
 }
 
 /* Customer Review */
@@ -94,7 +122,7 @@ input[type="url"] {
 }
 
 .add-review {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .review-form {
@@ -103,3 +131,77 @@ input[type="url"] {
     gap: var(--gap-10);
 }
 
+.checkbox-grp {
+    margin: 10px 0px;
+}
+
+/* Star rating */
+.rating-option {
+    display: flex;
+    gap: var(--gap-10);
+    margin: 20px 0px;
+}
+
+.star-option {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-30);
+    padding: 9px;
+    background-color: var(--color-bg-form-element);
+    border-radius: var(--border-radius-form-element);
+    width: calc(20% - 8px);
+    cursor: pointer;
+}
+
+.star-option:hover {
+    background-color: var(--color-rating-options-bg-hover);
+    color: var(--color-text-accent);
+}
+
+.rating-option input[type="radio"]:checked + .star-option {
+    background-color: var(--color-rating-options-bg-hover);
+}
+
+/* Content page - form */
+.contact-section {
+    display:flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.contact-img {
+    display: flex;
+    width: 35%;
+    margin: 0px 30px;
+}
+
+.contact-img img{
+    width: 100%;
+    border-radius: var(--border-radius-img-default);
+    object-fit: cover;
+    aspect-ratio: 4 / 5;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-30);
+    width: 55%;
+}
+
+.form-comment {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-10);
+}
+
+.form-input {
+    display: flex;
+    gap: var(--gap-10);
+    margin-bottom: 20px;
+}
+
+.form-input input {
+    width: calc(33.33% - 6.66px);
+}
