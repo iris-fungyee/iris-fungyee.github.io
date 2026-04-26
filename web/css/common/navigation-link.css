@@ -1,28 +1,30 @@
 .main-header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 25px 70px 0px;
+    padding: 25px 60px 0px;
+}
+
+.header-row {
+    display: flex;
 }
 
 .top-header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.three-dot-menu {
+.menu-toggle {
     display: none;
+    cursor: pointer;
+    z-index: 1001;
+    color: var(--color-icon);
 }
 
 div.search-container {
     width: 20%;
-    margin: 0;
+    align-items: center;
     justify-content: flex-start;
-}
-
-div.card {
-    display: none;
+    margin: 0;
 }
 
 .logo-header {
@@ -33,83 +35,79 @@ div.card {
 .header-icon {
     width: 20%;
     display: flex;
-    gap: var(--gap-10);
     justify-content: flex-end;
+    gap: var(--gap-10);
     color: var(--color-icon);
 }
 
-.bottom-header {
-    width: 100%;
+.icon-item {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-header {
     justify-content: center;
     padding-bottom: 24px;
     margin-top: 22px;
     border-top: 1px solid var(--color-border-line);
 }
 
-.navigationmenu {
+div.mobile-search {
+    display: none;
+}
+
+.navigation-menu {
     display: flex;
     margin-top: 10px;
     align-items: center;
 }
 
-.navigationmenu a {
+.navigation-menu a,
+.dropdown a {
     font-size: 16px;
     color: var(--color-text-default);
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    margin: 0px 20px;
-}
-
-.dropdown-section {
-    background-color: white;
-    padding: 14px 0px;
-}
-
-.dropdown .product {
-    position: relative;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: var(--color-text-default);
     padding: 14px 16px;
-    margin: 0;
 }
 
-.navigationmenu a:hover,
-.dropdown:hover .dropdown-section {
-    color: var(--color-text-accent);
+.navigation-menu a {
+    margin: 0px 20px;
+    text-align: center;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--color-bg-default);
-    z-index: 1;
-    margin-top: 15px;
-    border-radius: 6px;
-    box-shadow: 0 0 4px var(--color-box-shadow);
-}
-
-.header-dropdown a {
+.dropdown a {
     display: inline-flex;
     align-items: center;
     gap: 6px;
 }
 
-.header-dropdown i {
-    font-size: 14px;
-    flex-shrink: 0;
+.navigation-menu a:hover,
+.dropdown:hover .dropdown a {
+    color: var(--color-text-accent);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: var(--color-bg-default);
+    border-radius: 6px;
+    box-shadow: 0 0 4px var(--color-box-shadow);
+    z-index: 10;
+    overflow: hidden;
 }
 
 .dropdown-content a {
-    color: var(--color-text-default);
-    padding: 20px;
-    text-decoration: none;
     display: block;
-    text-align: center;
-
+    margin: 0;
 }
 
 .dropdown-content a:hover {
@@ -117,7 +115,7 @@ div.card {
     color: var(--color-text-light);
 }
 
-.dropdown-section:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -177,40 +175,56 @@ div.card {
     text-align: center;
 }
 
-@media screen and (max-width: 1440px) {
-    .footer-prodsection {
-        display: contents;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .footer-prodsection {
-        display: flex;
-        width: 66%;
-        gap: var(--gap-30);
-    }
-
-    .popular-products,
-    .featured-products {
-        width: 50%;
-    }
-}
-
 @media only screen and (max-width: 680px) {
-    .three-dot-menu {
-        display: block;
+    .main-header {
+        padding: 15px 25px;
     }
 
-    div.search-container,
-    .navigationmenu,
-    .icon-account {
+    .menu-toggle {
+        display: flex;
+        width: 20%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    div.search-container {
         display: none;
     }
 
-    div.card {
+    .header-icon {
+        width: 20%;
+        justify-content: flex-end;
+    }
+
+    div.mobile-search {
+        display: flex;
         width: 100%;
-        display: block;
         margin-top: 10px;
+
+    }
+
+    .account {
+        display: none;
+    }
+
+    .navigation-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: -50px;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        background-color: white;
+    }
+
+    .navigation-menu.active {
+        display: flex;
+    }
+
+    .bottom-header {
+        border-top: none;
     }
 
     .footer-content {
