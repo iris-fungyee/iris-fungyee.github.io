@@ -1,3 +1,4 @@
+/*Footer */
 .main-footer {
     display: flex;
     flex-direction: column;
@@ -37,4 +38,22 @@
     background-color: var(--color-btn-bg-default);
     padding: 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+    .footer-prodsection {
+        display: contents;
+    }
+} 
+
+@media only screen and (max-width: 680px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-avada,
+    .popular-products,
+    .featured-products {
+        width: 100%;
+    }
 }
