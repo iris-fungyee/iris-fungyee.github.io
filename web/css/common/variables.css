@@ -65,8 +65,9 @@
 
     /*border-radius*/
     --border-radius-btn: 50px;
-    --border-radius-img-default: 6px;
     --border-radius-img-card: 12px;
+    --border-radius-img-default: 6px;
+    --border-radius-form-element: 4px;
     --border-radius-circle: 50%;
 
     /*btn padding*/

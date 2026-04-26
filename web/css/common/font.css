@@ -133,7 +133,26 @@ h3 {
     /*color: var(--color-text-light); */
 }
 
-/* === Screen: Mobile  === */
+/* Discount Label*/
+.discount-label {
+    display: inline-flex;   
+    background-color: var(--color-btn-bg-default);
+    border-radius: var(--border-radius-form-element);
+    padding: 1px 8px;
+}
+
+.product-price,
+.product-info {
+    display: flex;
+    gap: var(--gap-10);
+}
+
+.product-info {
+    flex-direction: column;
+    align-items: center;
+}
+
+
 @media only screen and (max-width: 680px) {
 
     .logo-header {
