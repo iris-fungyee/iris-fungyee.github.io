@@ -17,11 +17,15 @@
 
 .max-width {
     margin: 40px;
-    max-width: 1440px;
 }
 
 .padding-default {
     padding: 20px;
+}
+
+.column-one {
+    width: 100%;
+    margin: auto;
 }
 
 .column-two {
