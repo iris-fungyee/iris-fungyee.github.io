@@ -18,9 +18,11 @@ input[type="url"] {
 
 textarea {
     padding: 12px 15px;
+    width: 100%;
 }
 
-button[type="submit"] {
+button[type="submit"],
+button[type="post"] {
     margin: 0px;
     border: none;
     color: var(--btn-text);
@@ -31,7 +33,9 @@ button[type="submit"] {
 .review-form textarea:focus,
 .contact-form input:focus,
 .form-comment textarea:focus,
-.form-comment textarea:hover {
+.form-comment textarea:hover,
+.comment-form input:focus,
+.comment-form textarea:focus {
     border-color: var(--color-border-line-hover);
 }
 
@@ -177,10 +181,8 @@ button[type="submit"] {
 }
 
 .contact-img img{
-    width: 100%;
     border-radius: var(--border-radius-img-default);
     object-fit: cover;
-    aspect-ratio: 4 / 5;
 }
 
 .contact-content {
@@ -190,18 +192,50 @@ button[type="submit"] {
     width: 55%;
 }
 
-.form-comment {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-10);
-}
-
 .form-input {
     display: flex;
     gap: var(--gap-10);
     margin-bottom: 20px;
 }
 
-.form-input input {
+.form-input input,
+.comment-input input {
     width: calc(33.33% - 6.66px);
 }
+
+.form-comment {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-10);
+}
+
+.form-comment button {
+    margin-top: 10px;
+}
+
+/* Blog pg - comment section */
+.blog-comment {
+    background-color: var(--color-bg-neutral);
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-10);
+}
+
+.comment-input {
+    display: flex;
+    gap: var(--gap-10);
+}
+
+.comment-form textarea::placeholder {
+    font-family: var(--font-base);
+}
+
+.categories-title {
+    margin-bottom: 20px;
+}
+

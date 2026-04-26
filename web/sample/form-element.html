@@ -112,12 +112,16 @@
             <h1 class="domine form-title">How can we help you today?</h1>
 
             <form class="contact-form">
+
                 <input type="radio" id="help" name="reason" value="help">
                 <label for="help">I need help with a product.</label><br>
+
                 <input type="radio" id="refund" name="reason" value="refund">
                 <label for="refund">I need to get a refund for a product.</label><br>
+
                 <input type="radio" id="receive" name="reason" value="not-receive">
                 <label for="receive">I didn't receive the product I ordered.</label><br>
+                
                 <input type="radio" id="other" name="reason" value="other">
                 <label for="other">Other</label><br><br>
 
@@ -128,37 +132,37 @@
                 </div>
 
                 <div class="form-comment">
-                <label for="comment">Comments or questions</label>
-                <textarea id="comment" name="comment" rows="4"></textarea>
-                </div>
-
-                <button type="submit">Submit</button>
+                    <label for="comment">Comments or questions</label>
+                    <textarea id="comment" name="comment" rows="4"></textarea>
+                    <button type="submit">Submit</button>
+            </div>
             </form>
         </div>  
     </div>
 </section> 
 
 <section>
-<div class="blog-comment">
+    <div class="blog-comment">
         <div class="comment-form">
-            <h2 class="categories-title">Leave your comment</h2>
-                    <form>
-                        <textarea id="blogcomment" name="blogcomment" rows="8" cols="45" placeholder="Comment ..." required></textarea>
+            <h2 class="domine categories-title">Leave your comment</h2>
+            <form class="blog-form">
+                <textarea id="blogcomment" name="blogcomment" rows="8" cols="45" placeholder="Comment ..." required></textarea>
 
-                    <div class="comment-input">
-                        <input type="text" id="namereq" name="namereq" placeholder="Name (required)" required/>
-                        <input type="email" id="emailreq" name="emailreq" placeholder="Email (required)" required/>
-                        <input type="url" id="webreq" name="webreq" placeholder="Website" required/>
-                    </div>
-                    <div class="checkbox-grp">
-                        <input type="checkbox" id="saveblog" name="saveblog" value="Save">
-                        <label for="save"> Save my name, email, and website in this browser for the next time I comment.</label>
-                    </div>
+                <div class="comment-input">
+                    <input type="text" id="namereq" name="namereq" placeholder="Name (required)" required/>
+                    <input type="email" id="emailreq" name="emailreq" placeholder="Email (required)" required/>
+                    <input type="url" id="webreq" name="webreq" placeholder="Website" required/>
+                </div>
 
-                    <button type="submit.post">Post Comment</button>
-                    </form>
-                </div> 
-</div>
+            <div class="checkbox-grp">
+                    <input type="checkbox" id="saveblog" name="saveblog" value="Save">
+                    <label for="saveblog"> Save my name, email, and website in this browser for the next time I comment.</label>
+            </div>
+
+                <button type="post">Post Comment</button>
+            </form>
+        </div> 
+    </div>
 </section>
 
 <section>

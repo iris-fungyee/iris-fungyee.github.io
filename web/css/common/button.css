@@ -1,5 +1,6 @@
 .btn,
-button[type="submit"] {
+button[type="submit"],
+button[type="post"] {
     display: inline-flex;
     font-size: 14px;
     text-align: center;
@@ -33,7 +34,8 @@ button[type="submit"] {
 
 .btn-full-width,
 .btn-dark,
-button[type="submit"] {
+button[type="submit"]
+ {
     display: block;
     text-align: center;
     font-size: 18px;
@@ -47,6 +49,7 @@ button[type="submit"] {
 .btndefault:hover,
 .btn-full-width:hover,
 .btn-light:hover,
-button[type="submit"]:hover {
+button[type="submit"]:hover,
+button[type="post"]:hover {
     background-color: var(--color-btn-bg-hover);
 }
