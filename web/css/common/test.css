@@ -1,0 +1,105 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea {                
+    outline: none;  
+	background-color: var(--color-bg-form-element-light);               
+    color: var(--color-text-default);
+	border-radius: var(--border-radius-img-default);
+	border: 1px solid var(--color-border-line);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+    display: inline-flex; 
+    padding: 16px 16px;
+}
+
+/* Search bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bg-form-element);
+    border-radius: var(--border-radius-form-element);
+    margin: 20px;
+   }
+
+.search-container img {
+    margin-left: 15px; 
+}
+
+.search-container input {
+    background-color: transparent;
+    margin-bottom: 0;  
+}
+
+.search-container input,
+.subscribe-form input {
+   border: none                         
+}
+
+/* Footer - subscribe */
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: var(--gap-30);
+    background-image: url('../../images/footer-bg.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: var(--border-radius-img-default);
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: var(--gap-10);
+    justify-content: center;
+}
+
+.subscribe-form input {
+    border-radius: var(--border-radius-btn);
+    width: 33%;                            
+}
+
+/* Customer Review */
+.review-section {
+    margin: 20px;
+}
+
+.review-head {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-30);
+}
+
+.review-container {
+    display: flex;
+}
+
+.user-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review {
+    margin-left: 20px;
+    padding: 15px;
+    border: 2px solid var(--color-border-line);
+    border-radius: var(--border-radius-form-element);
+}
+
+.add-review {
+    margin-bottom: 10px;
+}
+
+.review-form {
+    display:flex;
+    flex-direction: column;
+    gap: var(--gap-10);
+}
+

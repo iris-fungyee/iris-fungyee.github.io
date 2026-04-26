@@ -134,13 +134,27 @@ div.card {
     gap: var(--gap-30);
 }
 
+.footer-avada {
+    width: 33%;
+}
+
 .footer-avada,
 .popular-products,
 .featured-products {
     display: flex;
     flex-direction: column;
     gap: var(--gap-30);
-    width: 33%;
+}
+
+.popular-products,
+.featured-products {
+    width: 50%;
+}
+
+.footer-prodsection {
+    display: flex;
+    width: 66%;
+    gap: var(--gap-30);
 }
 
 .footer-prodcontent {

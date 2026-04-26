@@ -23,24 +23,7 @@
     margin-bottom: 0;                              
 }
 
-.search-container input::placeholder {
-    color: var(--color-text-default);
-}
-
 /* Subscribe Section */
-
-.subscribe-section {
-    background-color: var(--color-bg-brand);
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.subscribe-header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 25px 20px 25px;
-}
-
 .subscribe-form {
     display: flex;
     justify-content: center;
@@ -368,19 +351,6 @@ input[type="number"] {
     border-color: var(--color-border-line-hover);
 }
 
-/* Discount Label*/
-.discount-label{
-    display: inline-flex;
-    align-items: center;
-    font-family: var(--font-heading-san-serif);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--font-base-line-height);
-    font-size: 14px;
-    color: var(--btn-text);
-    background-color: var(--color-btn-bg-default);
-    border-radius: 4px;
-    padding: 1px 8px;
-}
 
 
 
