@@ -194,17 +194,16 @@ div.mobile-search {
         width: 100%;
         display: flex;
         flex-direction: column;
+        position: fixed;
+        top: -45%;
         align-items: flex-start;
         background-color: var(--color-bg-default);
-        position: absolute;
-        bottom: 100%;
-        left: 0;
         transition: all 0.2s ease;
         z-index: 1000;
     }
 
     .navigation-menu.active {
-        bottom: 0;
+        top: 10%;
     }
 
     .dropdown {
@@ -213,6 +212,7 @@ div.mobile-search {
 
     .dropdown-content {
         box-shadow: none;
+        margin: 0px 10px;
     }
 
     .dropdown-content a {

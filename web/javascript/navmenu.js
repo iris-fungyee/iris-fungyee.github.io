@@ -1,12 +1,15 @@
 const toggleButton = document.getElementById("menu-toggle");
 const menu = document.getElementById("mobile-menu");
+const icon = toggleButton.querySelector("i");
 
 toggleButton.addEventListener("click", () => {
     menu.classList.toggle("active");
-    // Change icon
+
     if (menu.classList.contains("active")) {
-        toggleButton.classList.replace = '<i class= "fa-solid fa-angle-up"></i>';
+        icon.classList.remove("fa-ellipsis");
+        icon.classList.add("fa-angle-up");
     } else {
-        toggleButton.classList.replace = '<i class= "fa-solid fa-ellipsis"></i>';
+        icon.classList.remove("fa-angle-up");
+        icon.classList.add("fa-ellipsis");
     }
 });
