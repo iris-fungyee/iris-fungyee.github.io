@@ -63,32 +63,27 @@ div.mobile-search {
     align-items: center;
 }
 
-.navigation-menu a,
+.menu-item a,
 .dropdown a {
     font-size: 16px;
     color: var(--color-text-default);
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
-}
-
-.navigation-menu a {
-    margin: 0px 10px;
-    text-align: center;
-}
-
-.dropdown a {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 6px;
+    justify-content: space-between;
+    margin: 0px 10px;
+    width: 100%;
 }
 
-.navigation-menu a:hover,
+.menu-item a:hover,
 .dropdown:hover .dropdown a {
     color: var(--color-text-accent);
 }
 
 .dropdown {
+    width: 100%;
     position: relative;
 }
 
@@ -99,10 +94,8 @@ div.mobile-search {
     left: 0;
     min-width: 200px;
     background-color: var(--color-bg-default);
-    border-radius: 6px;
+    border-radius: var(--border-radius-img-default);
     box-shadow: 0 0 4px var(--color-box-shadow);
-    z-index: 10;
-    overflow: hidden;
 }
 
 .dropdown-content a {
@@ -180,20 +173,15 @@ div.mobile-search {
         padding: 25px;
     }
 
-    .menu-toggle {
-        display: flex;
+    .menu-toggle,
+    .basket {
         width: 20%;
-        justify-content: flex-start;
-        align-items: center;
+        display: block;
     }
 
-    div.search-container {
+    div.search-container,
+    .account {
         display: none;
-    }
-
-    .header-icon {
-        width: 20%;
-        justify-content: flex-end;
     }
 
     div.mobile-search {
@@ -202,22 +190,44 @@ div.mobile-search {
         margin-top: 10px;
     }
 
-    .account {
-        display: none;
-    }
-
     .navigation-menu {
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
+        align-items: flex-start;
         background-color: var(--color-bg-default);
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        transition: all 0.2s ease;
+        z-index: 1000;
     }
 
     .navigation-menu.active {
-        left: 0;
+        bottom: 0;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        box-shadow: none;
+    }
+
+    .dropdown-content a {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0px;
+    }
+
+    .dropdown-content a:hover,
+    .menu a:hover {
+        display: flex;
+        align-items: flex-start;
+        color: var(--color-text-light);
+        background-color: var(--color-bg-submenu);
     }
 
     .bottom-header {
@@ -228,6 +238,9 @@ div.mobile-search {
         flex-direction: column;
     }
 
+    .menu,
+    div.mobile-search,
+    .dropdown-content,
     .footer-avada,
     .footer-prodsection {
         width: 100%;

@@ -20,7 +20,7 @@
         <div class="main-header">
             <div class="header-row top-header">
                 <div class="menu-toggle" id="menu-toggle">
-                    <i class="fa-solid fa-ellipsis"></i>
+                    <i class="fa-solid fa-ellipsis fa-xl"></i>
                 </div>
 
                 <div class="search-container">
@@ -48,20 +48,21 @@
                     <input type="text" id="searchcard" name="search" placeholder="Search...">
                 </div>
                 <div class="navigation-menu" id="mobile-menu">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Shop</a>
+                    <div class="menu-item"><a href="#">Home</a></div>
+                    <div class="menu-item"> <a href="#">About</a></div>
+                    <div class="menu-item"><a href="#">Shop</a></div>
                     <div class=" dropdown">
-                        <div class="header-dropdown" id="mobile-product"><a href="#">Products
+                        <div class="menu header-dropdown"><a href="#">Products
                                 <i class="fa-solid fa-angle-down"></i>
                             </a></div>
                         <div class="dropdown-content" id="product-content">
-                            <a href="#product1">Small terrarium kit</a>
-                            <a href="#product2">Mask</a>
+                            <a href="#plant">Small terrarium kit</a>
+                            <a href="#mask">Mask</a>
                         </div>
                     </div>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
+                    <div class="menu-item"><a href="#">Blog</a>
+                    </div>
+                    <div class="menu-item"><a href="#">Contact</a></div>
                 </div>
             </div>
         </div>
@@ -171,7 +172,7 @@
             </div>
         </div>
     </section>
-    <script src="mobile.js"></script>
+    <script src="javascript/mobile.js"></script>
 </body>
 
 </html>

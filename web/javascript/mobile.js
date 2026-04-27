@@ -5,8 +5,8 @@ toggleButton.addEventListener("click", () => {
     menu.classList.toggle("active");
     // Change icon
     if (menu.classList.contains("active")) {
-        toggleButton.innerHTML = 'a-solid fa-angle-up';
+        toggleButton.classList.replace = '<i class= "fa-solid fa-angle-up"></i>';
     } else {
-        toggleButton.innerHTML = 'fa-solid fa-ellipsis';
+        toggleButton.classList.replace = '<i class= "fa-solid fa-ellipsis"></i>';
     }
 });
