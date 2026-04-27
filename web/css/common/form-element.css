@@ -11,7 +11,8 @@ textarea {
 
 input[type="text"],
 input[type="email"],
-input[type="url"] {
+input[type="url"],
+input[type="number"] {
     display: inline-flex; 
     padding: 16px;
 }
@@ -35,7 +36,8 @@ button[type="post"] {
 .form-comment textarea:focus,
 .form-comment textarea:hover,
 .comment-form input:focus,
-.comment-form textarea:focus {
+.comment-form textarea:focus,
+.qty-btn:hover {
     border-color: var(--color-border-line-hover);
 }
 
@@ -406,6 +408,33 @@ button[type="post"] {
 }
 
 /*Product page - Quantity stepper */
+.quantity-selector {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.qty-btn {
+    border: 1px solid var(--color-border-line);
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.minus {
+   border-top-left-radius: var(--border-radius-form-element);
+   border-bottom-left-radius: var(--border-radius-form-element);
+}
+
+.plus {
+    border-top-right-radius: var(--border-radius-form-element);
+    border-bottom-right-radius: var(--border-radius-form-element);
+}
+
+.qty-input {
+    text-align: center;
+    background-color: #e0e0e0;
+    border: 1px solid var(--color-border-line);
+}
 
 @media only screen and (max-width: 1100px) { 
     .star-option {
