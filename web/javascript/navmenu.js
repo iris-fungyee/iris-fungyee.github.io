@@ -1,6 +1,8 @@
 const toggleButton = document.getElementById("menu-toggle");
 const menu = document.getElementById("mobile-menu");
 const icon = toggleButton.querySelector("i");
+const dropdown = document.getElementById("dropdown");
+const iconarrow = document.getElementById("dropdown-icon");
 
 toggleButton.addEventListener("click", () => {
     menu.classList.toggle("active");
@@ -12,4 +14,20 @@ toggleButton.addEventListener("click", () => {
         icon.classList.remove("fa-angle-up");
         icon.classList.add("fa-ellipsis");
     }
+});
+
+dropdown.addEventListener("click", () => {
+    if (window.innerWidth <= 680) {
+        event.preventDefault();
+        dropdown.classList.toggle("active");
+
+        if (dropdown.classList.contains("active")) {
+            iconarrow.classList.remove("fa-angle-down");
+            iconarrow.classList.add("fa-angle-up");
+        } else {
+            iconarrow.classList.remove("fa-angle-up");
+            iconarrow.classList.add("fa-angle-down");
+        }
+    }
+
 });

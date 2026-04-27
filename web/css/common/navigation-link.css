@@ -213,6 +213,9 @@ div.mobile-search {
     .dropdown-content {
         box-shadow: none;
         margin: 0px 10px;
+        display: none;
+        position: static;
+        width: 100%;
     }
 
     .dropdown-content a {
@@ -220,6 +223,14 @@ div.mobile-search {
         flex-direction: column;
         align-items: flex-start;
         margin: 0px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
     }
 
     .dropdown-content a:hover,
