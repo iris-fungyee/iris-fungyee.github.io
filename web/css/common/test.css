@@ -314,6 +314,37 @@ button[type="post"] {
 .arrow-down::before {
     content: "\f063";
 }
+
+.filter-box {
+    position: relative;
+}
+
+.filter-box-item {
+	opacity: 0; 
+	position: absolute;
+	pointer-events: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #F7F0ED;
+}
+
+.filter-box:hover > .filter-box-item {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.filter-box-item-list{
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.filter-box-item-list:hover {
+    background-color: t#f7efec69;
+    cursor: pointer;
+}
+
 /* Shop page - Page navigation */
 .next-arrow::after {
     content: "\f105";
