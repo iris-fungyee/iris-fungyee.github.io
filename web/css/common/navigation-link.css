@@ -73,7 +73,7 @@ div.mobile-search {
 }
 
 .navigation-menu a {
-    margin: 0px 20px;
+    margin: 0px 10px;
     text-align: center;
 }
 
@@ -177,7 +177,7 @@ div.mobile-search {
 
 @media only screen and (max-width: 680px) {
     .main-header {
-        padding: 15px 25px;
+        padding: 25px;
     }
 
     .menu-toggle {
@@ -200,7 +200,6 @@ div.mobile-search {
         display: flex;
         width: 100%;
         margin-top: 10px;
-
     }
 
     .account {
@@ -208,19 +207,17 @@ div.mobile-search {
     }
 
     .navigation-menu {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: fixed;
-        top: -50px;
-        transition: all 0.3s ease;
-        z-index: 1000;
-        background-color: white;
+        position: absolute;
+        background-color: var(--color-bg-default);
     }
 
     .navigation-menu.active {
-        display: flex;
+        left: 0;
     }
 
     .bottom-header {
