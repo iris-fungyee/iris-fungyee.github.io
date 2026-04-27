@@ -25,7 +25,8 @@ button[type="post"] {
 
 .btn-defualt a,
 .btn-full-width a,
-.btn-dark a {
+.btn-dark a,
+.btn-light:hover a {
     color: var(--btn-text);
 }
 
