@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Element</title>
+    <script src="https://kit.fontawesome.com/6cc981b743.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/common/variables.css">
     <link rel="stylesheet" href="../css/common/font.css">
     <link rel="stylesheet" href="../css/common/button.css">
@@ -40,7 +41,7 @@
     <div class="review-head">
         <div class="review-container">
             <div>
-                <img src="../images/user.png" alt="user" width="60" height="60">
+                <img class="user-pic" src="../images/user.png" alt="user" width="60" height="60">
             </div>
             <div class="review">
                 <div class="user-date">
@@ -61,27 +62,32 @@
     <div class="rating-option">
         <input type="radio" name="star_rating" id="rating1" value="1" hidden>
         <label for="rating1" class="star-option bold">
-            1 of 5 stars <img src="../images/onestar.png" alt="one" width="10" height="10">
+            <span class="rating-text">1 of 5 stars</span>
+            <img src="../images/onestar.png" alt="one" width="10" height="10">
         </label>
 
         <input type="radio" name="star_rating" id="rating2" value="2" hidden>
         <label for="rating2" class="star-option bold">
-            2 of 5 stars <img src="../images/twostar.png" alt="two" width="20" height="10">
+            <span class="rating-text">2 of 5 stars</span>
+            <img src="../images/twostar.png" alt="two" width="20" height="10">
         </label>
 
         <input type="radio" name="star_rating" id="rating3" value="3" hidden>
         <label for="rating3" class="star-option bold">
-            3 of 5 stars <img src="../images/threestar.png" alt="three" width="30" height="10">
+            <span class="rating-text">3 of 5 stars</span>
+            <img src="../images/threestar.png" alt="three" width="30" height="10">
         </label>
 
         <input type="radio" name="star_rating" id="rating4" value="4" hidden>
         <label for="rating4" class="star-option bold">
-            4 of 5 stars <img src="../images/fourstar.png" alt="three" width="40" height="10">
+            <span class="rating-text">4 of 5 stars</span>
+            <img src="../images/fourstar.png" alt="three" width="40" height="10">
         </label>
 
         <input type="radio" name="star_rating" id="rating5" value="5" hidden>
         <label for="rating5" class="star-option bold">
-            5 of 5 stars <img src="../images/fivestar.png" alt="five" width="50" height="10">
+            <span class="rating-text">5 of 5 stars</span>
+            <img src="../images/fivestar.png" alt="five" width="50" height="10">
         </label>
     </div>
 
@@ -166,20 +172,69 @@
 </section>
 
 <section>
-    <div class="quantity-stepper-plant">
-        <button type="button" class="qty-btn minus">-</button>
-        <input type="number" class="qty-input" value="1">
-        <button type="button" class="qty-btn plus">+</button>
+<div class="shop-subtext">
+    <p>Here's a list of all our products:</p>
+</div>
+
+<div class="shop-bar">
+        <div class="filter-box">
+            <div class="sort">
+                <p class="ui-text">Sort by <span class="bold">Default Order</span></p>
+            </div>
+            <div class="drop-down"></div>
+        </div>
+
+        <div class="arrow-down"></div>
+
+        <div class="filter-box">
+            <div class="sort">
+                <p class="ui-text">Show <span class="bold">12 Products</span></p>
+            </div>
+            <div class="drop-down"></div>
+        </div>
+
+        <div class="view-group">
+            <div class="grid">
+                <img src="../images/grid.png" alt="grid" width="24" height="24">
+            </div>
+            <div class="list"></div>
+        </div>
     </div>
+
+<div class="page-navi">
+    <div class="first-pg">
+        <p class="ui-text">1</p>
+    </div>
+    <div class="second-pg">
+        <p class="ui-text"><a class="link-dark" href="#">2</a></p>
+    </div>
+    <p class="ui-text">
+        <a class="next-arrow link-dark" href="#">Next</a>
+    </p>
+</div>
 </section>
 
-<section>
-    <div class="quantity-stepper-mask">
-        <button type="button" class="qty-btn minus">-</button>
-        <input type="number" class="qty-input" value="1">
-        <button type="button" class="qty-btn plus">+</button>
-    </div>
-</section>
+<div class="product-page-content">
+        <form>
+            <div class="product-controls">
+                <label for="select-mask">Size:</label>
+                <select class="mask-size-dropdown" name="size" id="size">
+                    <option value="">Choose an option</option>
+                    <option value="s">Small (Kids/Petite)</option>
+                    <option value="m">Medium (Standard)</option>
+                    <option value="l">Large (Adult)</option>
+                </select>
+            </div>
+        </form>
+</div>
+
+
+
+   
+
+
+
+
 
 </body>
 </html>
