@@ -14,7 +14,8 @@ button[type="post"] {
     margin-bottom: 10px;
 }
 
-.btn-light {
+.btn-light,
+.qty-btn {
     background-color: var(--btn-bg-light);
 }
 
