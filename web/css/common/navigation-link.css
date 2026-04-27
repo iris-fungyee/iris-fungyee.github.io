@@ -195,7 +195,7 @@ div.mobile-search {
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: -45%;
+        top: -100%;
         align-items: flex-start;
         background-color: var(--color-bg-default);
         transition: all 0.2s ease;
