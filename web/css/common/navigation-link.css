@@ -234,7 +234,7 @@ div.mobile-search {
     }
 
     .dropdown-content a:hover,
-    .menu a:hover {
+    .menu-item a:hover {
         display: flex;
         align-items: flex-start;
         color: var(--color-text-light);
@@ -249,7 +249,7 @@ div.mobile-search {
         flex-direction: column;
     }
 
-    .menu,
+    .menu-item,
     div.mobile-search,
     .dropdown-content,
     .footer-avada,
