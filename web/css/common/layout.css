@@ -1,3 +1,15 @@
+.page-intro {
+    background-color: var(--color-bg-neutral);
+    padding: 40px;
+    text-align: center;
+}
+
+.torn-paper-bg {
+    background-image: url('../../images/torn-paper.png'); 
+    background-size: cover;
+    min-height: 50px;
+}
+
 .row-column {
     display: flex;
     flex-wrap: wrap;
@@ -57,10 +69,6 @@
 
     .column-three {
         width: calc(50% - calc(var(--gap-10) / 2));
-    }
-
-    .disappear {
-        display: none;
     }
 
     .row-column-two {
