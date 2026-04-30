@@ -64,6 +64,7 @@
     width: 100%;
     padding: 30px;
     border-radius: 0 0 6px 6px;
+    color: var(--color-text-default);
 }
 
 .column-one-content,
@@ -78,7 +79,7 @@
 }
 
 .column-two-content {
-    padding: 35px;
+    max-width: 40%;
 }
 
 .column-two-content p,
@@ -144,6 +145,11 @@
     .column-six-img img {
         height: 150px;
     }
+
+    .column-two-content h2 {
+        font-size: 28px;
+    }
+
 }
 
 @media screen and (max-width: 680px) {
