@@ -62,21 +62,14 @@
 }
 
 @media screen and (max-width:1100px) {
-
-    .column-two {
-        width: 100%;
-    }
-
-    .column-three {
-        width: calc(50% - calc(var(--gap-10) / 2));
-    }
-
     .row-column-two {
         width: calc(50% - calc(var(--gap-10) / 2));
     }
 }
 
 @media screen and (max-width:680px) {
+
+    .column-two,
     .column-three {
         width: 100%
     }
