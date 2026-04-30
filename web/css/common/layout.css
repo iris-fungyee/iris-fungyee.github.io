@@ -5,7 +5,7 @@
 }
 
 .torn-paper-bg {
-    background-image: url('../../images/torn-paper.png'); 
+    background-image: url('../../images/torn-paper.png');
     background-size: cover;
     min-height: 50px;
 }
