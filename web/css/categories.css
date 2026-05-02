@@ -1,0 +1,12 @@
+.categories-page {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg-neutral);
+    margin: 20px;
+}
+
+.categories-head {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
