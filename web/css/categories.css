@@ -15,9 +15,9 @@
 
 .column-two.row-column-two img,
 .column.content-center img,
-.column-one img{
+.column-one img,
+.column-three img{
     object-fit: cover;
-    max-height: 400px;
     padding-bottom: 10px;
 }
 
@@ -26,10 +26,14 @@
     aspect-ratio: 16 / 9;
 }
 
+.column-two.row-column-two img,
+.column.content-center img,
+.column-one img{
+    max-height: 400px;
+}
+
 .column-three img {
     aspect-ratio: 2 / 3;
-    object-fit: cover;
-    padding-bottom: 10px;
 }
 
 @media screen and (max-width:680px) {
@@ -49,5 +53,13 @@
     .mobile-row {
         display: flex;
         justify-content: space-between;
+    }
+
+    .categories-title {
+        font-size: 20px;
+    }
+
+    .view-more {
+        font-size: 14px;
     }
 } 
