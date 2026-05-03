@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabric Mask - Avada Handmade</title>
+    <script src="https://kit.fontawesome.com/6cc981b743.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/common/variables.css">
+    <link rel="stylesheet" href="css/common/navigation-link.css">
+    <link rel="stylesheet" href="css/common/font.css">
+    <link rel="stylesheet" href="css/common/icon.css">
+    <link rel="stylesheet" href="css/common/link.css">
+    <link rel="stylesheet" href="css/common/button.css">
+    <link rel="stylesheet" href="css/common/form-element.css">
+    <link rel="stylesheet" href="css/common/layout.css">
+    <link rel="stylesheet" href="css/fabric-mask.css">
+</head>
+
+<body>
+    <div class="main-header">
+        <div class="header-row top-header">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-ellipsis fa-xl"></i>
+            </div>
+
+            <div class="search-container">
+                <img src="images/searchicon.png" alt="search" width="18" height="18">
+                <input type="text" id="search" name="search" placeholder="Search...">
+            </div>
+
+            <div class="domine accent logo-header">
+                Avada Handmade
+            </div>
+
+            <div class="header-icon">
+                <div class="icon-item account">
+                    <img src="images/account.png" alt="account icon" width="24px" height="auto">
+                </div>
+                <div class="icon-item basket">
+                    <img src="images/basket.png" alt="shopping cart" width="24px" height="auto">
+                </div>
+            </div>
+        </div>
+
+        <div class="header-row bottom-header">
+            <div class="search-container mobile-search">
+                <img src="images/searchicon.png" alt="search" width="18" height="18">
+                <input type="text" id="searchcard" name="search" placeholder="Search...">
+            </div>
+            <div class="navigation-menu" id="mobile-menu">
+                <div class="menu-item"><a href="#">Home</a></div>
+                <div class="menu-item"> <a href="#">About</a></div>
+                <div class="menu-item"><a href="#">Shop</a></div>
+                <div class=" dropdown" id="dropdown">
+                    <div class="menu-item header-dropdown"><a href="#">Products
+                            <i class="fa-solid fa-angle-down" id="dropdown-icon"></i>
+                        </a></div>
+                    <div class="dropdown-content">
+                        <a href="#plant">Small terrarium kit</a>
+                        <a href="#mask">Mask</a>
+                    </div>
+                </div>
+                <div class="menu-item"><a href="#">Blog</a>
+                </div>
+                <div class="menu-item"><a href="#">Contact</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-column max-width">
+        <div class="column-two content-center padding-default background-color">Two Columns on Desktop<br>One Column on
+            Table/Mobile
+        </div>
+        <div class="column-two content-center padding-default background-color">2</div>
+    </div>
+
+    <div class="row-column max-width">
+        <div class="column-two content-center padding-default background-color">Two Columns on Desktop<br>One Column on
+            Table/Mobile
+        </div>
+        <div class="column-two content-center padding-default background-color">2</div>
+    </div>
+
+    <div class="row-column max-width">
+        <div class="column-three content-center padding-default background-color">Three Columns on Desktop <br>
+            Two Column on Tablet <br>
+            One Column on Mobile</div>
+        <div class="column-three content-center padding-default background-color">2</div>
+        <div class="column-three content-center padding-default background-color disappear">3</div>
+    </div>
+
+    <div class="review-section">
+        <div class="review-head">
+            <div class="review-container">
+                <div>
+                    <img class="user-pic" src="images/user.png" alt="user" width="60" height="60">
+                </div>
+                <div class="review">
+                    <div class="user-date">
+                        <p class="ui-text"><span class="bold">Dany</span> - December 10, 2020</p>
+                        <img src="images/fivestars.png" alt="stars-rating" width="90" height="18">
+                    </div>
+                    <div class="review-content">
+                        <p>Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum
+                            porta.
+                            Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo
+                            eget
+                            malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="add-review">Add a review</h3>
+                <p>Your email address will not be published. Required fields are marked *</p>
+            </div>
+        </div>
+
+        <div class="rating-option">
+            <input type="radio" name="star_rating" id="rating1" value="1" hidden>
+            <label for="rating1" class="star-option bold">
+                <span class="rating-text">1 of 5 stars</span>
+                <img src="images/onestar.png" alt="one" width="10" height="10">
+            </label>
+
+            <input type="radio" name="star_rating" id="rating2" value="2" hidden>
+            <label for="rating2" class="star-option bold">
+                <span class="rating-text">2 of 5 stars</span>
+                <img src="images/twostar.png" alt="two" width="20" height="10">
+            </label>
+
+            <input type="radio" name="star_rating" id="rating3" value="3" hidden>
+            <label for="rating3" class="star-option bold">
+                <span class="rating-text">3 of 5 stars</span>
+                <img src="images/threestar.png" alt="three" width="30" height="10">
+            </label>
+
+            <input type="radio" name="star_rating" id="rating4" value="4" hidden>
+            <label for="rating4" class="star-option bold">
+                <span class="rating-text">4 of 5 stars</span>
+                <img src="images/fourstar.png" alt="three" width="40" height="10">
+            </label>
+
+            <input type="radio" name="star_rating" id="rating5" value="5" hidden>
+            <label for="rating5" class="star-option bold">
+                <span class="rating-text">5 of 5 stars</span>
+                <img src="images/fivestar.png" alt="five" width="50" height="10">
+            </label>
+        </div>
+
+        <form class="review-form">
+            <label for="review">Your review * </label>
+            <textarea id="review" name="review" rows="8" cols="45" required></textarea>
+
+            <label for="review-name">Name * </label>
+            <input type="text" id="review-name" name="review-name" required />
+
+            <label for="review-email">Email * </label>
+            <input type="email" id="review-email" name="review-email" required />
+            <div class="checkbox-grp">
+                <input type="checkbox" id="save" name="save" value="Save">
+                <label for="save"> Save my name, email, and website in this browser for the next time I
+                    comment.</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="main-footer">
+        <div class="footer-content">
+            <div class="footer-avada">
+                <div>
+                    <h2 class="domine accent logo-footer">Avada Handmade</h2>
+                </div>
+                <div>
+                    <p>Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et,
+                        porttitor at sem. Cras ultricies ligula sed.</p>
+                </div>
+                <div class="social-links">
+                    <a class="socials-icon fb link-static" href="https://www.facebook.com/ThemeFusionAvada#"></a>
+                    <a class="socials-icon x link-static" href="https://x.com/theme_fusion"></a>
+                    <a class="socials-icon ig link-static" href="https://www.instagram.com/themefusion/"></a>
+                    <a class="socials-icon yt link-static"
+                        href="https://www.youtube.com/channel/UC_C7uAOAH9RMzZs-CKCZ62w"></a>
+                </div>
+            </div>
+            <div class="footer-prodsection">
+                <div class="popular-products">
+                    <h2 class="domine footer-title">Popular products</h2>
+                    <div class="footer-prodcontent">
+                        <div class="footer-product">
+                            <a class="link-dark" href="#">Floral masks</a>
+                            <div class="five-stars">
+                                <img src="images/fivestars.png" alt="time" width="90" height="18">
+                            </div>
+                            <p class="bold">$12.00</p>
+                        </div>
+                        <div class="footer-prodimg">
+                            <img src="images/floralmask.jpg" alt="mask" width="58" height="58">
+                        </div>
+                    </div>
+                    <div class="footer-prodcontent">
+                        <div class="footer-product">
+                            <a class="link-dark" href="#">Small plant</a>
+                            <div class="five-stars">
+                                <img src="images/fivestars.png" alt="time" width="90" height="18">
+                            </div>
+                            <p class="bold">$15.00</p>
+                        </div>
+                        <div class="footer-prodimg">
+                            <img src="images/smallplant.jpg" alt="plant" width="58" height="58">
+                        </div>
+                    </div>
+                    <div class="footer-prodcontent">
+                        <div class="footer-product">
+                            <a class="link-dark" href="#">Eucalyptus candle</a>
+                            <div class="five-stars">
+                                <img src="images/fivestars.png" alt="time" width="90" height="18">
+                            </div>
+                            <p class="bold">$12.00</p>
+                        </div>
+                        <div class="footer-prodimg">
+                            <img src="images/candle.jpg" alt="candle" width="58" height="58">
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-products">
+                    <h2 class="domine footer-title">Featured products</h2>
+                    <div class="footer-prodcontent">
+                        <div class="footer-product">
+                            <a class="link-dark" href="#">Handmade necklace</a>
+                            <div class="five-stars">
+                                <img src="images/fivestars.png" alt="time" width="90" height="18">
+                            </div>
+                            <p class="bold">$40.00 - $90.00</p>
+                        </div>
+                        <div class="footer-prodimg">
+                            <img src="images/necklace.jpg" alt="necklace" width="58" height="58">
+                        </div>
+                    </div>
+                    <div class="footer-prodcontent">
+                        <div class="footer-product">
+                            <a class="link-dark" href="#">Christmas ornaments #1</a>
+                            <div class="five-stars">
+                                <img src="images/fivestars.png" alt="time" width="90" height="18">
+                            </div>
+                            <p class="bold">$15.00 - $25.00</p>
+                        </div>
+                        <div class="footer-prodimg">
+                            <img src="images/christmas.jpg" alt="ornaments" width="58" height="58">
+                        </div>
+                    </div>
+                    <div class="footer-prodcontent">
+                        <div class="footer-product">
+                            <a class="link-dark" href="#">Tropical plant</a>
+                            <div class="five-stars">
+                                <img src="images/fivestars.png" alt="time" width="90" height="18">
+                            </div>
+                            <p class="bold">$15.00</p>
+                        </div>
+                        <div class="footer-prodimg">
+                            <img src="images/plant.jpg" alt="tropical" width="58" height="58">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="light ui-text">© 2012 - 2026 • Avada is a Website Builder for WordPress and eCommerce •
+                All
+                Rights Reserved • Developed by ThemeFusion</p>
+        </div>
+    </div>
+
+    <script src="../javascript/navmenu.js"></script>
+</body>
+
+</html>
