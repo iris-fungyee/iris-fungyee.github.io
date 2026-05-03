@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/common/button.css">
     <link rel="stylesheet" href="css/common/form-element.css">
     <link rel="stylesheet" href="css/common/layout.css">
-    <link rel="stylesheet" href="css/firstproduct.css">
+    <link rel="stylesheet" href="css/alternate-product-1.css">
 </head>
 
 <body>
@@ -69,25 +69,75 @@
     </div>
 
     <div class="row-column max-width">
-        <div class="column-one content-center padding-default background-color">1
-        </div>
-        <div class="column-one content-center padding-default background-color">
-            <div class="row-column max-width">
-                <div class="column-two content-center padding-default background-color">Two Columns on Desktop<br>One
-                    Column on
-                    Table/Mobile
-                </div>
-                <div class="column-two content-center padding-default background-color">2</div>
+        <div class="column-one content-center padding-default">
+            <div class="column-one-img">
+                <img src="images/home-banner-indoor.jpg">
+            </div>
+            <div class="column-content">
+                <h1 class="product-title-plant">Small terrarium kit</h1>
+                <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus magna justo, lacinia
+                    eget consectetur sed, convallis at tellus.</p>
+            </div>
+            <div class="sub-content">
+                <p>Style</p>
+                <p>Opened,Triangle</p>
             </div>
         </div>
     </div>
 
     <div class="row-column max-width">
-        <div class="column-four content-center padding-default background-color">Four Columns on Desktop/Tablet/Mobile
+        <div class="column-one content-center padding-default">
+            <h1 class="domine home-banner-title">$35.00</h1>
+            <p class="homepage-sub">Style</p>
+
+            <div class="row-column max-width">
+                <div class="column-two content-center padding-default">
+                    <img src="images/cactus.jpg">
+                </div>
+                <div class="column-two content-center padding-default">
+                    <img src="images/planting.jpg">
+                </div>
+            </div>
+            <p class="homepage-sub">Opened terrarium</p>
         </div>
-        <div class="column-four content-center padding-default background-color">2</div>
-        <div class="column-four content-center padding-default background-color">3</div>
-        <div class="column-four content-center padding-default background-color">4</div>
+
+        <div class="quantity-selector qty-dark">
+            <button type="button" class="qty-btn minus">-</button>
+            <input type="number" value="1" min="1" class="qty-input">
+            <button type="button" class="qty-btn plus">+</button>
+        </div>
+
+        <div class="btn btn-dark">
+            <a href="https://google.com">Dark Button</a>
+        </div>
+    </div>
+
+    <div class="row-column max-width">
+        <div class="column-two content-center padding-default ">
+            <h2 class="domine product-pg-subtitle">More about this product</h2>
+            <p>Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+                Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.
+                Nulla
+                quis lorem ut libero malesuada feugiat.</p>
+        </div>
+        <div class="column-two content-center padding-default">
+            <h2 class="domine product-og-subtitle">Product gallery</h2>
+            <div class="row-column max-width">
+                <div class="column-four content-center padding-default">
+                    <img src="images/planting.jpg">
+                </div>
+                <div class="column-four content-center padding-default">
+                    <img src="images/deco-plant.jpg">
+                </div>
+                <div class="column-four content-center padding-default">
+                    <img src="images/plant.jpg">
+                </div>
+                <div class="column-four content-center padding-default">
+                    <img src="images/human-plant.jpg">
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="productpg-socials">
@@ -104,10 +154,13 @@
     </div>
 
     <div class="row-column max-width">
-        <div class="column-two content-center padding-default background-color">Two Columns on Desktop<br>One Column on
-            Table/Mobile
+        <div class="column-two content-center padding-default">
+            <img src="images/articles-2-women.jpg">
         </div>
-        <div class="column-two content-center padding-default background-color">2</div>
+        <div class="column-two content-center padding-default">
+            <h2 class="domine story-title"> Creative ideas to make this holiday extra special.</h2>
+            <p>Vulputate enim etiam sit eget. Neque nunc, sit interdum turpis. Amet tortor massa turpis urna.</p>
+        </div>
     </div>
 
     <div class="review-section">
@@ -122,8 +175,10 @@
                         <img src="images/fivestars.png" alt="stars-rating" width="90" height="18">
                     </div>
                     <div class="review-content">
-                        <p>Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta.
-                            Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget
+                        <p>Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum
+                            porta.
+                            Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo
+                            eget
                             malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
                     </div>
                 </div>
@@ -177,7 +232,8 @@
             <input type="email" id="review-email" name="review-email" required />
             <div class="checkbox-grp">
                 <input type="checkbox" id="save" name="save" value="Save">
-                <label for="save"> Save my name, email, and website in this browser for the next time I comment.</label>
+                <label for="save"> Save my name, email, and website in this browser for the next time I
+                    comment.</label>
             </div>
             <button type="submit">Submit</button>
         </form>

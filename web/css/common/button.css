@@ -16,14 +16,14 @@ button[type="post"] {
 
 .btn-light,
 .qty-btn {
-    background-color: var(--btn-bg-light);
+    background-color: var(--color-btn-bg-light);
 }
 
 .btn-light a {
     color: var(--color-text-default);
 }
 
-.btn-defualt a,
+.btn-default a,
 .btn-full-width a,
 .btn-dark a,
 .btn-light:hover a {
@@ -36,8 +36,7 @@ button[type="post"] {
 
 .btn-full-width,
 .btn-dark,
-button[type="submit"]
- {
+button[type="submit"] {
     display: block;
     text-align: center;
     font-size: 18px;
@@ -48,7 +47,7 @@ button[type="submit"]
     background-color: var(--color-btn-bg-dark);
 }
 
-.btndefault:hover,
+.btn-default:hover,
 .btn-full-width:hover,
 .btn-light:hover,
 button[type="submit"]:hover,
