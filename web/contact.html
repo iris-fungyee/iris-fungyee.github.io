@@ -4,8 +4,367 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Avada Handmade</title>
+    <script src="https://kit.fontawesome.com/6cc981b743.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/common/variables.css">
+    <link rel="stylesheet" href="css/common/navigation-link.css">
+    <link rel="stylesheet" href="css/common/font.css">
+    <link rel="stylesheet" href="css/common/icon.css">
+    <link rel="stylesheet" href="css/common/link.css">
+    <link rel="stylesheet" href="css/common/button.css">
+    <link rel="stylesheet" href="css/common/form-element.css">
+    <link rel="stylesheet" href="css/common/layout.css">
+    <link rel="stylesheet" href="css/shop.css">
 </head>
 <body>
-    
+<section>
+        <div class="main-header">
+            <div class="header-row top-header">
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fa-solid fa-ellipsis fa-xl"></i>
+                </div>
+
+                <div class="search-container">
+                    <img src="images/searchicon.png" alt="search" width="18" height="18">
+                    <input type="text" id="search" name="search" placeholder="Search...">
+                </div>
+
+                <div class="domine accent logo-header">
+                    Avada Handmade
+                </div>
+
+                <div class="header-icon">
+                    <div class="icon-item account">
+                        <img src="images/account.png" alt="account icon" width="24px" height="auto">
+                    </div>
+                    <div class="icon-item basket">
+                        <img src="images/basket.png" alt="shopping cart" width="24px" height="auto">
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-row bottom-header">
+                <div class="search-container mobile-search">
+                    <img src="images/searchicon.png" alt="search" width="18" height="18">
+                    <input type="text" id="searchcard" name="search" placeholder="Search...">
+                </div>
+                <div class="navigation-menu" id="mobile-menu">
+                    <div class="menu-item"><a href="#">Home</a></div>
+                    <div class="menu-item"> <a href="#">About</a></div>
+                    <div class="menu-item"><a href="#">Shop</a></div>
+                    <div class=" dropdown" id="dropdown">
+                        <div class="menu-item header-dropdown"><a href="#">Products
+                                <i class="fa-solid fa-angle-down" id="dropdown-icon"></i>
+                            </a></div>
+                        <div class="dropdown-content">
+                            <a href="#plant">Small terrarium kit</a>
+                            <a href="#mask">Mask</a>
+                        </div>
+                    </div>
+                    <div class="menu-item"><a href="#">Blog</a>
+                    </div>
+                    <div class="menu-item"><a href="#">Contact</a></div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<h1 class="page-intro">Let’s stay in touch</h1>
+<div class="torn-paper-bg"></div>
+
+<section>
+    <div class="contact-section">
+        <div class="contact-img">
+            <img src="images/contact-form.jpg" alt="contact-img" width="100%" height="auto">
+        </div>
+        <div class="contact-content">
+            <h1 class="domine form-title">How can we help you today?</h1>
+
+            <form class="contact-form">
+
+                <input type="radio" id="help" name="reason" value="help">
+                <label for="help">I need help with a product.</label><br>
+
+                <input type="radio" id="refund" name="reason" value="refund">
+                <label for="refund">I need to get a refund for a product.</label><br>
+
+                <input type="radio" id="receive" name="reason" value="not-receive">
+                <label for="receive">I didn't receive the product I ordered.</label><br>
+                
+                <input type="radio" id="other" name="reason" value="other">
+                <label for="other">Other</label><br><br>
+
+                <div class="form-input">
+                    <input type="text" id="fname" name="fname" placeholder="First name *" required/>
+                    <input type="text" id="lname" name="lname" placeholder="Last name *" required/>
+                    <input type="email" id="contact-email" name="contact-email" placeholder="Your email *" required/>
+                </div>
+
+                <div class="form-comment">
+                    <label for="comment">Comments or questions</label>
+                    <textarea id="comment" name="comment" rows="4"></textarea>
+                    <button type="submit">Submit</button>
+            </div>
+            </form>
+        </div>  
+    </div>
+</section> 
+
+<div class="followus-section">
+    <div class="followus-img">
+        <img src="images/about-pg-banner.jpg" alt="blog" width="100%" height="auto">
+        <div class="followus-content">
+            <h1 class="domine form-title">Follow us</h1>
+            <div class="social-links">
+                <a class="socials-icon fb link-static" href="https://www.facebook.com/ThemeFusionAvada#"></a>
+                <a class="socials-icon x link-static" href="https://x.com/theme_fusion"></a>
+                <a class="socials-icon ig link-static" href="https://www.instagram.com/themefusion/"></a>
+                <a class="socials-icon yt link-static" href="https://www.youtube.com/channel/UC_C7uAOAH9RMzZs-CKCZ62w"></a>
+             </div>
+        </div>
+        <img src="images/human-plant.jpg" alt="blog" width="100%" height="auto">
+    </div>
+</div>
+
+<div class="row-column">
+        <div class="column-four content-center">
+            <img src="images/handmade-jewels.jpg" alt="blog" width="100%" height="auto">
+        </div>
+        <div class="column-four content-center">
+            <img src="images/christmas-decorations.jpg" alt="blog" width="100%" height="auto">
+        </div>
+        <div class="column-four content-center">
+            <img src="images/ceramics.jpg" alt="blog" width="100%" height="auto">
+        </div>
+        <div class="column-four content-center">
+            <img src="images/two-banner-1.jpg" alt="follow" width="100%" height="auto">
+        </div>
+    </div>
+
+<div class="user-testimonial">
+    <h1 class="domine form-title">User Testimonial</h1>
+    <div class="row-column max-width">
+        <div class="column-three content-center">
+            <img src="images/user.png" alt="user" width="95" height="95">
+            <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.</p>
+            <p class="bold">Lisa Smith, ThemeFusion</p>
+        </div>
+        <div class="column-three content-center">
+            <img src="images/user.png" alt="user" width="95" height="95">
+            <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.</p>
+            <p class="bold">Melissa Green, ThemeFusion</p>
+        </div>
+        <div class="column-three content-center">
+            <img src="images/user.png" alt="user" width="95" height="95">
+            <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.</p>
+            <p class="bold">Dany Lewis, ThemeFusion</p>
+        </div>
+    </div>
+</div>
+
+<div class="row-column">
+    <div class="column-two content-center padding-default">
+        <img src="images/two-banner-2.jpg" alt="blog" width="100%" height="auto">
+    </div>
+    <div class="column-two content-center">
+        <h1 class="domine about-banner-card">We produce the best handmade products</h1>
+        <p class="homepage-sub">Ultricies pellentesque at at accumsan scelerisque sociis mauris consequat a risus nunc volutpat amet urna. Egestas ut pellentesque lorem aliquam neque eu id at parturient.</p>
+        <div class="btn btn-default ">
+            <a href="#">Buy Avada today</a>
+        </div>
+    </div>
+</div>
+
+<div class="usp-section">
+    <div class="usp-content">
+        <div class="usp-head">
+            <div>
+                <img src="images/time.png" alt="time" width="24" height="24">
+            </div>
+            <div class="usp-body">
+                <div>
+                    <h2 class="domine usp-title">Free returns</h2>
+                </div>
+                <div>
+                    <p class="homepage-sub">You can ask a refund anytime</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="usp-content">
+        <div class="usp-head">
+            <div>
+                <img src="images/basket.png" alt="basket" width="24" height="24">
+            </div>
+            <div class="usp-body">
+                <div>
+                    <h2 class="domine usp-title">Secure packaging</h2>
+                </div>
+                <div>
+                    <p class="homepage-sub">Your items will arrive in one piece</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="usp-content">
+        <div class="usp-head">
+            <div>
+                <img src="images/payment.png" alt="payment" width="24" height="24">
+            </div>
+            <div class="usp-body">
+                <div>
+                    <h2 class="domine usp-title">Free shipping</h2>
+                </div>
+                <div>
+                    <p class="homepage-sub">Don’t pay extra fees for your delivery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="usp-content">
+        <div class="usp-head">
+            <div>
+                <img src="images/dollarsign.png" alt="dollar" width="16" height="20">
+            </div>
+            <div class="usp-body">
+                <div>
+                    <h2 class="domine usp-title">Best discounts</h2>
+                </div>
+                <div>
+                    <p class="homepage-sub">We give you the best price guarantee</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+        <div class="footer-subscribe">
+            <div>
+                <h2 class="domine subscribe-title">Subscribe to our newsletter to receive updates.</h2>
+            </div>
+
+            <form class="subscribe-form">
+                <input type="text" id="name" name="name" placeholder="Your name ...">
+                <input type="email" id="email" name="email" placeholder="Your email ... *" required />
+                <button type="submit">Subscribe</button>
+
+            </form>
+
+            <div>
+                <p class="categories-sub">We will only send you the good stuff, no spam. *</p>
+            </div>
+        </div>
+    </section>
+<section>
+        <div class="main-footer">
+            <div class="footer-content">
+                <div class="footer-avada">
+                    <div>
+                        <h2 class="domine accent logo-footer">Avada Handmade</h2>
+                    </div>
+                    <div>
+                        <p>Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et,
+                            porttitor at sem. Cras ultricies ligula sed.</p>
+                    </div>
+                    <div class="social-links">
+                        <a class="socials-icon fb link-static" href="https://www.facebook.com/ThemeFusionAvada#"></a>
+                        <a class="socials-icon x link-static" href="https://x.com/theme_fusion"></a>
+                        <a class="socials-icon ig link-static" href="https://www.instagram.com/themefusion/"></a>
+                        <a class="socials-icon yt link-static"
+                            href="https://www.youtube.com/channel/UC_C7uAOAH9RMzZs-CKCZ62w"></a>
+                    </div>
+                </div>
+                <div class="footer-prodsection">
+                    <div class="popular-products">
+                        <h2 class="domine footer-title">Popular products</h2>
+                        <div class="footer-prodcontent">
+                            <div class="footer-product">
+                                <a class="link-dark" href="#">Floral masks</a>
+                                <div class="five-stars">
+                                    <img src="images/fivestars.png" alt="time" width="90" height="18">
+                                </div>
+                                <p class="bold">$12.00</p>
+                            </div>
+                            <div class="footer-prodimg">
+                                <img src="images/floralmask.jpg" alt="mask" width="58" height="58">
+                            </div>
+                        </div>
+                        <div class="footer-prodcontent">
+                            <div class="footer-product">
+                                <a class="link-dark" href="#">Small plant</a>
+                                <div class="five-stars">
+                                    <img src="images/fivestars.png" alt="time" width="90" height="18">
+                                </div>
+                                <p class="bold">$15.00</p>
+                            </div>
+                            <div class="footer-prodimg">
+                                <img src="images/smallplant.jpg" alt="plant" width="58" height="58">
+                            </div>
+                        </div>
+                        <div class="footer-prodcontent">
+                            <div class="footer-product">
+                                <a class="link-dark" href="#">Eucalyptus candle</a>
+                                <div class="five-stars">
+                                    <img src="images/fivestars.png" alt="time" width="90" height="18">
+                                </div>
+                                <p class="bold">$12.00</p>
+                            </div>
+                            <div class="footer-prodimg">
+                                <img src="images/candle.jpg" alt="candle" width="58" height="58">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products">
+                        <h2 class="domine footer-title">Featured products</h2>
+                        <div class="footer-prodcontent">
+                            <div class="footer-product">
+                                <a class="link-dark" href="#">Handmade necklace</a>
+                                <div class="five-stars">
+                                    <img src="images/fivestars.png" alt="time" width="90" height="18">
+                                </div>
+                                <p class="bold">$40.00 – $90.00</p>
+                            </div>
+                            <div class="footer-prodimg">
+                                <img src="images/necklace.jpg" alt="necklace" width="58" height="58">
+                            </div>
+                        </div>
+                        <div class="footer-prodcontent">
+                            <div class="footer-product">
+                                <a class="link-dark" href="#">Christmas ornaments #1</a>
+                                <div class="five-stars">
+                                    <img src="images/fivestars.png" alt="time" width="90" height="18">
+                                </div>
+                                <p class="bold">$15.00 – $25.00</p>
+                            </div>
+                            <div class="footer-prodimg">
+                                <img src="images/christmas.jpg" alt="ornaments" width="58" height="58">
+                            </div>
+                        </div>
+                        <div class="footer-prodcontent">
+                            <div class="footer-product">
+                                <a class="link-dark" href="#">Tropical plant</a>
+                                <div class="five-stars">
+                                    <img src="images/fivestars.png" alt="time" width="90" height="18">
+                                </div>
+                                <p class="bold">$15.00</p>
+                            </div>
+                            <div class="footer-prodimg">
+                                <img src="images/plant.jpg" alt="tropical" width="58" height="58">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="light ui-text">© 2012 - 2026 • Avada is a Website Builder for WordPress and eCommerce •
+                    All
+                    Rights Reserved • Developed by ThemeFusion</p>
+            </div>
+        </div>
+</section>
+<script src="javascript/navmenu.js"></script> 
 </body>
 </html>
