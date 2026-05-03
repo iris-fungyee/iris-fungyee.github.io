@@ -30,7 +30,7 @@
     padding: 20px;
 }
 
-.btn.btn-defualt {
+.btn.btn-default {
     display: flex;
     justify-content: center;
     width: 30%;
@@ -63,7 +63,7 @@
         font-size: 28px;
     }
 
-    .btn.btn-defualt {
+    .btn.btn-default {
         width: 40%;
     }
 }
