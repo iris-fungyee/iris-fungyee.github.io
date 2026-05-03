@@ -192,6 +192,7 @@ button[type="post"] {
     flex-direction: column;
     gap: var(--gap-30);
     width: 55%;
+    margin-right: 20px;
 }
 
 .form-input {
