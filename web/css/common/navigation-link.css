@@ -96,6 +96,7 @@ div.mobile-search {
     background-color: var(--color-bg-default);
     border-radius: var(--border-radius-img-default);
     box-shadow: 0 0 4px var(--color-box-shadow);
+    z-index: 1000;
 }
 
 .dropdown-content a {
