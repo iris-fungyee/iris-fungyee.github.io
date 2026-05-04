@@ -1,47 +1,61 @@
-.column-one-img {
-    position: relative;
+.banner-bg-img {
+    width: 100%;
+    min-height: 500px;
+    background: url(../images/home-banner-indoor.jpg) center / cover no-repeat;
+}
+
+.column-content,
+.orange-card {
+    position: absolute;
+    top: 35%;
 }
 
 .column-content {
-    position: absolute;
     left: 50%;
-    max-width: 55%;
-    color: var(--color-text-light);
+    max-width: 40%;
     z-index: 2;
     text-align: left;
+    color: var(--color-text-light);
 }
 
+.orange-card {
+    width: 40%;
+    padding: 40px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-text-light);
+    background-color: var(--color-bg-form-element-plant);
+    border-radius: var(--border-radius-form-element);
+}
 
 .product-content {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
+}
+
+.product-title-plant,
+.sub-content,
+.categories-no,
+.categories-social,
+.article-content,
+.card-img {
+    display: flex;
 }
 
 .product-title-plant,
 .sub-content {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .sub-content {
+    align-items: center;
     padding: 20px;
 }
 
 .content {
     margin-right: 20%;
-}
-
-.orange-card {
-    position: absolute;
-    top: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--color-bg-form-element-plant);
-    width: 40%;
-    border-radius: var(--border-radius-form-element);
-    color: var(--color-text-light);
-    padding: 40px;
+    padding: 20px 0;
 }
 
 .homepage-sub {
@@ -58,10 +72,77 @@
     border-top: 1px solid var(--color-border-line);
 }
 
-.column-two img {
+.tab-content {
+    width: 100%;
+}
+
+.tab-btn {
+    width: 50%;
     display: flex;
-    width: 90%;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    border-color: white;
+}
+
+.content-box {
+    display: none;
+}
+
+.content-box.active {
+    display: block;
+}
+
+.column-two img,
+.column-four img,
+.card-img img {
+    width: 100%;
+    display: flex;
+}
+
+.column-two img {
     border-radius: var(--border-radius-img-default);
+}
+
+.column-four img,
+.card-img img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.card-img img {
+    border-radius: var(--border-radius-img-card);
+}
+
+.card-img {
+    width: 100%
+}
+
+.column-two {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px;
+}
+
+.categories-no {
+    gap: var(--gap-10);
+}
+
+.categories-social {
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.product-pg-subtitle {
+    margin-right: auto;
+    padding: 10% 0 20px;
+}
+
+.article-btn {
+    margin-right: auto;
 }
 
 .btn-dark {
@@ -70,54 +151,74 @@
 }
 
 .bg-color {
-    background-color: var(--color-bg-brand);
-    margin: auto;
-    height: 200%;
-    padding: 20px;
-}
-
-.column-four img {
-    display: flex;
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.column-two {
+    position: relative;
+    top: 60%;
+    z-index: 1;
+    margin-top: -100px;
+    padding-top: 20%;
     display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.product-pg-subtitle {
-    margin-right: auto;
-    padding-top: 10%;
-    padding-bottom: 20px;
-}
-
-.article-content {
-    display: flex;
-    text-align: left;
-}
-
-.content {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.btn-default {
-    margin-right: auto;
+    justify-content: center;
+    background-color: var(--color-bg-brand);
 }
 
 .review-bg-color {
-    background-color: var(--color-bg-neutral);
     width: 100%;
     padding: 20px;
+    background-color: var(--color-bg-neutral);
 }
 
 .review-section {
-    background-color: var(--color-bg-form-element-light);
-    margin: 5%;
+    margin: 3% 5%;
     padding: 20px;
+    background-color: var(--color-bg-form-element-light);
     border-radius: var(--border-radius-img-card);
+}
+
+@media screen and (max-width: 1100px) {
+
+    .column-content,
+    .orange-card {
+        top: 30%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .categories-social {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .categories-no {
+        padding-left: 20px;
+    }
+
+    .column-content {
+        top: 30%;
+        left: 5%;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .orange-card {
+        top: 80%;
+        left: 5%;
+        width: 90%;
+        padding: 5%;
+        height: auto;
+    }
+
+    .orange-card .row-column.tab-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .bg-color {
+        top: 0;
+        width: 100%;
+        padding-top: 95%;
+    }
 }
