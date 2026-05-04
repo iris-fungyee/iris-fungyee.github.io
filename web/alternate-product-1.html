@@ -75,20 +75,21 @@
             </div>
             <div class="column-content">
                 <h1 class="product-title-plant">Small terrarium kit</h1>
-                <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus magna justo, lacinia
+                <p class="product-content">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus
+                    magna justo, lacinia
                     eget consectetur sed, convallis at tellus.</p>
-            </div>
-            <div class="sub-content">
-                <p>Style</p>
-                <p>Opened,Triangle</p>
+                <div class="sub-content">
+                    <p class="content">Style</p>
+                    <p>Opened,Triangle</p>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="row-column max-width">
-        <div class="column-one content-center padding-default">
+        <div class="column-one content-center padding-default orange-card">
             <h1 class="domine home-banner-title">$35.00</h1>
-            <p class="homepage-sub">Style</p>
+            <p class="homepage-sub top-part">Style</p>
 
             <div class="row-column max-width">
                 <div class="column-two content-center padding-default">
@@ -98,22 +99,21 @@
                     <img src="images/planting.jpg">
                 </div>
             </div>
-            <p class="homepage-sub">Opened terrarium</p>
-        </div>
+            <p class="homepage-sub bottom-part">Opened terrarium</p>
+            <div class="quantity-selector qty-dark">
+                <button type="button" class="qty-btn minus">-</button>
+                <input type="number" value="1" min="1" class="qty-input">
+                <button type="button" class="qty-btn plus">+</button>
+            </div>
 
-        <div class="quantity-selector qty-dark">
-            <button type="button" class="qty-btn minus">-</button>
-            <input type="number" value="1" min="1" class="qty-input">
-            <button type="button" class="qty-btn plus">+</button>
-        </div>
-
-        <div class="btn btn-dark">
-            <a href="https://google.com">Dark Button</a>
+            <div class="btn btn-dark">
+                <a href="https://google.com">Add to cart</a>
+            </div>
         </div>
     </div>
 
-    <div class="row-column max-width">
-        <div class="column-two content-center padding-default ">
+    <div class="row-column max-width bg-color">
+        <div class="column-two content-center padding-default">
             <h2 class="domine product-pg-subtitle">More about this product</h2>
             <p>Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit.
@@ -122,28 +122,22 @@
                 quis lorem ut libero malesuada feugiat.</p>
         </div>
         <div class="column-two content-center padding-default">
-            <h2 class="domine product-og-subtitle">Product gallery</h2>
-            <div class="row-column max-width">
-                <div class="column-four content-center padding-default">
+            <h2 class="domine product-pg-subtitle">Product gallery</h2>
+            <div class="row-column">
+                <div class="column-four content-center ">
                     <img src="images/planting.jpg">
                 </div>
-                <div class="column-four content-center padding-default">
+                <div class="column-four content-center ">
                     <img src="images/deco-plant.jpg">
                 </div>
-                <div class="column-four content-center padding-default">
+                <div class="column-four content-center">
                     <img src="images/plant.jpg">
                 </div>
-                <div class="column-four content-center padding-default">
+                <div class="column-four content-center ">
                     <img src="images/human-plant.jpg">
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="productpg-socials">
-        <p class="categories-sub"><a class="share-icon fb fb-color link-static" href="#">Share this</a></p>
-        <p class="categories-sub"><a class="share-icon x link-static" href="#">Tweet this</a></p>
-        <p class="categories-sub"><a class="share-icon email link-static" href="#">Email this</a></p>
     </div>
 
     <div class="customerreview-sub">
@@ -153,90 +147,121 @@
         <p>(1 customer review)</p>
     </div>
 
-    <div class="row-column max-width">
+    <div class="productpg-socials">
+        <p class="categories-sub"><a class="share-icon fb fb-color link-static" href="#">Share this</a></p>
+        <p class="categories-sub"><a class="share-icon x link-static" href="#">Tweet this</a></p>
+        <p class="categories-sub"><a class="share-icon email link-static" href="#">Email this</a></p>
+    </div>
+
+    <div class="row-column max-width article-content">
         <div class="column-two content-center padding-default">
             <img src="images/articles-2-women.jpg">
         </div>
         <div class="column-two content-center padding-default">
             <h2 class="domine story-title"> Creative ideas to make this holiday extra special.</h2>
-            <p>Vulputate enim etiam sit eget. Neque nunc, sit interdum turpis. Amet tortor massa turpis urna.</p>
+            <p class="content">Vulputate enim etiam sit eget. Neque nunc, sit interdum turpis. Amet tortor massa turpis
+                urna.</p>
+            <div class="btn btn-default ">
+                <a href="https://google.com">Default Button</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="review-bg-color">
+        <div class="review-section">
+            <div class="review-head">
+                <div class="review-container">
+                    <div>
+                        <img class="user-pic" src="images/user.png" alt="user" width="60" height="60">
+                    </div>
+                    <div class="review">
+                        <div class="user-date">
+                            <p class="ui-text"><span class="bold">Dany</span> - December 10, 2020</p>
+                            <img src="images/fivestars.png" alt="stars-rating" width="90" height="18">
+                        </div>
+                        <div class="review-content">
+                            <p>Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum
+                                porta.
+                                Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo
+                                eget
+                                malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="add-review">Add a review</h3>
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                </div>
+            </div>
+
+            <div class="rating-option">
+                <input type="radio" name="star_rating" id="rating1" value="1" hidden>
+                <label for="rating1" class="star-option bold">
+                    <span class="rating-text">1 of 5 stars</span>
+                    <img src="images/onestar.png" alt="one" width="10" height="10">
+                </label>
+
+                <input type="radio" name="star_rating" id="rating2" value="2" hidden>
+                <label for="rating2" class="star-option bold">
+                    <span class="rating-text">2 of 5 stars</span>
+                    <img src="images/twostar.png" alt="two" width="20" height="10">
+                </label>
+
+                <input type="radio" name="star_rating" id="rating3" value="3" hidden>
+                <label for="rating3" class="star-option bold">
+                    <span class="rating-text">3 of 5 stars</span>
+                    <img src="images/threestar.png" alt="three" width="30" height="10">
+                </label>
+
+                <input type="radio" name="star_rating" id="rating4" value="4" hidden>
+                <label for="rating4" class="star-option bold">
+                    <span class="rating-text">4 of 5 stars</span>
+                    <img src="images/fourstar.png" alt="three" width="40" height="10">
+                </label>
+
+                <input type="radio" name="star_rating" id="rating5" value="5" hidden>
+                <label for="rating5" class="star-option bold">
+                    <span class="rating-text">5 of 5 stars</span>
+                    <img src="images/fivestar.png" alt="five" width="50" height="10">
+                </label>
+            </div>
+
+            <form class="review-form">
+                <label for="review">Your review * </label>
+                <textarea id="review" name="review" rows="8" cols="45" required></textarea>
+
+                <label for="review-name">Name * </label>
+                <input type="text" id="review-name" name="review-name" required />
+
+                <label for="review-email">Email * </label>
+                <input type="email" id="review-email" name="review-email" required />
+                <div class="checkbox-grp">
+                    <input type="checkbox" id="save" name="save" value="Save">
+                    <label for="save"> Save my name, email, and website in this browser for the next time I
+                        comment.</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </div>
 
-    <div class="review-section">
-        <div class="review-head">
-            <div class="review-container">
-                <div>
-                    <img class="user-pic" src="images/user.png" alt="user" width="60" height="60">
-                </div>
-                <div class="review">
-                    <div class="user-date">
-                        <p class="ui-text"><span class="bold">Dany</span> - December 10, 2020</p>
-                        <img src="images/fivestars.png" alt="stars-rating" width="90" height="18">
-                    </div>
-                    <div class="review-content">
-                        <p>Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum
-                            porta.
-                            Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo
-                            eget
-                            malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h3 class="add-review">Add a review</h3>
-                <p>Your email address will not be published. Required fields are marked *</p>
-            </div>
+    <div class="footer-subscribe">
+        <div>
+            <h2 class="domine subscribe-title">Subscribe to our newsletter to receive updates.</h2>
         </div>
 
-        <div class="rating-option">
-            <input type="radio" name="star_rating" id="rating1" value="1" hidden>
-            <label for="rating1" class="star-option bold">
-                <span class="rating-text">1 of 5 stars</span>
-                <img src="images/onestar.png" alt="one" width="10" height="10">
-            </label>
+        <form class="subscribe-form">
+            <input type="text" id="name" name="name" placeholder="Your name ...">
+            <input type="email" id="email" name="email" placeholder="Your email ... *" required />
+            <button type="submit">Subscribe</button>
 
-            <input type="radio" name="star_rating" id="rating2" value="2" hidden>
-            <label for="rating2" class="star-option bold">
-                <span class="rating-text">2 of 5 stars</span>
-                <img src="images/twostar.png" alt="two" width="20" height="10">
-            </label>
-
-            <input type="radio" name="star_rating" id="rating3" value="3" hidden>
-            <label for="rating3" class="star-option bold">
-                <span class="rating-text">3 of 5 stars</span>
-                <img src="images/threestar.png" alt="three" width="30" height="10">
-            </label>
-
-            <input type="radio" name="star_rating" id="rating4" value="4" hidden>
-            <label for="rating4" class="star-option bold">
-                <span class="rating-text">4 of 5 stars</span>
-                <img src="images/fourstar.png" alt="three" width="40" height="10">
-            </label>
-
-            <input type="radio" name="star_rating" id="rating5" value="5" hidden>
-            <label for="rating5" class="star-option bold">
-                <span class="rating-text">5 of 5 stars</span>
-                <img src="images/fivestar.png" alt="five" width="50" height="10">
-            </label>
-        </div>
-
-        <form class="review-form">
-            <label for="review">Your review * </label>
-            <textarea id="review" name="review" rows="8" cols="45" required></textarea>
-
-            <label for="review-name">Name * </label>
-            <input type="text" id="review-name" name="review-name" required />
-
-            <label for="review-email">Email * </label>
-            <input type="email" id="review-email" name="review-email" required />
-            <div class="checkbox-grp">
-                <input type="checkbox" id="save" name="save" value="Save">
-                <label for="save"> Save my name, email, and website in this browser for the next time I
-                    comment.</label>
-            </div>
-            <button type="submit">Submit</button>
         </form>
+
+        <div>
+            <p class="categories-sub">We will only send you the good stuff, no spam. *</p>
+        </div>
     </div>
 
     <div class="main-footer">
