@@ -216,6 +216,10 @@ button[type="post"] {
     margin-top: 10px;
 }
 
+.contact-form input[type="radio"] {
+    accent-color: var(--color-btn-bg-default);
+}
+
 /* Blog pg - comment section */
 .blog-comment {
     background-color: var(--color-bg-neutral);
