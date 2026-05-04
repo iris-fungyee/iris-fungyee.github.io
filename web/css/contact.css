@@ -1,8 +1,10 @@
+
 .max-width {
     margin: 20px;
 }
 
-.follow-img img {
+.follow-img img,
+.img-mobile img  {
     aspect-ratio: 2 / 3;
     object-fit: cover;
 }
@@ -63,7 +65,7 @@
 }
 
 @media only screen and (max-width: 1440px) { 
-    .follow-img-mobile {
+    .follow-us-mobile {
         display: none;
     }
 }
@@ -97,6 +99,7 @@
 }
 
 @media only screen and (max-width: 680px) {
+
    .column-two img {
         aspect-ratio: auto;
     }
@@ -112,4 +115,23 @@
     .row-column {
         justify-content: space-between;
     }
+
+    .follow-img img {
+        display: none;
+    }
+
+    .follow-us-mobile {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .img-mobile img {
+        aspect-ratio: 4 / 7;
+    }
+
+    .follow-us {
+        min-height: 400px;
+    }
 }
+
