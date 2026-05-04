@@ -99,6 +99,14 @@
     padding: 10px;
 }
 
+.column-six {
+    transition: 0.3s ease;
+}
+
+.column-six:hover {
+    transform: scale(1.05);
+}
+
 .bg-card-1,
 .column-six-card {
     background-color: var(--color-bg-accent);
