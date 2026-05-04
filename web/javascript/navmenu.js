@@ -7,6 +7,16 @@ const iconarrow = document.getElementById("dropdown-icon");
 toggleButton.addEventListener("click", () => {
     menu.classList.toggle("active");
 
+    gsap.fromTo(icon,
+        {
+            rotation: 0
+        },
+        {
+            rotation: 180,
+            duration: 0.3
+        }
+    );
+
     if (menu.classList.contains("active")) {
         icon.classList.remove("fa-ellipsis");
         icon.classList.add("fa-angle-up");
@@ -14,9 +24,10 @@ toggleButton.addEventListener("click", () => {
         icon.classList.remove("fa-angle-up");
         icon.classList.add("fa-ellipsis");
     }
+
 });
 
-dropdown.addEventListener("click", () => {
+dropdown.addEventListener("click", (event) => {
     if (window.innerWidth <= 680) {
         event.preventDefault();
         dropdown.classList.toggle("active");
