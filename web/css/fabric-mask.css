@@ -67,7 +67,7 @@
     justify-content: flex-start;
 }
 
-#description-tabs {
+.description-tabs {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,6 +87,10 @@
     padding: 20px 0px;
     border-bottom: 1px solid var(--color-border-line);
     cursor: pointer;
+}
+
+.tab-btn.active {
+    color: var(--color-text-accent);
 }
 
 .tab-btn:hover {
@@ -124,6 +128,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0px;
 }
 
 .categories-no {
