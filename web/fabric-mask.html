@@ -129,17 +129,17 @@
 
     <div class="row-column max-width" id="description-tabs">
         <div class="column-two content-center padding-default tab-menu">
-            <p class="tab-btn active domine">Description</p>
-            <p class="tab-btn domine">Additional information</p>
+            <p class="tab-btn active">Description</p>
+            <p class="tab-btn ">Additional information</p>
         </div>
         <div class="column-two content-center padding-default tab-content">
             <div class="content-box active">
-                <h2 class="domine usp-title">Description</h2>
+                <h2 class="domine title">Description</h2>
                 <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta
                     dapibus.</p>
             </div>
             <div class="content-box">
-                <h2 class="domine usp-title">Additional Information</h2>
+                <h2 class="domine title">Additional Information</h2>
                 <p class="info-label">Size</p>
                 <p class="info-value">Large, Medium, Small, XSmall</p>
             </div>
@@ -185,96 +185,98 @@
         </div>
     </div>
 
-    <div class="customer-review-title">
-        <h2 class="domine categories-title">Customers Reviews</h2>
-        <div class="customerreview-sub">
-            <div class="five-stars">
-                <img src="images/fivestars.png" alt="time" width="90" height="18">
-                <p>(1 customer review)</p>
-            </div>
+    <div class="review-bg-color">
 
-            <div class="btn btn-default">
-                <a href="#">Write a review</a>
+        <div class="customer-review-title">
+            <h2 class="domine categories-title">Customers Reviews</h2>
+            <div class="customerreview-sub">
+                <div class="five-stars">
+                    <img src="images/fivestars.png" alt="time" width="90" height="18">
+                    <p>(1 customer review)</p>
+                </div>
+
+                <div class="btn btn-default">
+                    <a href="#">Write a review</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="review-section">
-        <div class="review-head">
-            <div class="review-container">
+        <div class="review-section">
+            <div class="review-head">
+                <div class="review-container">
+                    <div>
+                        <img class="user-pic" src="images/user.png" alt="user" width="60" height="60">
+                    </div>
+                    <div class="review">
+                        <div class="user-date">
+                            <p class="ui-text"><span class="bold">Dany</span> - December 10, 2020</p>
+                            <img src="images/fivestars.png" alt="stars-rating" width="90" height="18">
+                        </div>
+                        <div class="review-content">
+                            <p>Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum
+                                porta.
+                                Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo
+                                eget
+                                malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                        </div>
+                    </div>
+                </div>
                 <div>
-                    <img class="user-pic" src="images/user.png" alt="user" width="60" height="60">
-                </div>
-                <div class="review">
-                    <div class="user-date">
-                        <p class="ui-text"><span class="bold">Dany</span> - December 10, 2020</p>
-                        <img src="images/fivestars.png" alt="stars-rating" width="90" height="18">
-                    </div>
-                    <div class="review-content">
-                        <p>Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum
-                            porta.
-                            Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo
-                            eget
-                            malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-                    </div>
+                    <h3 class="add-review">Add a review</h3>
+                    <p>Your email address will not be published. Required fields are marked *</p>
                 </div>
             </div>
-            <div>
-                <h3 class="add-review">Add a review</h3>
-                <p>Your email address will not be published. Required fields are marked *</p>
+
+            <div class="rating-option">
+                <input type="radio" name="star_rating" id="rating1" value="1" hidden>
+                <label for="rating1" class="star-option bold">
+                    <span class="rating-text">1 of 5 stars</span>
+                    <img src="images/onestar.png" alt="one" width="10" height="10">
+                </label>
+
+                <input type="radio" name="star_rating" id="rating2" value="2" hidden>
+                <label for="rating2" class="star-option bold">
+                    <span class="rating-text">2 of 5 stars</span>
+                    <img src="images/twostar.png" alt="two" width="20" height="10">
+                </label>
+
+                <input type="radio" name="star_rating" id="rating3" value="3" hidden>
+                <label for="rating3" class="star-option bold">
+                    <span class="rating-text">3 of 5 stars</span>
+                    <img src="images/threestar.png" alt="three" width="30" height="10">
+                </label>
+
+                <input type="radio" name="star_rating" id="rating4" value="4" hidden>
+                <label for="rating4" class="star-option bold">
+                    <span class="rating-text">4 of 5 stars</span>
+                    <img src="images/fourstar.png" alt="three" width="40" height="10">
+                </label>
+
+                <input type="radio" name="star_rating" id="rating5" value="5" hidden>
+                <label for="rating5" class="star-option bold">
+                    <span class="rating-text">5 of 5 stars</span>
+                    <img src="images/fivestar.png" alt="five" width="50" height="10">
+                </label>
             </div>
+
+            <form class="review-form">
+                <label for="review">Your review * </label>
+                <textarea id="review" name="review" rows="8" cols="45" required></textarea>
+
+                <label for="review-name">Name * </label>
+                <input type="text" id="review-name" name="review-name" required />
+
+                <label for="review-email">Email * </label>
+                <input type="email" id="review-email" name="review-email" required />
+                <div class="checkbox-grp">
+                    <input type="checkbox" id="save" name="save" value="Save">
+                    <label for="save"> Save my name, email, and website in this browser for the next time I
+                        comment.</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </div>
-
-        <div class="rating-option">
-            <input type="radio" name="star_rating" id="rating1" value="1" hidden>
-            <label for="rating1" class="star-option bold">
-                <span class="rating-text">1 of 5 stars</span>
-                <img src="images/onestar.png" alt="one" width="10" height="10">
-            </label>
-
-            <input type="radio" name="star_rating" id="rating2" value="2" hidden>
-            <label for="rating2" class="star-option bold">
-                <span class="rating-text">2 of 5 stars</span>
-                <img src="images/twostar.png" alt="two" width="20" height="10">
-            </label>
-
-            <input type="radio" name="star_rating" id="rating3" value="3" hidden>
-            <label for="rating3" class="star-option bold">
-                <span class="rating-text">3 of 5 stars</span>
-                <img src="images/threestar.png" alt="three" width="30" height="10">
-            </label>
-
-            <input type="radio" name="star_rating" id="rating4" value="4" hidden>
-            <label for="rating4" class="star-option bold">
-                <span class="rating-text">4 of 5 stars</span>
-                <img src="images/fourstar.png" alt="three" width="40" height="10">
-            </label>
-
-            <input type="radio" name="star_rating" id="rating5" value="5" hidden>
-            <label for="rating5" class="star-option bold">
-                <span class="rating-text">5 of 5 stars</span>
-                <img src="images/fivestar.png" alt="five" width="50" height="10">
-            </label>
-        </div>
-
-        <form class="review-form">
-            <label for="review">Your review * </label>
-            <textarea id="review" name="review" rows="8" cols="45" required></textarea>
-
-            <label for="review-name">Name * </label>
-            <input type="text" id="review-name" name="review-name" required />
-
-            <label for="review-email">Email * </label>
-            <input type="email" id="review-email" name="review-email" required />
-            <div class="checkbox-grp">
-                <input type="checkbox" id="save" name="save" value="Save">
-                <label for="save"> Save my name, email, and website in this browser for the next time I
-                    comment.</label>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
     </div>
-
 
     <div class="footer-subscribe">
         <div>
@@ -401,6 +403,7 @@
     </div>
 
     <script src="../javascript/navmenu.js"></script>
+    <script src="../javascript/quantity-selector.js"></script>
 </body>
 
 </html>
