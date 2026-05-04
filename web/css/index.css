@@ -12,6 +12,10 @@
     flex-direction: column;
 }
 
+.column-two {
+    min-width: 600px;
+}
+
 .column-three,
 .column-six,
 .column-one,
@@ -21,12 +25,16 @@
     text-align: center;
 }
 
+.column-one-content {
+    padding: 10%
+}
+
 .first-card {
     position: relative;
     margin-bottom: 20px;
 }
 
-.first-card img,
+.column-two .first-card img,
 .column-two img {
     border-radius: var(--border-radius-img-default);
 }
@@ -48,6 +56,10 @@
 
 .column-six-img img {
     height: 180px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    margin: auto;
     border-radius: var(--border-radius-circle);
 }
 
@@ -79,7 +91,7 @@
 }
 
 .column-two-content {
-    max-width: 40%;
+    padding: 10%;
 }
 
 .column-two-content p,
@@ -116,13 +128,18 @@
 }
 
 .column-six-card {
+    width: 100%;
     position: relative;
     margin: 0;
     height: 450px;
 }
 
 .green-bg {
-    background: url("../images/green-bg.svg") no-repeat center/cover;
+    width: 100%;
+    background: url("../images/green-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
     position: relative;
     min-height: 50px;
     bottom: 50px;
@@ -143,13 +160,18 @@
     }
 
     .column-six-img img {
+        width: 150px;
         height: 150px;
+    }
+
+    .column-six-card {
+        height: auto;
+
     }
 
     .column-two-content h2 {
         font-size: 28px;
     }
-
 }
 
 @media screen and (max-width: 680px) {
