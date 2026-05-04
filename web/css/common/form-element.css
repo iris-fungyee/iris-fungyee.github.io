@@ -428,7 +428,8 @@ button[type="post"] {
 
 .qty-dark .qty-btn,
 .qty-dark .qty-input {
-    border: 1px solid var(--color-border-line-stepper-plant);
+    border: 1px solid #7A3115;
+;
 }
 
 .qty-dark .qty-input,
