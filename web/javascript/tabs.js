@@ -1,15 +1,22 @@
-const tabButtons = document.querySelectorAll(".tab-btn");
-const tabContents = document.querySelectorAll(".content-box");
+const btn1 = document.getElementById("btn-1");
+const btn2 = document.getElementById("btn-2");
 
-tabButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
+const content1 = document.getElementById("content-1");
+const content2 = document.getElementById("content-2");
 
-        tabButtons.forEach(btn => btn.classList.remove("active"));
+btn1.addEventListener("click", () => {
 
-        tabContents.forEach(content => content.classList.remove("active"));
+    btn1.classList.add("active");
+    content1.classList.add("active");
 
-        button.classList.add("active");
+    btn2.classList.remove("active");
+    content2.classList.remove("active");
+});
 
-        tabContents[index].classList.add("active");
-    });
+btn2.addEventListener("click", () => {
+    btn2.classList.add("active");
+    content2.classList.add("active");
+
+    btn1.classList.remove("active");
+    content1.classList.remove("active");
 });
