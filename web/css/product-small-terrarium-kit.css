@@ -82,8 +82,8 @@
     cursor: pointer;
 }
 
-.tab-btn.active {
-    border-color: white;
+.tab-btn.active img {
+    border: 8px solid var(--color-bg-form-element-light);
 }
 
 .content-box {
