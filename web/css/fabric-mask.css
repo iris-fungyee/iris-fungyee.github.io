@@ -167,10 +167,14 @@
         max-width: 100%;
     }
 
-    #description-tabs {
+    .description-tabs {
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    .column-two {
+        margin: 10px;
     }
 
     .tab-menu {
