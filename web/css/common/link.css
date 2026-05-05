@@ -14,6 +14,11 @@ a {
     text-decoration: underline;
 }
 
+.link-accent {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
 .link-dark:hover {
     color: var(--color-link);
 }
@@ -21,6 +26,8 @@ a {
 .link-light:hover {
     color: var(--btn-text);
 }
+
+
 
 
 
