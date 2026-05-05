@@ -34,7 +34,8 @@
     margin-bottom: 20px;
 }
 
-.column-two .first-card img,
+.column-two,
+.column-three img,
 .column-two img {
     border-radius: var(--border-radius-img-default);
 }
