@@ -16,52 +16,79 @@
     --font-default-weight: 400;
     --font-weight-bold: 700;
 
-    /* background color*/
-    --color-bg-neutral: #f2f1f6;
-    --color-bg-accent: #EDF7F1;
-    --color-bg-brand: #f7efec;
-    --color-btn-bg-default: #BC4B20;
-    --color-btn-bg-light: #FFFFFF;
-    --color-btn-bg-dark: #000000;
-    --color-bg-form-element: #F6F6F6;
-    --color-bg-form-element-light: #FFFFFF;
-    --color-bg-stepper-plant: #903A18;
-    --color-bg-stepper-mask: #FFFFFF;
-    --color-bg-form-element-plant: #BC4B20;
-    --color-bg-quantity-masks: #F6F6F6;
-    --color-disclaimer-bg: #BC4B20;
-    --color-discount-bg: #BC4B20;
-    --color-bg-submenu: #BC4B20;
-    --color-bg-default: #FFFFFF;
+    /*color*/
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-light-brown: #BC4B20;
+    --color-mid-brown: #903A18;
+    --color-dark-brown: #7A3115;
+    --color-light-gray: #F6F6F6;
+    --color-dark-gray: #E2E2E2;
+    --color-purple: #f2f1f6;
+    --color-green: #EDF7F1;
+    --color-pink: #f7efec;
+    --color-light-yellow: #C3B3A1;
 
-    /* background hover color*/
-    --color-btn-bg-hover: #903A18;
-    --color-border-line-hover: #BC4B20;
-    --color-bg-stepper-plant-hover: #7A3115;
-    --color-icon-socials-hover: #C3B3A1;
-    --color-rating-options-bg-hover: rgba(0, 0, 0, .075);
+    /*Alpha color*/
+    --color-purple-alpha: #f2f1f6ef;
+    --color-green-alpha: #EDF7F1ef;
+    --color-pink-alpha: #f7efecef;
+    --color-black-alpha: rgba(0, 0, 0, .075);
+    --color-mid-black-alpha: rgba(0, 0, 0, 0.2);
 
-    --color-border-line-focus: #BC4B20;
+    /* card color*/
+    --color-bg-purple: var(--color-purple-alpha);
+    --color-bg-green: var(--color-green-alpha);
+    --color-bg-pink: var(--color-pink-alpha);
+    --color-bg-stepper-plant: var(--color-mid-brown);
+    --color-bg-stepper-mask: var(--color-white);
+    --color-disclaimer-bg: var(--color-light-brown);
+    --color-bg-column-four: var(--color-white);
+
+    /*label color*/
+    --color-discount-bg: var(--color-light-brown);
+
+    /*submenu color*/
+    --color-bg-submenu: var(--color-light-brown);
+
+    /*form color*/
+    --color-bg-form-element: var(--color-light-gray);
+    --color-bg-form-element-light: var(--color-white);
+    --color-bg-form-element-plant: var(--color-light-brown);
+
+    /*button color*/
+    --color-btn-bg-default: var(--color-light-brown);
+    --color-btn-bg-light: var(--color-white);
+    --color-btn-bg-dark: var(--color-black);
+    --color-btn-bg-hover: var(--color-mid-brown);
+    --btn-text: var(--color-white);
+
+    /* form-element color*/
+    --color-bg-quantity-masks: var(--color-light-gray);
+    --color-bg-stepper-plant-hover: var(--color-dark-brown);
+    --color-rating-options-bg-hover: var(--color-black-alpha);
 
     /*text color*/
-    --color-text-default: #000000;
-    --btn-text: #FFFFFF;
-    --color-text-accent: #BC4B20;
-    --color-text-light: #FFFFFF;
+    --color-text-default: var(--color-black);
+    --color-text-accent: var(--color-light-brown);
+    --color-text-light: var(--color-white);
 
     /*logo color*/
-    --color-logo: #BC4B20;
+    --color-logo: var(--color-light-brown);
 
     /*icon color*/
-    --color-icon: #BC4B20;
-    --coloc-icon-socials: #000000;
+    --color-icon: var(--color-light-brown);
+    --coloc-icon-socials: var(--color-black);
+    --color-icon-socials-hover: var(--color-light-yellow);
 
     /*link color*/
-    --color-link: #BC4B20;
+    --color-link: var(--color-light-brown);
 
     /*border line*/
-    --color-border-line: #E2E2E2;
-    --color-border-line-stepper-plant: #BC4B2080;
+    --color-border-line: var(--color-dark-gray);
+    --color-border-line-focus: var(--color-light-brown);
+    --color-border-line-hover: var(--color-light-brown);
+    --color-border-line-stepper-plant: var(--color-light-brown);
 
     /*border-radius*/
     --border-radius-btn: 50px;
@@ -80,6 +107,4 @@
 
     /*shadow*/
     --color-box-shadow: rgba(0, 0, 0, 0.2);
-
- 
 }
