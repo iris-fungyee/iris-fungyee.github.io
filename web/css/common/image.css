@@ -1,0 +1,47 @@
+.object-resize {
+    object-fit: cover;
+}
+
+.ratio-auto {
+    aspect-ratio: auto;
+}
+
+.ratio-custom {
+    aspect-ratio: 1276 / 843;
+}
+
+.ratio-custom-2 {
+    aspect-ratio: 100 / 78;
+}
+
+.ratio1-1 {
+    aspect-ratio: 1 / 1;
+}
+
+.ratio2-3 {
+    aspect-ratio: 2 / 3;
+}
+
+.ratio16-9 {
+    aspect-ratio: 16 / 9;
+}
+
+.ratio4-7 {
+    aspect-ratio: 4 / 7;
+}
+
+.ratio21-9 {
+    aspect-ratio: 21 / 9;
+}
+
+.bg-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-color {
+    top: -55px;
+    min-height: 55px;
+}
+

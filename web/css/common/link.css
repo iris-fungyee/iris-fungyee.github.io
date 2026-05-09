@@ -1,6 +1,7 @@
 a {
 	text-decoration: none;
     color: var(--btn-text);
+    cursor: pointer;
 }
 
 .link-dark,
