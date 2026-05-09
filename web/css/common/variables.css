@@ -75,7 +75,7 @@
     --color-text-default: var(--color-black);
     --color-text-accent: var(--color-light-brown);
     --color-text-light: var(--color-white);
-    --margin-text: 20px;
+    --margin-text: 20px 0px;
 
     /*logo color*/
     --color-logo: var(--color-light-brown);
