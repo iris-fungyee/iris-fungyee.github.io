@@ -46,7 +46,11 @@
 }
 
 .margin-section {
-    margin-bottom: 75px;
+    margin-bottom: var(--margin-section)
+}
+
+.col-2-content {
+    padding: var(--padding-content);
 }
 
 .column-two {
@@ -65,9 +69,7 @@
     width: calc(16.66% - calc(var(--gap-20)* 5/6));
 }
 
-.margin-subtext,
-.article-img,
-.article-product-title {
+.margin-content {
     margin-bottom: var(--margin-text);
 }
 
@@ -75,6 +77,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.img-border img {
+    border-radius: var(--border-radius-img-default);
 }
 
 .article-content {
@@ -89,7 +95,7 @@
     padding: var(--padding-card);
 }
 
-.column-three {
+.col {
     flex-direction: column;
 }
 

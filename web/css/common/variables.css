@@ -45,8 +45,8 @@
     --color-disclaimer-bg: var(--color-light-brown);
     --color-bg-column-four: var(--color-white);
     --padding-card: 20px;
-    --padding-content: 40px;
-    --margin-content: 50px;
+    --padding-content: 0px 50px;
+    --margin-content: 0px 50px;
 
     /*label color*/
     --color-discount-bg: var(--color-light-brown);
