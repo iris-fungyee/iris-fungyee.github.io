@@ -9,9 +9,6 @@
     border-top: 1px solid var(--color-border-line);
 }
 
-.shop-section .row-column {
-    gap: var(--gap-10);
-}
 
 @media only screen and (max-width: 1100px) { 
     .category-image-block {
