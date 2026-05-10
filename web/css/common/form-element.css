@@ -7,6 +7,8 @@ textarea {
     color: var(--color-text-default);
 	border-radius: var(--border-radius-img-default);
 	border: 1px solid var(--color-border-line);
+    font-family: var(--font-base);
+    font-size: 16px;
 }
 
 input[type="text"],
@@ -48,11 +50,10 @@ button[type="post"] {
 
 /* Search bar */
 .search-container {
-    display: flex;
     align-items: center;
     background-color: var(--color-bg-form-element);
     border-radius: var(--border-radius-form-element);
-    margin: 20px;
+    margin: var(--margin-text);
    }
 
 .search-container img {
@@ -71,8 +72,6 @@ button[type="post"] {
 
 /* Footer - subscribe */
 .footer-subscribe {
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     gap: var(--gap-30);
     background-image: url('../../images/footer-bg.png'); 
@@ -81,14 +80,12 @@ button[type="post"] {
     background-repeat: no-repeat;
     border-radius: var(--border-radius-img-default);
     text-align: center;
-    margin: 20px;
-    padding: 30px;
+    margin: var(--margin-text);
+    padding: 80px 130px 70px 130px;
 }
 
 .subscribe-form {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: var(--gap-20);
 }
 
 .subscribe-form input {
@@ -100,56 +97,50 @@ button[type="post"] {
     width: 25%;
 }
 
-/* Customer Review */
-.review-section {
-    margin: 20px;
+.subscribe-title {
+    margin-bottom: var(--margin-text);
 }
 
+/* Customer Review */
 .review-head {
-    display: flex;
-    flex-direction: column;
     gap: var(--gap-30);
 }
 
 .review-container {
-    display: flex;
+    flex-wrap: nowrap;
 }
 
 .user-date {
-    display: flex;
     justify-content: space-between;
 }
 
+.review-content,
+.user-date,
+.add-review {
+  margin-bottom: var(--margin-text);
+}
+
 .review {
-    margin-left: 20px;
     padding: 15px;
     border: 2px solid var(--color-border-line);
     border-radius: var(--border-radius-form-element);
 }
 
-.add-review {
-    margin-bottom: 20px;
-}
-
 .review-form {
-    display:flex;
-    flex-direction: column;
     gap: var(--gap-10);
 }
 
 .checkbox-grp {
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
 
 /* Star rating */
 .rating-option {
-    display: flex;
     gap: var(--gap-10);
     margin: 20px 0px;
 }
 
 .star-option {
-    display:flex;
     justify-content: space-between;
     align-items: center;
     gap: var(--gap-30);
@@ -171,15 +162,14 @@ button[type="post"] {
 
 /* Content page - form */
 .contact-section {
-    display:flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: var(--margin-text);
 }
 
 .contact-img {
-    display: flex;
     width: 35%;
     margin: 0px 30px;
+    flex-wrap: nowrap;
 }
 
 .contact-img img{
@@ -188,15 +178,12 @@ button[type="post"] {
 }
 
 .contact-content {
-    display: flex;
-    flex-direction: column;
     gap: var(--gap-30);
     width: 55%;
-    margin-right: 20px;
+    margin-right: var(--margin-text);
 }
 
 .form-input {
-    display: flex;
     gap: var(--gap-10);
     margin-bottom: 20px;
 }
@@ -207,13 +194,11 @@ button[type="post"] {
 }
 
 .form-comment {
-    display: flex;
-    flex-direction: column;
     gap: var(--gap-10);
 }
 
 .form-comment button {
-    margin-top: 10px;
+    margin-top: var(--margin-text);
 }
 
 .contact-form input[type="radio"] {
@@ -221,16 +206,17 @@ button[type="post"] {
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
     gap: var(--gap-20);
 }
 
 /* Blog pg - comment section */
 .blog-comment {
-    background-color: var(--color-bg-neutral);
     padding: 20px;
     margin: 20px 0px;
+}
+
+.fullbg-color {
+    background-color: var(--color-bg-purple);
 }
 
 .comment-form {
@@ -492,9 +478,11 @@ button[type="post"] {
     .contact-img {
         margin: 0px 20px;
     }
-}
 
-@media only screen and (max-width: 680px) {
+    .footer-subscribe {
+        padding: 80px 60px 70px 60px;
+    }
+    
     .subscribe-form {
         flex-direction: column;
         gap: var(--gap-30);
@@ -509,6 +497,10 @@ button[type="post"] {
         width: 100%;                            
     }
 
+}
+
+@media only screen and (max-width: 680px) {
+    
     .user-pic {
         display: none;
     }

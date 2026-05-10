@@ -9,42 +9,43 @@
     <link rel="stylesheet" href="../css/common/font.css">
     <link rel="stylesheet" href="../css/common/button.css">
     <link rel="stylesheet" href="../css/common/link.css">
+    <link rel="stylesheet" href="../css/common/image.css">
+    <link rel="stylesheet" href="../css/common/layout.css">
     <link rel="stylesheet" href="../css/common/form-element.css">
 </head>
 <body>
-    <div class="search-container">
+<section class="max-width padding-default margin-section">
+    <div class="search-container row-column">
         <img src="../images/searchicon.png" alt="search" width="18" height="18">
         <input type="text" id="search" name="search" placeholder="Search...">
     </div>
+</section>
 
-<section>
-    <div class="footer-subscribe">
+<section class="max-width padding-default margin-section">
+    <div class="footer-subscribe row-column col">
         <div>
             <h2 class="domine subscribe-title">Subscribe to our newsletter to receive updates.</h2>
         </div>
-
-        <form class="subscribe-form">
+        <form class="subscribe-form row-column content-center">
             <input type="text" id="name" name="name" placeholder="Your name ...">
             <input type="email" id="email" name="email" placeholder="Your email ... *" required/>
             <button type="submit">Subscribe</button>
-        
         </form>
-
         <div>
             <p class="categories-sub">We will only send you the good stuff, no spam. *</p>
         </div>
     </div>
 </section>
 
-<section>
+<section class="max-width padding-default margin-section">
 <div class="review-section">
-    <div class="review-head">
-        <div class="review-container">
+    <div class="review-head row-column col">
+        <div class="review-container row-column">
             <div>
                 <img class="user-pic" src="../images/user.png" alt="user" width="60" height="60">
             </div>
             <div class="review">
-                <div class="user-date">
+                <div class="user-date row-column">
                     <p class="ui-text"><span class="bold">Dany</span> – December 10, 2020</p>
                     <img src="../images/fivestars.png" alt="stars-rating" width="90" height="18">
                 </div>
@@ -59,39 +60,39 @@
         </div>
     </div>
 
-    <div class="rating-option">
+    <div class="rating-option row-column">
         <input type="radio" name="star_rating" id="rating1" value="1" hidden>
-        <label for="rating1" class="star-option bold">
+        <label for="rating1" class="star-option bold row-column">
             <span class="rating-text">1 of 5 stars</span>
             <img src="../images/onestar.png" alt="one" width="10" height="10">
         </label>
 
         <input type="radio" name="star_rating" id="rating2" value="2" hidden>
-        <label for="rating2" class="star-option bold">
+        <label for="rating2" class="star-option bold row-column">
             <span class="rating-text">2 of 5 stars</span>
             <img src="../images/twostar.png" alt="two" width="20" height="10">
         </label>
 
         <input type="radio" name="star_rating" id="rating3" value="3" hidden>
-        <label for="rating3" class="star-option bold">
+        <label for="rating3" class="star-option bold row-column">
             <span class="rating-text">3 of 5 stars</span>
             <img src="../images/threestar.png" alt="three" width="30" height="10">
         </label>
 
         <input type="radio" name="star_rating" id="rating4" value="4" hidden>
-        <label for="rating4" class="star-option bold">
+        <label for="rating4" class="star-option bold row-column">
             <span class="rating-text">4 of 5 stars</span>
             <img src="../images/fourstar.png" alt="three" width="40" height="10">
         </label>
 
         <input type="radio" name="star_rating" id="rating5" value="5" hidden>
-        <label for="rating5" class="star-option bold">
+        <label for="rating5" class="star-option bold row-column">
             <span class="rating-text">5 of 5 stars</span>
             <img src="../images/fivestar.png" alt="five" width="50" height="10">
         </label>
     </div>
 
-    <form class="review-form">
+    <form class="review-form row-column col">
         <label for="review">Your review * </label>
         <textarea id="review" name="review" rows="8" cols="45" required></textarea>
 
@@ -109,15 +110,15 @@
 </div>
 </section>
 
-<section>
-    <div class="contact-section">
-        <div class="contact-img">
+<section class="max-width padding-default margin-section">
+    <div class="contact-section row-column">
+        <div class="contact-img row-column full-width">
             <img src="../images/contact-form.jpg" alt="contact-img" width="100%" height="auto">
         </div>
-        <div class="contact-content">
+        <div class="contact-content row-column col">
             <h1 class="domine form-title">How can we help you today?</h1>
 
-            <form class="contact-form">
+            <form class="contact-form row-column col">
                  
             <div class="radio-item">
                 <input type="radio" id="help" name="reason" value="help">
@@ -136,13 +137,13 @@
                 <label for="other">Other</label>
             </div>
 
-                <div class="form-input">
+                <div class="form-input row-column">
                     <input type="text" id="fname" name="fname" placeholder="First name *" required/>
                     <input type="text" id="lname" name="lname" placeholder="Last name *" required/>
                     <input type="email" id="contact-email" name="contact-email" placeholder="Your email *" required/>
                 </div>
 
-                <div class="form-comment">
+                <div class="form-comment row-column col">
                     <label for="comment">Comments or questions</label>
                     <textarea id="comment" name="comment" rows="4"></textarea>
                     <button type="submit">Submit</button>
@@ -152,7 +153,8 @@
     </div>
 </section> 
 
-<section>
+<section class="margin-section fullbg-color">
+    <section class="max-width padding-default margin-section fullbg-color">
     <div class="blog-comment">
         <div class="comment-form">
             <h2 class="domine categories-title">Leave your comment</h2>
@@ -174,9 +176,10 @@
             </form>
         </div> 
     </div>
+    </section>
 </section>
 
-<section>
+<section class="margin-section fullbg-color">
 <div class="shop-subtext">
     <p>Here's a list of all our products:</p>
 </div>
