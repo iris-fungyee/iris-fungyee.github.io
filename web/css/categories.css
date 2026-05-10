@@ -8,8 +8,7 @@
 }
 
 @media screen and (max-width:680px) {
-
-    .column-four {
-        width: 100%
+    .categories-title {
+        text-align: center;
     }
 }
