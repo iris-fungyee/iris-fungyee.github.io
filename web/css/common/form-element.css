@@ -220,6 +220,12 @@ button[type="post"] {
     accent-color: var(--color-btn-bg-default);
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-20);
+}
+
 /* Blog pg - comment section */
 .blog-comment {
     background-color: var(--color-bg-neutral);

@@ -31,13 +31,13 @@
     padding: 160px 76px
 }
 
-.full-width,
+
 .column-one {
     width: 100%;
 }
 
 .max-width {
-    max-width: 1370px;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -118,7 +118,7 @@
 
 @media screen and (max-width:680px) {
 
-    .full-w {
+    .full-width {
         width: 100%
     }
 
