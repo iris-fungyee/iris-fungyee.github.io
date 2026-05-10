@@ -36,7 +36,7 @@
     --color-black-alpha: rgba(0, 0, 0, .075);
     --color-mid-black-alpha: rgba(0, 0, 0, 0.2);
 
-    /* card*/
+    /*card*/
     --color-bg-purple: var(--color-purple-alpha);
     --color-bg-green: var(--color-green-alpha);
     --color-bg-pink: var(--color-pink-alpha);

@@ -41,7 +41,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 40px;
+    padding: 40px 0px;
     border-radius: 0 0 6px 6px;
     color: var(--color-text-default);
 }
@@ -52,6 +52,7 @@
 
 .usp-section {
     border-bottom: 1px solid var(--color-border-line);
+    padding-bottom: 20px;
 }
 
 .margin-content {
@@ -60,7 +61,7 @@
 
 .banner-img1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/home-banner-indoor.jpg);
-    max-height: 500px;
+    max-height: 600px;
     background-position: center bottom;
 }
 
@@ -93,53 +94,60 @@
     min-height: 50px;
 }
 
-.column-three-title {
-    margin-left: 30px;
-    padding-left: 30px;
+.bg-light-green {
+    background-color: var(--color-green);
+    padding: 50px;
 }
 
-.second-column-three img {
-    padding-bottom: 20px;
+.banner-img2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/two-banner-1.jpg);
+    max-height: 100%;
 }
+
+.banner-img3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/two-banner-2.jpg);
+    max-height: 100%;
+}
+
+.p-10 {
+    padding: 10%
+}
+
 
 @media screen and (max-width: 1100px) {
     .disappear {
         display: none;
     }
 
-    .column-six-img img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .column-six-card {
-        height: auto;
-
-    }
-
-    .column-two-content h2 {
-        font-size: 28px;
+    .card.relative {
+        width: 48%;
+        aspect-ratio: 4/3;
     }
 }
 
 @media screen and (max-width: 680px) {
-    .first-card img {
-        display: none;
-    }
 
-    .bg-card {
-        border-radius: var(--border-radius-img-default);
+    .card-img1,
+    .card-img2,
+    .card-img3 {
+        display: none;
     }
 
     .disappear {
         display: block;
     }
 
-    .column-six-card {
-        height: auto;
+    .card.relative {
+        width: 100%;
+        aspect-ratio: auto;
     }
 
-    .column-six-img img {
-        height: 160px;
+    .absolute.bg-card {
+        position: static;
     }
+
+    .bg-card {
+        border-radius: var(--border-radius-img-default);
+    }
+
 }
