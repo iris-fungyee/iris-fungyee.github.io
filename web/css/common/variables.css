@@ -75,7 +75,7 @@
     --color-text-default: var(--color-black);
     --color-text-accent: var(--color-light-brown);
     --color-text-light: var(--color-white);
-    --margin-text: 20px 0px;
+    --margin-text: 20px;
 
     /*logo color*/
     --color-logo: var(--color-light-brown);
@@ -110,6 +110,7 @@
     --gap-20: 20px;
     --gap-30: 30px;
     --padding-selection: 30px 60px;
+    --margin-section: 75px;
 
     /*shadow*/
     --color-box-shadow: rgba(0, 0, 0, 0.2);
