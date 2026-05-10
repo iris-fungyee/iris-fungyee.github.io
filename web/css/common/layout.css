@@ -27,10 +27,6 @@
     background-color: antiquewhite;
 }
 
-.bg-light-green {
-    background-color: var(--color-green);
-}
-
 .banner {
     padding: 160px 76px
 }
@@ -122,9 +118,7 @@
 
 @media screen and (max-width:680px) {
 
-    .column-two,
-    .column-three,
-    .column-four {
+    .full-w {
         width: 100%
     }
 
