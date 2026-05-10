@@ -6,13 +6,10 @@
 
 .shop-subtext {
     padding-top: 20px;
-    margin-right: 20px;
     border-top: 1px solid var(--color-border-line);
 }
 
-.column-four {
-    display: flex;
-    flex-direction: column;
+.shop-section .row-column {
     gap: var(--gap-10);
 }
 
@@ -24,11 +21,6 @@
     .column-three {
          width: calc(50% - var(--gap-10));
     }
-
-    .column-four {
-        width: calc(33.33% - var(--gap-10));
-    }
-
 }
 
 @media only screen and (max-width: 680px) {
@@ -39,10 +31,17 @@
 
     .column-three {
         width: 100%;
-        padding-top: 0px;
+    }
+
+    .category-image {
+        aspect-ratio: auto;
+    }
+
+    .reverse {
+        order: -1;
     }
 
     .column-four {
-        width: calc(50% - var(--gap-10));
+        width: 100%;
     }
 }

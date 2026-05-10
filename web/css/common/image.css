@@ -26,12 +26,16 @@
     aspect-ratio: 2 / 3;
 }
 
-.ratio16-9 {
-    aspect-ratio: 16 / 9;
+.ratio3-2 {
+    aspect-ratio: 3 / 2;
 }
 
 .ratio4-7 {
     aspect-ratio: 4 / 7;
+}
+
+.ratio16-9 {
+    aspect-ratio: 16 / 9;
 }
 
 .ratio21-9 {
@@ -39,6 +43,7 @@
 }
 
 .bg-img {
+    background-image: var(--bg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
