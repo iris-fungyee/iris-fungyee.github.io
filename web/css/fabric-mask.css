@@ -71,6 +71,7 @@
 
 .productpg-socials {
     margin-right: auto;
+    gap: var(--gap-10)
 }
 
 .product-controls,
@@ -88,6 +89,11 @@
     justify-content: flex-start;
     gap: var(--gap-10)
 }
+
+.rating-option.row-column {
+    flex-wrap: nowrap;
+}
+
 
 @media screen and (max-width: 1100px) {
     .padding-default {
