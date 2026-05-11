@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/common/button.css">
     <link rel="stylesheet" href="css/common/form-element.css">
     <link rel="stylesheet" href="css/common/layout.css">
+    <link rel="stylesheet" href="css/common/images.css">
     <link rel="stylesheet" href="css/blog.css">
 </head>
        <div class="main-header">
@@ -54,7 +55,7 @@
                                 <i class="fa-solid fa-angle-down" id="dropdown-icon"></i>
                             </a></div>
                         <div class="dropdown-content">
-                            <a href="/product-small-terrarium-kit.html">Small terrarium kit</a>
+                            <a href="/web/product-small-terrarium-kit.html">Small terrarium kit</a>
                             <a href="/web/fabric-mask.html">Mask</a>
                         </div>
                     </div>
@@ -67,40 +68,44 @@
             </div>
         </div>
 
-<h1 class="page-intro">Latest tips & tricks</h1>
-<div class="torn-paper-bg"></div>
+<div class="page-content">
+        <h1 class="page-intro">Latest tips & tricks</h1>
+    </div>
+    <div class="torn-paper-bg margin-section"></div>
 
-<div class="blog-section">
-    <div class="blog-main">
-        <div class="blog-img">
-            <img src="images/articles-hand-bowl.jpg" alt="blog" width="100%" height="auto">
-        </div>
-
-        <div class="blog-content-left">
+<section class="max-width padding-default margin-section">
+<div class="blog-section row-column content-center">
+    <div class="blog-post">
+        <div class="bg-img" style="--bg: url(/web/images/articles-hand-bowl.jpg)">
+            </div>
+    </div>
+        <div class="blog-content right content-center padding-default col relative">
             <h1 class="domine about-banner-card">Giftable scents to warm the heart with artisanal soap.</h1>
             <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit.</p>
-            <div class="btn btn-default ">
-                <a href="https://avada.website/handmade/2020/11/26/giftable-scents-to-warm-the-heart-with-artisanal-soap/">Read more about it</a>
+            <div class="btn btn-default">
+                <a href="/web/blog.html">Read more about it</a>
             </div>
+        </div>
+</div>
+
+<div class="blog-section row-column content-center">
+    <div class="blog-content left content-center padding-default col relative">
+        <h1 class="domine about-banner-card">Creative ideas to make this holiday extra special.</h1>
+        <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit.</p>
+        <div class="btn btn-default ">
+            <a href="/web/blog.html">Read more about it</a>
         </div>
     </div>
-
-    <div class="blog-main">
-        <div class="blog-img-right">
-            <img src="images/articles-color.jpg" alt="blog" width="100%" height="auto">
-        </div>
-
-        <div class="blog-content-right">
-            <h1 class="domine about-banner-card">Creative ideas to make this holiday extra special.</h1>
-            <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit.</p>
-            <div class="btn btn-default ">
-                <a href="https://avada.website/handmade/2020/11/26/creative-ideas-to-make-this-holiday-extra-special/">Read more about it</a>
-            </div>
+    <div class="blog-post">
+        <div class="bg-img" style="--bg: url(/web/images/articles-color.jpg)">
         </div>
     </div>
 </div>
 
-<section>
+</section>
+
+<section class="margin-section fullbg-color">
+    <section class="max-width padding-default margin-section fullbg-color">
     <div class="blog-comment">
         <div class="comment-form">
             <h2 class="domine categories-title">Leave your comment</h2>
@@ -122,50 +127,54 @@
             </form>
         </div> 
     </div>
+    </section>
 </section>
 
-<div class="column-two-title">
+<section class="max-width padding-default margin-section">
         <h1 class="domine form-title">Related post</h1>
+        <div class="row-column">
+            <div class="column-two full-width col content-center">
+                <div class="article-img margin-content">
+                    <img src="images/articles-2-women.jpg" class="ratio-custom-3">
+                </div>
+                <div class="article-content margin-content">
+                    <h3 class="domine article-product-title margin-content">
+                        <a class="link-dark" a href="/web/blog.html">Decorative touches for your holiday season</a>
+                    </h3>
+                    <p class="article-sub">Aenean tellus metus bibendum sed posuere ac mattis non nunc.</p>
+                </div>
+            </div>
+
+            <div class="column-two full-width col content-center">
+                <div class="article-img margin-content">
+                    <img src="images/articles-color.jpg" class="ratio-custom-3">
+                </div>
+                <div class="article-content margin-content">
+                    <h3 class="domine article-product-title margin-content">
+                        <a class="link-dark" a href="/web/blog.html">Creative ideas to make this holiday extra special</a>
+                    </h3>
+                    <p class="article-sub">Etiam feugiat lorem non metus cras id dui nullam vel sem.
+                    </p>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section class="max-width padding-default margin-section">
+    <div class="footer-subscribe row-column col">
+        <div>
+            <h2 class="domine subscribe-title">Subscribe to our newsletter to receive updates.</h2>
+        </div>
+        <form class="subscribe-form row-column content-center">
+            <input type="text" id="name" name="name" placeholder="Your name ...">
+            <input type="email" id="email" name="email" placeholder="Your email ... *" required/>
+            <button type="submit">Subscribe</button>
+        </form>
+        <div>
+            <p class="categories-sub">We will only send you the good stuff, no spam. *</p>
+        </div>
     </div>
-
-    <div class="row-column">
-        <div class="column-two content-center padding-default">
-            <div clas="article-base">
-                <img src="images/articles-2-women.jpg" alt="blog" width="100%" height="auto">
-                <h3 class="domine article-product-title">
-                    <a class="link-dark" href="https://avada.website/handmade/2020/11/26/decorative-touches-for-your-holiday-season/">Decorative touches for your holiday season</a>
-                </h3>
-                <h3 class="popular-card-sub">Aenean tellus metus bibendum sed posuere ac mattis non nunc.</h3>
-            </div>
-        </div>
-
-        <div class="column-two content-center padding-default">
-            <div clas="article-base">
-                <img src="images/articles-color.jpg" alt="blog" width="100%" height="auto">
-                <h3 class="domine article-product-title">
-                     <a class="link-dark" href="https://avada.website/handmade/2020/11/26/creative-ideas-to-make-this-holiday-extra-special/">Creative ideas to make this holiday extra special.</a>
-                </h3>
-                <h3 class="popular-card-sub">Etiam feugiat lorem non metus cras id dui nullam vel sem.</h3>
-            </div>
-        </div>
-</div>
-
-      <div class="footer-subscribe">
-            <div>
-                <h2 class="domine subscribe-title">Subscribe to our newsletter to receive updates.</h2>
-            </div>
-
-            <form class="subscribe-form">
-                <input type="text" id="name" name="name" placeholder="Your name ...">
-                <input type="email" id="email" name="email" placeholder="Your email ... *" required />
-                <button type="submit">Subscribe</button>
-
-            </form>
-
-            <div>
-                <p class="categories-sub">We will only send you the good stuff, no spam. *</p>
-            </div>
-        </div>
+</section>
 
         <div class="main-footer">
             <div class="footer-content">
