@@ -1,36 +1,18 @@
-
-.max-width {
-    margin: 20px;
-}
-
-.follow-img img,
-.img-mobile img  {
-    aspect-ratio: 2 / 3;
-    object-fit: cover;
-}
-
 .follow-us {
-    background-color: var( --color-bg-brand);
+    background-color: var(--color-pink);
 }
 
-.column-four img {
-    aspect-ratio: 4 / 7;
-    object-fit: cover;
-}
-
-.user-testimonial {
-    background-color: var(--color-bg-accent);
-    margin: 20px;
-    padding: 20px;
+.user-pg {
+    background-color: var(--color-green);
+    padding: var(--margin-text);
 }
 
 .form-title {
     text-align: center;
+    margin-bottom: var(--margin-text);
 }
 
 .user-content {
-    display: flex;
-    flex-direction: column;
     gap: var(--gap-30);
 }
 
@@ -42,12 +24,7 @@
 }
 
 .banner-section {
-    background-color: var(--color-bg-neutral);
-}
-
-.usp-section {
-    flex-wrap: wrap;
-    gap: var(--gap-30);
+    background-color: var(--color-purple);
 }
 
 .usp-content{
@@ -64,10 +41,12 @@
     align-items: center;
 }
 
+.same-height {
+    height: 600px;
+}
+
 @media only screen and (max-width: 1440px) { 
-    .follow-us-mobile {
-        display: none;
-    }
+
 }
 
 @media only screen and (max-width: 1100px) { 
@@ -114,10 +93,6 @@
 
     .column-four {
         width: calc(50% - var(--gap-10));
-    }
-
-    .row-column {
-        justify-content: space-between;
     }
 
     .follow-img img {

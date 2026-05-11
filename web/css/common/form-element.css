@@ -164,12 +164,13 @@ button[type="post"] {
 .contact-section {
     justify-content: space-between;
     margin: var(--margin-text);
+    flex-wrap: nowrap;
+    
 }
 
 .contact-img {
     width: 35%;
     margin: 0px 30px;
-    flex-wrap: nowrap;
 }
 
 .contact-img img{
@@ -496,6 +497,8 @@ button[type="post"] {
     .comment-input input {
         width: 100%;                            
     }
+
+
 
 }
 

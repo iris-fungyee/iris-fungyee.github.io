@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/common/link.css">
     <link rel="stylesheet" href="css/common/button.css">
     <link rel="stylesheet" href="css/common/form-element.css">
+    <link rel="stylesheet" href="css/common/image.css">
     <link rel="stylesheet" href="css/common/layout.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
@@ -68,38 +69,46 @@
             </div>
         </div>
 
-<h1 class="page-intro">Let’s stay in touch</h1>
-<div class="torn-paper-bg"></div>
+<div class="page-content">
+        <h1 class="page-intro">Let's stay in touch</h1>
+    </div>
+    <div class="torn-paper-bg margin-section"></div>
 
-<section>
-    <div class="contact-section">
-        <div class="contact-img">
-            <img src="images/contact-form.jpg" alt="contact-img" width="100%" height="auto">
+
+<section class="max-width padding-default margin-section">
+    <div class="contact-section row-column">
+        <div class="contact-img row-column full-width">
+            <img src="/web/images/contact-form.jpg" alt="contact-img" width="100%" height="auto">
         </div>
-        <div class="contact-content">
+        <div class="contact-content row-column col">
             <h1 class="domine form-title">How can we help you today?</h1>
 
-            <form class="contact-form">
-
+            <form class="contact-form row-column col">
+                 
+            <div class="radio-item">
                 <input type="radio" id="help" name="reason" value="help">
-                <label for="help">I need help with a product.</label><br>
-
+                <label for="help">I need help with a product.</label>
+            </div>
+            <div class="radio-item">
                 <input type="radio" id="refund" name="reason" value="refund">
-                <label for="refund">I need to get a refund for a product.</label><br>
-
+                <label for="refund">I need to get a refund for a product.</label>
+            </div>
+            <div class="radio-item">
                 <input type="radio" id="receive" name="reason" value="not-receive">
-                <label for="receive">I didn't receive the product I ordered.</label><br>
-                
+                <label for="receive">I didn't receive the product I ordered.</label>
+            </div>
+                <div class="radio-item">
                 <input type="radio" id="other" name="reason" value="other">
-                <label for="other">Other</label><br><br>
+                <label for="other">Other</label>
+            </div>
 
-                <div class="form-input">
+                <div class="form-input row-column">
                     <input type="text" id="fname" name="fname" placeholder="First name *" required/>
                     <input type="text" id="lname" name="lname" placeholder="Last name *" required/>
                     <input type="email" id="contact-email" name="contact-email" placeholder="Your email *" required/>
                 </div>
 
-                <div class="form-comment">
+                <div class="form-comment row-column col">
                     <label for="comment">Comments or questions</label>
                     <textarea id="comment" name="comment" rows="4"></textarea>
                     <button type="submit">Submit</button>
@@ -109,23 +118,16 @@
     </div>
 </section> 
 
-<div class="followus-section">
-    <div class="row-column max-width">
-        <div class="column-three content-center follow-img">
-                <img src="images/about-pg-banner.jpg" alt="blog" width="100%" height="auto">
+<section class="max-width padding-default margin-section">
+    <div class="row-column same-height">
+            
+            <div class="column-three same-height">
+                <img src="images/about-pg-banner.jpg" class="ratio2-3 object-resize" alt="blog"  width="100%" height="100%">
             </div>
-        <div class ="follow-us-mobile">
-            <div class="column-two content-center img-mobile">
-                <img src="images/about-pg-banner.jpg" alt="blog" width="100%" height="auto">
-            </div>
-            <div class="column-two content-center img-mobile">
-                <img src="images/human-plant.jpg" alt="blog" width="100%" height="auto">
-            </div>
-        </div>
 
-        <div class="column-three content-center padding-default follow-us">
-            <div class="followus-content">
-                <h1 class="domine form-title">Follow us</h1>
+            <div class="column-three col content-center follow-us same-height">
+                <div class="followus-content">
+                    <h1 class="domine form-title">Follow us</h1>
                 <div class="social-links">
                     <a class="socials-icon fb link-static" href="https://www.facebook.com/ThemeFusionAvada#"></a>
                     <a class="socials-icon x link-static" href="https://x.com/theme_fusion"></a>
@@ -133,49 +135,55 @@
                     <a class="socials-icon yt link-static" href="https://www.youtube.com/channel/UC_C7uAOAH9RMzZs-CKCZ62w"></a>
                  </div>
              </div>
-        </div>
-        <div class="column-three content-center follow-img">
-                <img src="images/human-plant.jpg" alt="blog" width="100%" height="auto">
-        </div>
-    </div>
-</div>
+                </div>
+           
+            <div class="column-three same-height">
+                <img src="images/human-plant.jpg" class="ratio2-3 object-resize" alt="blog"  width="100%" height="100%">
+            </div>
+         </div>
+</section>
 
-<div class="row-column max-width">
-        <div class="column-four content-center">
-            <img src="images/handmade-jewels.jpg" alt="blog" width="100%" height="auto">
+  <section class="max-width padding-default margin-section">
+        <div class="row-column">
+            <div class="column-four content-center">
+                <img src="images/handmade-jewels.jpg" class="ratio4-7 object-resize" alt="blog" width="100%" height="auto">
+            </div>
+            <div class="column-four content-center">
+                <img src="images/christmas-decorations.jpg" class="ratio4-7 object-resize" alt="blog" width="100%" height="auto">
+            </div>
+            <div class="column-four content-center">
+                <img src="images/ceramics.jpg" class="ratio4-7 object-resize" alt="blog" width="100%" height="auto">
+            </div>
+            <div class="column-four content-center">
+                <img src="images/two-banner-1.jpg" class="ratio4-7 object-resize" alt="follow" width="100%" height="auto">
+            </div>
         </div>
-        <div class="column-four content-center">
-            <img src="images/christmas-decorations.jpg" alt="blog" width="100%" height="auto">
-        </div>
-        <div class="column-four content-center img-remove">
-            <img src="images/ceramics.jpg" alt="blog" width="100%" height="auto">
-        </div>
-        <div class="column-four content-center img-remove">
-            <img src="images/two-banner-1.jpg" alt="follow" width="100%" height="auto">
-        </div>
-    </div>
+    </section>
 
-<div class="user-testimonial"> 
+<section class="margin-section user-pg">
+<div class="max-width user-testimonial"> 
     <h1 class="domine form-title">User Testimonial</h1>
-    <div class="row-column max-width">
-        <div class="column-three content-center padding-default user-content">
+    <div class="row-column">
+        <div class="column-three content-center padding-default full-width col user-content">
             <img src="images/user.png" alt="user" width="95" height="95">
             <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.</p>
             <p class="bold">Lisa Smith, ThemeFusion</p>
         </div>
-        <div class="column-three content-center padding-default user-content">
+        <div class="column-three content-center padding-default full-width col user-content">
             <img src="images/user.png" alt="user" width="95" height="95">
             <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.</p>
             <p class="bold">Melissa Green, ThemeFusion</p>
         </div>
-        <div class="column-three content-center padding-default user-content">
+        <div class="column-three content-center padding-default full-width col user-content">
             <img src="images/user.png" alt="user" width="95" height="95">
             <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.</p>
             <p class="bold">Dany Lewis, ThemeFusion</p>
         </div>
     </div>
 </div>
+</section>
 
+<section class="max-width padding-default margin-section">
 <div class="row-column banner-section">
     <div class="column-two content-center">
         <img src="images/two-banner-2.jpg" alt="blog" width="100%" height="auto">
@@ -188,7 +196,9 @@
         </div>
     </div>
 </div>
+</section>
 
+<section class="max-width padding-default margin-section">
 <div class="usp-section">
     <div class="usp-content">
         <div class="usp-head">
@@ -254,23 +264,24 @@
         </div>
     </div>
 </div>
+</section>
 
-      <div class="footer-subscribe">
-            <div>
-                <h2 class="domine subscribe-title">Subscribe to our newsletter to receive updates.</h2>
-            </div>
-
-            <form class="subscribe-form">
-                <input type="text" id="name" name="name" placeholder="Your name ...">
-                <input type="email" id="email" name="email" placeholder="Your email ... *" required />
-                <button type="submit">Subscribe</button>
-
-            </form>
-
-            <div>
-                <p class="categories-sub">We will only send you the good stuff, no spam. *</p>
-            </div>
+    <section class="max-width padding-default margin-section">
+    <div class="footer-subscribe row-column col">
+        <div>
+            <h2 class="domine subscribe-title">Subscribe to our newsletter to receive updates.</h2>
         </div>
+        <form class="subscribe-form row-column content-center">
+            <input type="text" id="name" name="name" placeholder="Your name ...">
+            <input type="email" id="email" name="email" placeholder="Your email ... *" required/>
+            <button type="submit">Subscribe</button>
+        </form>
+        <div>
+            <p class="categories-sub">We will only send you the good stuff, no spam. *</p>
+        </div>
+    </div>
+</section>
+
 
         <div class="main-footer">
             <div class="footer-content">
