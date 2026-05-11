@@ -8,10 +8,11 @@
     display: flex;
     justify-content: center;
     text-align: left;
-    padding: 80px;
+    padding: 10%;
     background-color: var(--color-bg-form-element-light);
     border-radius: var(--border-radius-form-element);
 }
+
 
 .tab-menu {
     display: flex;
@@ -35,10 +36,16 @@
 
 .tab-content {
     text-align: left;
-    padding: 5%;
-    width: 80%;
+    padding: 2%;
+    width: 60%;
+    gap: var(--gap-20);
     background-color: var(--color-bg-stepper-mask);
     border: 1px solid var(--color-border-line);
+}
+
+.sub-content {
+    display: flex;
+    gap: var(--gap-30)
 }
 
 .content-box {
@@ -63,7 +70,7 @@
 }
 
 .productpg-socials {
-    margin: auto;
+    margin-right: auto;
 }
 
 .product-controls,
@@ -83,21 +90,20 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .tab-menu {
-        width: 10%
-    }
-
-    .tab-content {
-        text-align: left;
-        padding: 5%;
-        width: 90%;
-        background-color: var(--color-bg-stepper-mask);
-        border: 1px solid var(--color-border-line);
+    .padding-default {
+        padding: 0px 30px
     }
 }
 
-
 @media screen and (max-width: 680px) {
+    .article-img {
+        width: 100%;
+    }
+
+    .full-w {
+        width: 100%
+    }
+
     .tab-menu {
         width: 100%;
         flex: none;
