@@ -1,7 +1,7 @@
 .banner-bg-img {
     width: 100%;
     min-height: 600px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/home-banner-indoor.jpg) center / cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/home-banner-indoor.jpg) center / cover no-repeat;
     display: flex;
 }
 
@@ -27,10 +27,12 @@
 .top-part {
     border-bottom: 1px solid var(--color-border-line);
     width: 100%;
+    padding: 10px
 }
 
 .sub-content {
     display: flex;
+    gap: var(--gap-30);
     width: 100%;
     border-top: 1px solid var(--color-border-line);
     padding: 20px 0px;
@@ -44,6 +46,8 @@
 
 .tab-content {
     width: 100%;
+    border-top: 1px solid var(--color-border-line);
+    padding-top: 30px
 }
 
 .tab-btn {
@@ -69,8 +73,9 @@
 }
 
 .card-img img {
+    aspect-ratio: 69/48;
     object-fit: cover;
-    border-radius: var(--border-radius-img-card);
+    border-radius: var(--border-radius-img-default);
 }
 
 .categories-no {
@@ -91,6 +96,7 @@
     width: 100%;
     z-index: 1;
     padding-top: 10%;
+    padding-bottom: 5%;
     background-color: var(--color-pink);
 }
 
@@ -113,38 +119,31 @@
     justify-content: space-between;
 }
 
-
-@media screen and (max-width: 1100px) {
-
-    .column-content,
-    .orange-card {
-        top: 30%;
-    }
+.column-four img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
+.rating-option.row-column {
+    flex-wrap: nowrap;
+}
+
+
+@media screen and (max-width: 1100px) {}
+
 @media screen and (max-width: 680px) {
-    .categories-social {
-        flex-direction: column;
-        align-items: normal;
-    }
-
-    .categories-no {
-        padding-left: 20px;
-    }
-
     .column-content {
-        top: 30%;
-        left: 5%;
-        max-width: 90%;
-        text-align: center;
+        height: auto;
+        width: 100%;
+        margin-left: -80vw;
+        position: relative;
+        bottom: 130px;
     }
 
     .orange-card {
-        top: 80%;
-        left: 5%;
-        width: 90%;
-        padding: 5%;
+        bottom: -300px;
         height: auto;
+        width: 80vw;
     }
 
     .orange-card .row-column.tab-menu {
@@ -158,6 +157,10 @@
     .bg-color {
         top: 0;
         width: 100%;
-        padding-top: 95%;
+        padding-top: 50%;
+    }
+
+    .customerreview-sub {
+        flex-direction: column;
     }
 }
