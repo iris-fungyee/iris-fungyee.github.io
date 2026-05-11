@@ -1,7 +1,7 @@
 .main-header {
     display: flex;
     flex-direction: column;
-    padding: 25px 60px 0px;
+    padding: 25px 10px 0px;
 }
 
 .header-row {
@@ -21,6 +21,7 @@
 }
 
 div.search-container {
+    display: flex;
     width: 20%;
     align-items: center;
     justify-content: flex-start;
@@ -73,7 +74,6 @@ div.mobile-search {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 10px;
     width: 100%;
 }
 
@@ -93,7 +93,7 @@ div.mobile-search {
     top: 100%;
     left: 0;
     min-width: 200px;
-    background-color: var(--color-bg-default);
+    background-color: var(--color-white);
     border-radius: var(--border-radius-img-default);
     box-shadow: 0 0 4px var(--color-box-shadow);
     z-index: 1000;
@@ -170,9 +170,6 @@ div.mobile-search {
 }
 
 @media only screen and (max-width: 680px) {
-    .main-header {
-        padding: 25px;
-    }
 
     .menu-toggle,
     .basket {
@@ -198,7 +195,7 @@ div.mobile-search {
         position: fixed;
         top: -100%;
         align-items: flex-start;
-        background-color: var(--color-bg-default);
+        background-color: var(--color-white);
         transition: all 0.2s ease;
         z-index: 1000;
     }
