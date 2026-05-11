@@ -126,6 +126,9 @@
 }
 
 @media screen and (max-width: 680px) {
+    .full-w {
+        width: 100%;
+    }
 
     .card-img1,
     .card-img2,
@@ -148,6 +151,22 @@
 
     .bg-card {
         border-radius: var(--border-radius-img-default);
+    }
+
+    .promo-banner-title.margin-content {
+        margin-bottom: 5px;
+    }
+
+    .promo-banner-title {
+        font-size: 19px
+    }
+
+    .p-banner {
+        font-size: 10px
+    }
+
+    .banner-btn {
+        padding: 10px 15px
     }
 
 }
