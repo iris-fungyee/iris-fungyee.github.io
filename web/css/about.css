@@ -1,6 +1,7 @@
 .banner-img1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../images/about-pg-banner.jpg);
     z-index: 10;
+    border-radius: var(--border-radius-img-default);
 }
 
 .bg-img {
